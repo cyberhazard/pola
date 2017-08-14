@@ -8,7 +8,6 @@ const App = styled.div`
   display: flex;
   width: 100%;
   height: 100vh;
-  border: 10px solid red;
 `;
 
 export default class extends React.Component {
