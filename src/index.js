@@ -6,8 +6,9 @@ import { injectGlobal } from 'styled-components';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import './_assets/css/fonts.css';
-
 import App from './App';
+// eslint-disable-next-line
+//import TestComponents from './TestComponents.jsx';
 
 render(
   <Router>
