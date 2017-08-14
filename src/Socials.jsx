@@ -18,6 +18,5 @@ export default () => (
     <Icon src={twitter} />
     <Icon src={fb} />
     <Icon src={linkedin} />
-    {vk}
   </Socials>
 );
