@@ -11,6 +11,8 @@ const Logo = styled(Link)`
   box-shadow: 1px 1px 6px black;
   transform-origin: top left;
   transform: scale(1.025);
+  margin-bottom: 60px;
+  flex-shrink: 0;
 `;
 
 const Image = styled.img`
