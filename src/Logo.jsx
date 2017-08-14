@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-const Logo = styled.div`
+const Logo = styled(Link)`
+  display: block;
   width: 100%;
   height: 200px;
   padding: 38px 100px;
@@ -16,7 +18,7 @@ const Image = styled.img`
 `;
 
 export default () => (
-  <Logo>
+  <Logo to="/">
     <Image src={require('./_assets/images/pola-logo.png')} />
   </Logo>
 );
