@@ -5,9 +5,13 @@ import { render } from 'react-dom';
 import { injectGlobal } from 'styled-components';
 import { BrowserRouter as Router } from 'react-router-dom';
 
+import './_assets/css/fonts.css';
+
+import App from './App';
+
 render(
   <Router>
-    <div>TEST</div>
+    <App />
   </Router>,
   document.querySelector('#root'),
 );
