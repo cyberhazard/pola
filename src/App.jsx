@@ -1,4 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
+
+import Sidebar from './Sidebar';
+import RightSide from './RightSide';
+
+const App = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  border: 10px solid red;
+`;
 
 export default class extends React.Component {
   constructor(props) {
@@ -7,7 +18,10 @@ export default class extends React.Component {
   }
   render() {
     return (
-      <div>App!</div>
+      <App>
+        <Sidebar />
+        <RightSide />
+      </App>
     );
   }
 }
