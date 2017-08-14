@@ -21,3 +21,9 @@
   src: url('../fonts/social.otf');
   font-weight: normal
 }
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.woff');
+  font-weight: normal
+}
