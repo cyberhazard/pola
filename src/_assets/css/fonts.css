@@ -15,3 +15,9 @@
   src: url('../fonts/Lora-Bold.woff');
   font-weight: 700
 }
+
+@font-face {
+  font-family: 'Social';
+  src: url('../fonts/social.otf');
+  font-weight: normal
+}
