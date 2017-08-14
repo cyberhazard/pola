@@ -42,11 +42,12 @@ export const Item = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  display: none;
-  ${({ isOpen }) => isOpen && 'display: block;'}
+  opacity: 0;
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
-  left: 0;
+  left: 150%;
+  transition: opacity .5s;
+  ${({ isOpen }) => isOpen && 'left: 0; opacity: 1;'}
 `;
