@@ -13,13 +13,19 @@ const App = styled.div`
 export default class extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { language: 'RU' };
+    this.changeLang = this.changeLang.bind(this);
   }
+
+  changeLang(language) {
+    this.setState({ language });
+  }
+
   render() {
     return (
       <App>
-        <Sidebar />
-        <RightSide />
+        <Sidebar language={this.state.language} />
+        <RightSide language={this.state.language} changeLang={this.changeLang} />
       </App>
     );
   }

@@ -14,9 +14,9 @@ const RightSide = styled.div`
   baackground-size: cover;
 `;
 
-export default () => (
+export default ({ language, changeLang }) => (
   <RightSide>
-    <Header />
+    <Header language={language} changeLang={changeLang} />
     <Content />
   </RightSide>
 );

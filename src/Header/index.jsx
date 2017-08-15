@@ -12,14 +12,14 @@ const Header = styled.div`
   padding-left: 80px;
 `;
 
-export default () => (
+export default ({ language, changeLang }) => (
   <Header>
     <Select
       height="100%"
       width="126px"
-      label="Язык"
+      label={language}
       values={['RU', 'EN']}
-      onChange={console.log}
+      onChange={changeLang}
     />
   </Header>
 );
