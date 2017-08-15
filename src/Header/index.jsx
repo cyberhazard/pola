@@ -17,9 +17,10 @@ export default ({ language, changeLang }) => (
     <Select
       height="100%"
       width="126px"
-      label={language}
-      values={['RU', 'EN']}
+      label={language === 'RU' ? '🇷🇺 RU' : '🇺🇸 EN'}
+      values={[{ value: 'RU', name: '🇷🇺 RU' }, { value: 'EN', name: '🇺🇸 EN' }]}
       onChange={changeLang}
+      backgroundColor="rgba(255,255,255,0.1)"
     />
   </Header>
 );

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Select = styled.div`
   ${({ width }) => width && `width: ${width};`}
   ${({ height }) => height && `height: ${height};`}
-  border: 1px solid red;
+  ${({ backgroundColor }) => backgroundColor && `background-color: ${backgroundColor};`}
   position: relative;
 `;
 
@@ -17,6 +17,9 @@ export const Label = styled.div`
   position: relative;
   user-select: none;
   cursor: pointer;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
   &:after {
     content: '\f107';
     font-family: 'FontAwesome';
@@ -37,8 +40,17 @@ export const Dropdown = styled.div`
 export const Item = styled.div`
   padding: 6px 20px;
   width: 100%;
-  border: 1px solid green;
+  background-color: rgba(255,255,255,0.3);
+  text-align: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
   cursor: pointer;
+  transition: .3s;
+  &:hover {
+    background-color: rgba(0,0,0,0.5);
+    color: #0397d6;
+  }
 `;
 
 export const Wrapper = styled.div`

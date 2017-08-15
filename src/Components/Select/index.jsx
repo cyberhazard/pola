@@ -33,9 +33,9 @@ export default class extends React.Component {
 
   handleSelect(e, selectedValue) {
     e.stopPropagation();
-    this.setState({ isOpen: false, selectedValue });
+    this.setState({ isOpen: false, selectedValue: selectedValue.name });
     // eslint-disable-next-line
-    this.props.onChange && this.props.onChange(selectedValue);
+    this.props.onChange && this.props.onChange(selectedValue.value);
   }
 
   render() {
@@ -44,6 +44,7 @@ export default class extends React.Component {
         width={this.props.width}
         height={this.props.height}
         onClick={this.handleClick}
+        backgroundColor={this.props.backgroundColor}
       >
         <Label>
           { this.state.selectedValue || this.props.label }
@@ -54,7 +55,7 @@ export default class extends React.Component {
             {
               this.props.values && this.props.values.map((value, index) =>
                 // eslint-disable-next-line
-                    <Item key={index} onClick={e => this.handleSelect(e, value)}>{value}</Item>)
+                    <Item key={index} onClick={e => this.handleSelect(e, value)}>{value.name}</Item>)
             }
           </Dropdown>
         </Wrapper>
