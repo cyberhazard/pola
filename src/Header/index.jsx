@@ -6,7 +6,7 @@ import Select from './../Components/Select';
 const Header = styled.div`
   height: 66px;
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid #44484c;
   flex-shrink: 0;
   background-color: rgba(0,0,0,0.8);
   padding-left: 80px;
