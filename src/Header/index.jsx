@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Select from './../Components/Select';
 
 const Header = styled.div`
-  height: 66px;
+  height: 6.6666666667vh;
   width: 100%;
   border: 1px solid #44484c;
   flex-shrink: 0;
