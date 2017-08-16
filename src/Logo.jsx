@@ -3,20 +3,19 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const Logo = styled(Link)`
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 200px;
-  padding: 38px 100px;
+  height: 20.20vh;
   background-color:  #141b22;
-  box-shadow: 1px 1px 6px black;
-  transform-origin: top left;
-  transform: scale(1.025);
-  margin-bottom: 60px;
+  margin-bottom: 6vh;
   flex-shrink: 0;
 `;
 
 const Image = styled.img`
-  height: 100%;
+  max-width: 126px;
+  max-height: 80%;
 `;
 
 export default () => (
