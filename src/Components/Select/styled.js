@@ -40,7 +40,7 @@ export const Dropdown = styled.div`
 export const Item = styled.div`
   padding: 6px 20px;
   width: 100%;
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255,255,255,0.1);
   text-align: center;
   color: #ffffff;
   font-family: Roboto;
