@@ -1,12 +1,14 @@
 /* eslint-disable no-return-assign */
 import React from 'react';
-import { Dropdown, Item, Label, Select, Wrapper } from './styled';
+import { Dropdown, Item, Label, Select, Wrapper, Icon } from './styled';
 
 /**
  * props:
  * width - ширина
  * height - высота
  * label - Начальная подпись
+ * icon - иконка (ссылка)
+ * iconStyle - стили иконки (css строка)
  * values = массив значений
  *  [{value 'Значание', name: 'Лейбл'}]
  * onChange - функция, которая возращает выбранное значение
@@ -47,8 +49,9 @@ export default class extends React.Component {
         onClick={this.handleClick}
         backgroundColor={this.props.backgroundColor}
       >
-        <Label>
-          { this.state.selectedValue || this.props.label }
+        <Label left={this.props.left}>
+          {this.props.icon && <Icon customStyle={this.props.iconStyle} src={this.props.icon} />}
+          { this.props.label }
         </Label>
 
         <Wrapper isOpen={this.state.isOpen}>
@@ -56,7 +59,7 @@ export default class extends React.Component {
             {
               this.props.values && this.props.values.map((value, index) =>
                 // eslint-disable-next-line
-                    <Item key={index} onClick={e => this.handleSelect(e, value)}>{value.name}</Item>)
+                <Item key={index} onClick={e => this.handleSelect(e, value)}>{value.name}</Item>)
             }
           </Dropdown>
         </Wrapper>

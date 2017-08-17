@@ -10,6 +10,7 @@ export const Select = styled.div`
 export const Label = styled.div`
   display: flex;
   justify-content: center;
+  ${({ left }) => left && 'justify-content: flex-start;'}
   align-items: center;
   width: 100%;
   height: 100%;
@@ -62,4 +63,8 @@ export const Wrapper = styled.div`
   left: 150%;
   transition: opacity .5s;
   ${({ isOpen }) => isOpen && 'left: 0; opacity: 1;'}
+`;
+
+export const Icon = styled.img`
+  ${p => p.customStyle && p.customStyle}
 `;
