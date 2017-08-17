@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header, Icon, Wrapper, Contact } from './styled';
+import Search from './Search';
 
 import Select from './../Components/Select';
 import flagRU from './../_assets/images/flag-ru.jpg';
@@ -30,6 +31,7 @@ export default ({ language, changeLang, changeLocation, location }) => (
       onChange={changeLang}
       backgroundColor="rgba(255,255,255,0.1)"
     />
+    <Search />
     <Contact>
       <Icon src={mapPin} /> {locations[location][language].address}
     </Contact>
