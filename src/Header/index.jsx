@@ -2,6 +2,28 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Select from './../Components/Select';
+import flagRU from './../_assets/images/flag-ru.jpg';
+import flagEN from './../_assets/images/flag-en.jpg';
+
+
+const Icon = styled.img`
+  height: 14px;
+  margin-right: 12px;
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+`;
+
+const country = (lang, img) => (
+  <Wrapper>
+    <Icon src={img} />{lang}
+  </Wrapper>
+);
 
 const Header = styled.div`
   height: 6.6666666667vh;
@@ -17,8 +39,8 @@ export default ({ language, changeLang }) => (
     <Select
       height="100%"
       width="126px"
-      label={language === 'RU' ? '🇷🇺 RU' : '🇺🇸 EN'}
-      values={[{ value: 'RU', name: '🇷🇺 RU' }, { value: 'EN', name: '🇺🇸 EN' }]}
+      label={language === 'RU' ? country('RU', flagRU) : country('EN', flagEN)}
+      values={[{ value: 'RU', name: country('RU', flagRU) }, { value: 'EN', name: country('EN', flagEN) }]}
       onChange={changeLang}
       backgroundColor="rgba(255,255,255,0.1)"
     />
