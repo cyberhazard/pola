@@ -8,6 +8,7 @@ import { Dropdown, Item, Label, Select, Wrapper } from './styled';
  * height - высота
  * label - Начальная подпись
  * values = массив значений
+ *  [{value 'Значание', name: 'Лейбл'}]
  * onChange - функция, которая возращает выбранное значение
  *
  * @export
@@ -27,7 +28,7 @@ export default class extends React.Component {
 
   handleClick(e) {
     this.setState(p => ({ isOpen: !p.isOpen }));
-    const { bottom, left } = e.target.getBoundingClientRect();
+    const { bottom, left } = e.currentTarget.getBoundingClientRect();
     this.dropdown.style.cssText = `top: ${bottom}px; left: ${left}px;`;
   }
 
