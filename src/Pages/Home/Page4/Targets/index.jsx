@@ -22,7 +22,7 @@ export default class extends React.Component {
               key={el.id}
             >
               <City> {el.city} </City>
-              <Item> {el.adres} </Item>
+              <Item> {el.address} </Item>
               <Item> {el.phone} </Item>
               <Email> {el.email} </Email>
             </Content>
