@@ -14,8 +14,8 @@ export const Page = styled(OriginalPage)`
 `;
 
 export const Contact = styled.div`
-  width: 1180px;
-  height: 672px;
+  width: 100%;
+  height: 67.8787878788vh;
   background: url(${Map}) no-repeat;
   background-size: cover;
   position: relative;
