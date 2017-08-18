@@ -13,17 +13,20 @@ export const Wrapper = styled.div`
   height: 100%;
 `;
 
+export const Cover = styled.div`
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+`;
 
 export const Header = styled.div`
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 6.6666666667vh;
-  width: 100%;
+  margin: 0 auto;
   border-bottom: 1px solid #44484c;
   flex-shrink: 0;
-  background-color: rgba(0,0,0,0.8);
-  padding: 0 100px 0 80px;
 `;
 
 export const Contact = styled.div`

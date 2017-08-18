@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Icon, Wrapper, Contact } from './styled';
+import { Header, Icon, Wrapper, Contact, Cover } from './styled';
 import Search from './Search';
 
 import Select from './../Components/Select';
@@ -22,32 +22,34 @@ const getAddresses = (loc, lang) => {
 };
 
 export default ({ language, changeLang, changeLocation, location }) => (
-  <Header>
-    <Select
-      height="100%"
-      width="126px"
-      label={language === 'RU' ? country('RU', flagRU) : country('EN', flagEN)}
-      values={[{ value: 'RU', name: country('RU', flagRU) }, { value: 'EN', name: country('EN', flagEN) }]}
-      onChange={changeLang}
-      backgroundColor="rgba(255,255,255,0.1)"
-    />
-    <Search />
-    <Contact>
-      <Icon src={mapPin} /> {locations[location][language].address}
-    </Contact>
-    <Contact>
-      <Icon src={iconPhone} /> {locations[location][language].phone}
-    </Contact>
-    <Select
-      left
-      height="100%"
-      width="228px"
-      onChange={changeLocation}
-      backgroundColor="#0168b3"
-      label={locations[location][language].title}
-      values={getAddresses(locations, language)}
-      icon={mapFlag}
-      iconStyle="height: 17px; margin-right: 12px;"
-    />
-  </Header>
+  <Cover>
+    <Header>
+      <Select
+        height="100%"
+        width="126px"
+        label={language === 'RU' ? country('RU', flagRU) : country('EN', flagEN)}
+        values={[{ value: 'RU', name: country('RU', flagRU) }, { value: 'EN', name: country('EN', flagEN) }]}
+        onChange={changeLang}
+        backgroundColor="rgba(255,255,255,0.1)"
+      />
+      <Search />
+      <Contact>
+        <Icon src={mapPin} /> {locations[location][language].address}
+      </Contact>
+      <Contact>
+        <Icon src={iconPhone} /> {locations[location][language].phone}
+      </Contact>
+      <Select
+        left
+        height="100%"
+        width="228px"
+        onChange={changeLocation}
+        backgroundColor="#0168b3"
+        label={locations[location][language].title}
+        values={getAddresses(locations, language)}
+        icon={mapFlag}
+        iconStyle="height: 17px; margin-right: 12px;"
+      />
+    </Header>
+  </Cover>
 );
