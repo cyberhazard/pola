@@ -63,6 +63,7 @@ export const Wrapper = styled.div`
   left: 150%;
   transition: opacity .5s;
   ${({ isOpen }) => isOpen && 'left: 0; opacity: 1;'}
+  z-index: 100;
 `;
 
 export const Icon = styled.img`

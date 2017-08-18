@@ -25,4 +25,7 @@ injectGlobal`
     outline: none;
     text-decoration: none;
   }
+  body {
+    overflow: hidden;
+  }
 `;

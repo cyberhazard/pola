@@ -20,7 +20,7 @@ export const Header = styled.div`
   align-items: center;
   height: 6.6666666667vh;
   width: 100%;
-  border: 1px solid #44484c;
+  border-bottom: 1px solid #44484c;
   flex-shrink: 0;
   background-color: rgba(0,0,0,0.8);
   padding: 0 100px 0 80px;
