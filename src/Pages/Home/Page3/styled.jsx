@@ -21,12 +21,6 @@ export const Header = styled.h2`
   margin-bottom: 46px;
 `;
 
-export const Wave = styled.img`
-  height: 11px;
-  transform: translateY(-50%);
-  margin-right: 24px;
-`;
-
 export const Blocks = styled.div`
   display: flex;
   flex-wrap: wrap;
