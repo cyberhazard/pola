@@ -1,7 +1,8 @@
 import React from 'react';
 import More from './../../../Components/ShowMore';
-import { Block, Blocks, Footer, Header, Page, Text, TimeStamp, Wave, Last } from './styled';
+import { Block, Blocks, Footer, Page, Text, TimeStamp, Wave, Last } from './styled';
 import Button from './../../../Components/Button';
+import { Header } from './../styled';
 
 import waveWhite from './../../../_assets/images/wave-white.png';
 
