@@ -34,6 +34,7 @@ export const MainText = styled.p`
   font-weight: 400;
   margin-top: 5.6464646465vh;
   margin-bottom: 4.4343434343vh;
+  line-height: 3.4rem;
 `;
 
 export const Wave = styled.img`
