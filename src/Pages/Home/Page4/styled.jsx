@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { Page as OriginalPage } from './../styled';
 
 import Map from './../../../_assets/images/contact-map.png';
+import bg1 from './../../../_assets/images/home-page4-bg-rect.png';
+import bg2 from './../../../_assets/images/home-page4-bg-rect2.png';
 
 export const Page = styled(OriginalPage)`
   display: flex;
@@ -11,6 +13,9 @@ export const Page = styled(OriginalPage)`
   padding-right: 18.6335403727%;
   padding-left: 10rem;
   background-color: #012641;
+  background-image: url('${bg2}') , url('${bg1}');
+  background-position: bottom right, top left;
+  background-repeat: no-repeat, no-repeat;
 `;
 
 export const Contact = styled.div`
