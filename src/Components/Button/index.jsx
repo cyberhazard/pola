@@ -7,19 +7,19 @@ const Wrapper = styled.div`
 `;
 
 const Button = styled.button`
-  width: 250px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  width: 25rem;
+  box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.15);
   background-color: #0168b3;
   border: none;
-  padding: 22px 64px;
+  padding: 2.2rem 6.4rem;
   position: relative;
   cursor: pointer;
   :before {
     content: '';
     position: absolute;
-    top: -10px;
-    left: 30px;
-    width: 231px;
+    top: -1rem;
+    left: 3rem;
+    width: 23.1rem;
     height: 100%;
     background-color: rgba(3, 151, 214,0.6);
     z-index: -1;
@@ -29,7 +29,7 @@ const Button = styled.button`
 const Text = styled.span`
   color: #ffffff;
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
 `;
 

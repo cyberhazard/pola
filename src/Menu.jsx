@@ -7,7 +7,7 @@ const Menu = styled.div`
 `;
 
 const Image = styled.img`
-  margin-right: 22px;
+  margin-right: 2.2rem;
   flex-shrink: 0;
   opacity: 0;
   transition: .2s;
@@ -20,12 +20,12 @@ const Link = styled(RouterLink)`
   padding: 2.626vh 0;
   color: #ffffff;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
   transition: .3s;
-  border-bottom: 1px solid rgba(68, 72, 76,0.2);
+  border-bottom: .1rem solid rgba(68, 72, 76,0.2);
   &:first-child {
-    border-top: 1px solid rgba(68, 72, 76,0.2);
+    border-top: .1rem solid rgba(68, 72, 76,0.2);
   }
   &:hover {
     color: #0397d6;

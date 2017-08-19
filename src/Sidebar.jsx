@@ -8,8 +8,8 @@ import Socials from './Socials';
 const Sidebar = styled.div`
   display: flex;
   flex-direction: column;
-  width: 310px;
-  flex: 0 0 310px;
+  width: 31rem;
+  flex: 0 0 31rem;
   height: 100%;
   font-family: 'Roboto';
   font-weight: 400;

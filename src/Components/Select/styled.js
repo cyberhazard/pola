@@ -14,20 +14,20 @@ export const Label = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 0 20px;
+  padding: 0 2rem;
   position: relative;
   user-select: none;
   cursor: pointer;
   color: #ffffff;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 1.6rem;
   &:after {
     content: '\f107';
     font-family: 'FontAwesome';
     position: absolute;
-    left: calc(100% - 24px);
-    top: calc(50% - 8px);
-    margin-left: 4px;
+    left: calc(100% - 2.4rem);
+    top: calc(50% - .8rem);
+    margin-left: .4rem;
   }
 `;
 
@@ -39,13 +39,13 @@ export const Dropdown = styled.div`
 `;
 
 export const Item = styled.div`
-  padding: 6px 20px;
+  padding: .6rem 2rem;
   width: 100%;
   background-color: rgba(255,255,255,0.1);
   text-align: center;
   color: #ffffff;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 1.6rem;
   cursor: pointer;
   transition: .3s;
   &:hover {

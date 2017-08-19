@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import page2x from './../_assets/images/page-down@2x.png';
 
 const Image = styled.img`
-  width: 104px;
-  height: 104px;
+  width: 10.4rem;
+  height: 10.4rem;
   position: fixed;
   right: 5.2083333333%;
   bottom: 5.4545454545vh;
@@ -14,10 +14,10 @@ const Image = styled.img`
   z-index: 20;
   @keyframes float {
     0% {transform: translateY(0)}
-    20% {transform: translateY(4px)}
-    40% {transform: translateY(1px)}
-    60% {transform: translateY(3px)}
-    80% {transform: translateY(2px)}
+    20% {transform: translateY(.4rem)}
+    40% {transform: translateY(.1rem)}
+    60% {transform: translateY(.3rem)}
+    80% {transform: translateY(.2rem)}
     100% {transform: translateY(0)}
   }
 `;

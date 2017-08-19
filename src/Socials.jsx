@@ -10,10 +10,10 @@ const Socials = styled.div`
 
 const Icon = styled.a`
   font-family: 'Social';
-  font-size: 52px;
+  font-size: 5.2rem;
   color: #4D5057;
   transition: .3s;
-  margin-right: 18px;
+  margin-right: 1.8rem;
   &:last-child{
     margin-right: 0;
   }

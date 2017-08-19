@@ -9,9 +9,9 @@ const Text = styled.div`
   width: 54.0372670807%;
   color: rgb(255, 255, 255);
   font-family: Lora;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 700;
-  line-height: 62px;
+  line-height: 6.2rem;
   margin-bottom: 9.2929292929vh;
 `;
 

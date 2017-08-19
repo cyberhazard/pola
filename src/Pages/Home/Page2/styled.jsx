@@ -8,31 +8,31 @@ export const Page = OriginalPage.extend`
   align-items: flex-start;
   background-color: white;
   padding-right: 18.6335403727%;
-  padding-left: 100px;
+  padding-left: 10rem;
 `;
 
 export const Title = styled.div`
-  height: 36px;
+  height: 3.6rem;
   color: black;
   font-family: Lora;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 700;
   width: 100%;
   ${p => p.right && 'text-align: right;'}
-  ${p => p.left && 'transform: translateX(-100px);'}
+  ${p => p.left && 'transform: translateX(-10rem);'}
 `;
 
 export const MainText = styled.p`
   color: black;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
   margin-top: 5.6464646465vh;
   margin-bottom: 4.4343434343vh;
 `;
 
 export const Wave = styled.img`
-  height: 11px;
+  height: 1.1rem;
   transform: translateY(-50%);
-  margin-right: 24px;
+  margin-right: 2.4rem;
 `;

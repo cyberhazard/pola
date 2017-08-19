@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Icon = styled.img`
-  height: 14px;
-  margin-right: 12px;
+  height: 1.4rem;
+  margin-right: 1.2rem;
 `;
 
 export const Wrapper = styled.div`
@@ -19,13 +19,13 @@ export const Cover = styled.div`
 `;
 
 export const Header = styled.div`
-  max-width: 1440px;
+  max-width: 144rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 6.6666666667vh;
   margin: 0 auto;
-  border-bottom: 1px solid #44484c;
+  border-bottom: .1rem solid #44484c;
   flex-shrink: 0;
 `;
 
@@ -34,8 +34,8 @@ export const Contact = styled.div`
   align-items: center;
   color: #ffffff;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
   margin-right: 7.4534161491%;
-  width: 212px;
+  width: 21.2rem;
 `;

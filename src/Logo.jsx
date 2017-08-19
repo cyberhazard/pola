@@ -14,7 +14,7 @@ const Logo = styled(Link)`
 `;
 
 const Image = styled.img`
-  max-width: 126px;
+  max-width: 12.6rem;
   max-height: 80%;
 `;
 

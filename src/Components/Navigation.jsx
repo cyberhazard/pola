@@ -9,8 +9,8 @@ const Navigation = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 140px;
-  height: 22px;
+  width: 14rem;
+  height: 2.2rem;
   ${p => p.abs && `
     position: absolute;
     bottom: 7.0707070707vh;
@@ -19,16 +19,16 @@ const Navigation = styled.div`
 `;
 
 const Left = styled.img`
-  height: 22px;
+  height: 2.2rem;
   cursor: pointer;
 `;
 
 const Dot = styled.img`
-  height: 8px;
+  height: .8rem;
 `;
 
 const Right = styled.img`
-  height: 22px;
+  height: 2.2rem;
   cursor: pointer;
 `;
 

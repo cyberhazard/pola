@@ -9,7 +9,7 @@ export const Page = styled(OriginalPage)`
   justify-content: center;
   align-items: flex-start;
   padding-right: 18.6335403727%;
-  padding-left: 100px;
+  padding-left: 10rem;
   background-color: #012641;
 `;
 
@@ -22,13 +22,13 @@ export const Contact = styled.div`
 `;
 
 export const Places = styled.div`
-  width: 354px;
+  width: 35.4rem;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   background-color: #014a7f;
-  padding: 27px 27px;
+  padding: 2.7rem 2.7rem;
   opacity: 0.85;
 `;
 

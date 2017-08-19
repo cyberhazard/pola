@@ -8,17 +8,17 @@ export const Page = styled(OriginalPage)`
   align-items: flex-start;
   background-color: white;
   padding-right: 18.6335403727%;
-  padding-left: 100px;
+  padding-left: 10rem;
   background-color: #004980;
 `;
 
 export const Header = styled.h2`
   color: rgb(255, 255, 255);
   font-family: Lora;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 700;
-  transform: translateX(-100px);
-  margin-bottom: 46px;
+  transform: translateX(-10rem);
+  margin-bottom: 4.6rem;
 `;
 
 export const Blocks = styled.div`
@@ -29,35 +29,35 @@ export const Blocks = styled.div`
 
 export const Block = styled.div`
   background-color: #fff;
-  padding: 38px;
+  padding: 3.8rem;
   flex-basis: 46%;
   margin-bottom: 3.8383838384vh;
 `;
 
 export const Text = styled.p`
   color: rgb(0, 0, 0);
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.8rem;
+  line-height: 3rem;
   font-family: Roboto;
   font-weight: 500;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 `;
 
 export const TimeStamp = styled.div`
   display: inline-block;
   color: rgb(148, 148, 148);
   font-family: Roboto;
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 400;
   position: relative;
-  transform: translateX(36px);
+  transform: translateX(3.6rem);
   &:before {
     content: '';
     position: absolute;
     top: 25%;
-    right: calc(100% + 6px);
-    width: 30px;
-    height: 1px;
+    right: calc(100% + .6rem);
+    width: 3rem;
+    height: .1rem;
     background-color: rgb(148, 148, 148);
   }
 `;

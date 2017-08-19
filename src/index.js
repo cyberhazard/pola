@@ -25,6 +25,9 @@ injectGlobal`
     outline: none;
     text-decoration: none;
   }
+  html {
+    font-size: 10px;
+  }
   body {
     overflow: hidden;
   }

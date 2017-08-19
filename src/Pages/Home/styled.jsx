@@ -8,14 +8,14 @@ export const Page = styled.div`
 export const Header = styled.h2`
   color: rgb(255, 255, 255);
   font-family: Lora;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 700;
-  transform: translateX(-100px);
-  margin-bottom: 46px;
+  transform: translateX(-10rem);
+  margin-bottom: 4.6rem;
 `;
 
 export const Wave = styled.img`
-height: 11px;
+height: 1.1rem;
 transform: translateY(-50%);
-margin-right: 24px;
+margin-right: 2.4rem;
 `;

@@ -26,7 +26,7 @@ export default ({ language, changeLang, changeLocation, location }) => (
     <Header>
       <Select
         height="100%"
-        width="126px"
+        width="12.6rem"
         label={language === 'RU' ? country('RU', flagRU) : country('EN', flagEN)}
         values={[{ value: 'RU', name: country('RU', flagRU) }, { value: 'EN', name: country('EN', flagEN) }]}
         onChange={changeLang}
@@ -42,13 +42,13 @@ export default ({ language, changeLang, changeLocation, location }) => (
       <Select
         left
         height="100%"
-        width="228px"
+        width="22.8rem"
         onChange={changeLocation}
         backgroundColor="#0168b3"
         label={locations[location][language].title}
         values={getAddresses(locations, language)}
         icon={mapFlag}
-        iconStyle="height: 17px; margin-right: 12px;"
+        iconStyle="height: 1.7rem; margin-right: 1.2rem;"
       />
     </Header>
   </Cover>
