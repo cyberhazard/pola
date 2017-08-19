@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { Page as OriginalPage } from './../styled';
+import bg1 from './../../../_assets/images/home-page2-bg-rect.png';
+import bg2 from './../../../_assets/images/home-page2-bg-ship.png';
 
 export const Page = OriginalPage.extend`
   display: flex;
@@ -9,6 +11,9 @@ export const Page = OriginalPage.extend`
   background-color: white;
   padding-right: 18.6335403727%;
   padding-left: 10rem;
+  background-image: url('${bg2}') , url('${bg1}');
+  background-position: bottom right, top right;
+  background-repeat: no-repeat, no-repeat;
 `;
 
 export const Title = styled.div`
