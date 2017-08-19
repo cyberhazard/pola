@@ -9,11 +9,15 @@ const Wrapper = styled.div`
 const Button = styled.button`
   width: 25rem;
   box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.15);
-  background-color: #0168b3;
+  background-color: rgb(1, 104, 179);
   border: none;
   padding: 2.2rem 6.4rem;
   position: relative;
   cursor: pointer;
+  transition: .3s;
+  &:hover {
+    background-color: rgb(1, 104, 299);
+  }
   :before {
     content: '';
     position: absolute;
