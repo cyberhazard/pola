@@ -15,6 +15,7 @@ import Structure from './Pages/About/Structure';
 const Content = styled.div`
   flex-grow: 1;
   background-color: rgba(0,0,0,0.4);
+  overflow: auto;
 `;
 
 export default () => (
