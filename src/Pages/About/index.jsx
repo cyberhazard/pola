@@ -13,6 +13,9 @@ import aboutB5 from './../../_assets/images/about-b5.png';
 import aboutB6 from './../../_assets/images/about-b6.png';
 
 export const Page = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   height: 93.3333333333vh;
   background: white url('${bg}') top left no-repeat;
@@ -24,6 +27,7 @@ const Title = styled.h2`
   font-family: Lora;
   font-size: 3.6rem;
   font-weight: 700;
+  margin-bottom: 4rem;
 `;
 
 const Wave = styled.img`
@@ -57,6 +61,12 @@ const Block = styled(Link)`
   font-family: Lora;
   font-size: 2.8rem;
   font-weight: 700;
+  transition: .4s;
+  will-change: box-shadow;
+  &:hover {
+    box-shadow: .1rem .1rem 2.6rem black;
+    transform: translate(-.1rem,-.1rem)
+  }
 `;
 
 const FloatImage = styled.img`
@@ -69,28 +79,28 @@ export default () => (
   <Page>
     <Title><Wave src={wave} />О группе</Title>
     <Blocks>
-      <Block to="/test">
-        <Wave float src={wave} /><FloatImage src={aboutB1} css="top: -1rem; left: -4rem" />
+      <Block to="/about/structure">
+        <Wave float src={wave} /><FloatImage src={aboutB1} css="top: -1rem; left: -4rem;" />
         Структура группы
       </Block>
-      <Block to="/test">
+      <Block to="/about/profile">
         <Wave float src={wave} /><FloatImage src={aboutB2} css="top: -4.2rem; left: -6rem" />
         Профиль группы
       </Block>
-      <Block to="/test">
-        <Wave float src={wave} /><FloatImage src={aboutB3} />
+      <Block to="/about/history">
+        <Wave float src={wave} /><FloatImage src={aboutB3} css="right: -10rem; bottom: -1rem" />
         История
       </Block>
-      <Block to="/test">
-        <Wave float src={wave} /><FloatImage src={aboutB4} />
+      <Block to="/about/lead">
+        <Wave float src={wave} /><FloatImage src={aboutB4} css="top: -1.3rem; left: -4rem" />
         Руководство
       </Block>
-      <Block to="/test">
-        <Wave float src={wave} /><FloatImage src={aboutB5} />
+      <Block to="/about/geography">
+        <Wave float src={wave} /><FloatImage src={aboutB5} css="top: -2.4rem; left: -1.7rem" />
         География
       </Block>
-      <Block to="/test">
-        <Wave float src={wave} /><FloatImage src={aboutB6} />
+      <Block to="/about/projects">
+        <Wave float src={wave} /><FloatImage src={aboutB6} css="right: -5.6rem; bottom: -4.3rem" />
         Проекты
       </Block>
     </Blocks>
