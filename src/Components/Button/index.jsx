@@ -7,7 +7,7 @@ const Wrapper = styled.div`
 `;
 
 const Button = styled.button`
-  width: 25rem;
+  min-width: 25rem;
   box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.15);
   background-color: rgb(1, 104, 179);
   border: none;
@@ -22,8 +22,8 @@ const Button = styled.button`
     content: '';
     position: absolute;
     top: -1rem;
-    left: 3rem;
-    width: 23.1rem;
+    right: -1.2rem;
+    width: calc(100% - 2.2rem);
     height: 100%;
     background-color: rgba(3, 151, 214,0.6);
     z-index: -1;
