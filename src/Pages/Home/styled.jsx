@@ -10,7 +10,7 @@ export const Header = styled.h2`
   font-family: Lora;
   font-size: 3.6rem;
   font-weight: 700;
-  transform: translateX(-10rem);
+  transform: translateX(-17rem);
   margin-bottom: 4.6rem;
 `;
 
