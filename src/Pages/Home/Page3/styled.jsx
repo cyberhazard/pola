@@ -38,6 +38,7 @@ export const Block = styled.div`
   padding: 3.8rem;
   flex-basis: 46%;
   margin-bottom: 3.8383838384vh;
+  box-shadow: 0 1.2rem 1.5rem rgba(0, 0, 0, 0.12);
 `;
 
 export const Text = styled.p`
