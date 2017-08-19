@@ -19,11 +19,11 @@ import ship9 from './../../../_assets/images/structure/ship9.png';
 const Page = styled.div`
   position: relative;
   min-height: 93.3333333333vh;
-  background-color: white;
   padding-top: 6.2626262626vh;
   padding-left: 10rem;
   padding-right: 23rem;
   padding-bottom: 10rem;
+  background: white url('${require('./../../../_assets/images/structure/bg.png')}') top right no-repeat;
 `;
 
 const Header = HeaderText.extend`
