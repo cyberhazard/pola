@@ -9,49 +9,53 @@ export const Target = styled.div`
 `;
 
 export const Content = styled.div`
-  width: 30rem;
-  height: 19.3rem;
+  width: 300px;
+  height: 193px;
   background: transparent;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   color: white;
-  margin-bottom:20px;
+  cursor:pointer;
   border: .2rem solid white;
-  ${({ selected }) => selected && 'border: .2rem solid white;'}
+  margin-bottom: 2rem;
+  ${({ selected }) => selected && 'border: 2px solid white;'}
   ${({ selected }) => selected && 'color: black;'}
   ${({ selected }) => selected && 'background: white;'}
   &:last-child {
-    margin-bottom:0;
+    margin-bottom: 0;
   }
 `;
 export const City = styled.div`
   font-family: Roboto;
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: 700;
   position:relative;
-  margin-bottom: 3.6rem;
+  margin-bottom: 36px;
   width: 100%;
   text-align:center;
   &:after{
     content: '';
     position: absolute;
-    bottom: -1.4rem;
+    bottom: -14px;
     left: 44%;
-    width: 3.6rem;
-    border-bottom: .2rem solid #0168b3;
+    width: 36px;
+    border-bottom: 2px solid #0168b3;
   }
 `;
 export const Item = styled.div`
   font-family: Roboto;
-  font-size: 1.4rem;
+  font-size: 14px;
   font-weight: 500;
-  margin-bottom:1.6rem;
+  margin-bottom:16px;
+  margin-left: 28px;
 `;
 export const Email = styled.div`
   font-family: Roboto;
-  font-size: 1.4rem;
+  font-size: 14px;
   font-weight: 500;
+  margin-left: 28px;
   text-decoration: underline;
 `;
+
