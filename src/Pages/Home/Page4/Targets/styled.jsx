@@ -19,9 +19,13 @@ export const Content = styled.div`
   color: white;
   cursor:pointer;
   border: 2px solid white;
+  margin-bottom: 2rem;
   ${({ selected }) => selected && 'border: 2px solid white;'}
   ${({ selected }) => selected && 'color: black;'}
   ${({ selected }) => selected && 'background: white;'}
+  &:last-child {
+    margin-bottom: 0;
+  }
 `;
 export const City = styled.div`
   font-family: Roboto;
