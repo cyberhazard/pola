@@ -17,11 +17,14 @@ export const Content = styled.div`
   align-items: center;
   justify-content: center;
   color: white;
+  margin-bottom:20px;
   border: .2rem solid white;
   ${({ selected }) => selected && 'border: .2rem solid white;'}
   ${({ selected }) => selected && 'color: black;'}
   ${({ selected }) => selected && 'background: white;'}
-
+  &:last-child {
+    margin-bottom:0;
+  }
 `;
 export const City = styled.div`
   font-family: Roboto;
