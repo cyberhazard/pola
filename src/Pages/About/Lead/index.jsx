@@ -30,10 +30,15 @@ const Footer = styled.div`
   text-align: center;
 `;
 
+const Header = styled(HeaderText)`
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+`;
+
 export default () => (
   <Page>
     <Breadcrumbs to="/about" label="О группе" current="Руководство" />
-    <HeaderText>Руководство</HeaderText>
+    <Header>Руководство</Header>
     <Slider />
     <Footer>
       <Link to="/about/geography">
