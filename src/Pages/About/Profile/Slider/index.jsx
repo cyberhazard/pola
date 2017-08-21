@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { injectGlobal } from 'styled-components';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import ship1 from './../../../../_assets/images/profile/ship1.png';
 import ship2 from './../../../../_assets/images/profile/ship2.png';
@@ -64,7 +65,11 @@ export default class extends React.Component {
     const selectedImage = data.find(el => el.id === this.state.selectedImageId);
     return (
       <Slider>
-        <BigImage src={selectedImage.big} />
+        <TransitionGroup>
+          <CSSTransition classNames="slider" timeout={500}>
+            <BigImage src={selectedImage.big} />
+          </CSSTransition>
+        </TransitionGroup>
         <Images>
           {
             data.map(img =>
@@ -78,4 +83,22 @@ export default class extends React.Component {
       </Slider>
     );
   }
-}
+};
+
+// eslint-disable-next-line
+injectGlobal`
+  .slider-enter {
+    opacity: 0;
+  }
+  .slider-enter-active {
+    transition: .5s;
+    opacity: 1;
+  }
+  .slider-exit {
+    opacity: 1;
+  }
+  .slider-exit-active {
+    transition: .5s;
+    opacity: 0;
+  }
+`;

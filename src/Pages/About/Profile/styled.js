@@ -7,7 +7,7 @@ export const Page = styled.div`
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  min-height: 93.3333333333vh;
+  height: 93.3333333333vh;
   padding-top: 6.2626262626vh;
   padding-left: 10rem;
   padding-right: 23rem;
