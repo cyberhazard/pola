@@ -18,7 +18,7 @@ export const Page = styled.div`
 `;
 
 export const Header = styled(HeaderText)`
-  margin: 3rem 0 4.8rem 0;
+  margin: 2rem 0 2.8rem 0;
 `;
 
 export const Content = styled.div`
