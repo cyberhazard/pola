@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Breadcrumbs from './../../../Components/Breadcrumbs';
 import HeaderText from './../../../Components/HeaderText';
 import Button from './../../../Components/Button';
+import Slider from './Slider';
 
 import bg1 from './../../../_assets/images/home-page3-bg-rect2.png';
 import bg2 from './../../../_assets/images/home-page2-bg-rect.png';
@@ -33,6 +34,7 @@ export default () => (
   <Page>
     <Breadcrumbs to="/about" label="О группе" current="Руководство" />
     <HeaderText>Руководство</HeaderText>
+    <Slider />
     <Footer>
       <Link to="/about/geography">
         <Button label="География" />
