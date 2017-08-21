@@ -1,0 +1,5 @@
+{
+  "globalDependencies": {
+    "react-fa": "registry:dt/react-fa#4.1.2+20161025152919"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/b6f6ba5f89cf1eaf295ca78a0ad74c4dab2457c1/react-fa/react-fa.d.ts",
+    "raw": "registry:dt/react-fa#4.1.2+20161025152919",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/b6f6ba5f89cf1eaf295ca78a0ad74c4dab2457c1/react-fa/react-fa.d.ts"
+  }
+}
