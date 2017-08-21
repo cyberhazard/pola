@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Content, Header, Page, Text } from './styled';
 import Breadscrubs from './../../../Components/Breadcrumbs';
 import Button from './../../../Components/Button';
+import Slider from './Slider';
+
 
 export default () => (
   <Page>
@@ -25,6 +27,7 @@ export default () => (
         какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные
         генераторы Lorem Ipsum используют один.
       </Text>
+      <Slider />
     </Content>
     <Link to="/about/history">
       <Button label="История группы" />
