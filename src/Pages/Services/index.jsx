@@ -17,9 +17,9 @@ export const Page = styled.div`
   background-color: white;
 `;
 
-// export const Header = styled(HeaderText)`
-//   margin-bottom: 2.2rem;
-// `;
+export const Header = styled(HeaderText)`
+  margin-bottom: 2.2rem;
+`;
 
 export default class extends React.Component {
   constructor(props) {
@@ -29,7 +29,7 @@ export default class extends React.Component {
   render() {
     return (
       <Page>
-        <HeaderText> Услуги </HeaderText>
+        <Header> Услуги </Header>
         <SerivcesItems />
       </Page>
     );
