@@ -52,6 +52,28 @@ font-size: 3.3rem;
 const Buttons = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+`;
+
+const Counter = styled.div`
+  width: 10rem;
+  text-align: center;
+`;
+
+const CurrentSlide = styled.span`
+  color: rgb(1, 104, 179);
+  font-family: Roboto;
+  font-size: 3.2rem;
+  font-weight: 500;
+`;
+
+const AllSlides = styled.span`
+  color: rgb(0, 0, 0);
+  font-family: Roboto;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-left: 1rem;
 `;
 
 export default class extends React.Component {
@@ -59,10 +81,22 @@ export default class extends React.Component {
     super(props);
     this.state = { selectedIndex: 0 };
     this.selectSlide = this.selectSlide.bind(this);
+    this.next = this.next.bind(this);
+    this.prev = this.prev.bind(this);
   }
 
   selectSlide(selectedIndex) {
     this.setState({ selectedIndex });
+  }
+
+  next() {
+    if (this.state.selectedIndex === data.length - 1) return null;
+    return this.setState(p => ({ selectedIndex: p.selectedIndex + 1 }));
+  }
+
+  prev() {
+    if (this.state.selectedIndex === 0) return null;
+    return this.setState(p => ({ selectedIndex: p.selectedIndex - 1 }));
   }
 
   render() {
@@ -92,8 +126,12 @@ export default class extends React.Component {
           }
         </TimeLine>
         <Buttons>
-          <Button left><Icon name="angle-right" /></Button>
-          <Button><Icon name="angle-right" /></Button>
+          <Button left onClick={this.prev}><Icon name="angle-right" /></Button>
+          <Counter>
+            <CurrentSlide>{this.state.selectedIndex + 1} /</CurrentSlide>
+            <AllSlides>{data.length}</AllSlides>
+          </Counter>
+          <Button onClick={this.next}><Icon name="angle-right" /></Button>
         </Buttons>
       </Slider>
     );
