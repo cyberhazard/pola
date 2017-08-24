@@ -14,6 +14,7 @@ import Structure from './Pages/About/Structure';
 import Profile from './Pages/About/Profile';
 import Lead from './Pages/About/Lead';
 import History from './Pages/About/History';
+import NewsDetail from './Pages/News/NewsDetail';
 
 const Content = styled.div`
   flex-grow: 1;
@@ -32,7 +33,8 @@ export default () => (
       <Route path="/about/history" component={History} />
       <Route path="/actives" component={Actives} />
       <Route path="/contacts" component={Contacts} />
-      <Route path="/news" component={News} />
+      <Route exact path="/news" component={News} />
+      <Route path="/news/:id" component={NewsDetail} />
       <Route path="/services" component={Services} />
       <Route path="/stockholders" component={Stockholders} />
       <Route path="*" component={NotFound} />
