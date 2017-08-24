@@ -1,18 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const NotFound = styled.div`
-  display: flex;
-  height: 100%;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 5rem;
-`;
+import PageTemplate from './../Components/PageTemplate';
+import Breadcrumbs from './../Components/Breadcrumbs';
+import Header from './../Components/HeaderText';
 
 export default () => (
-  <NotFound>
-    Hey man, the page not found!
-  </NotFound>
+  <PageTemplate full>
+    <Breadcrumbs to="/" label="Главная" current="Неверное направление" />
+    <Header>Извините, данной страницы не существует</Header>
+  </PageTemplate>
 );
