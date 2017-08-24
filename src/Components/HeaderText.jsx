@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export default styled.h2`
   color: rgb(0, 0, 0);
+  ${({ white }) => white && 'color: rgb(255, 255, 255);'}
   font-family: Lora;
   font-size: 3.6rem;
   line-height: 5.2rem;
@@ -19,5 +20,6 @@ export default styled.h2`
     width: 7.9rem;
     transform: translateY(-50%);
     background: url(${require('./../_assets/images/wave1.png')}) top left no-repeat;
+    ${({ white }) => white && `background: url(${require('./../_assets/images/wave-white.png')}) top left no-repeat;`}
   }
 `;
