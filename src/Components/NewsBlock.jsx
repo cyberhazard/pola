@@ -43,14 +43,14 @@ const Footer = styled.div`
   justify-content: space-between;
 `;
 
-export default () => (
+export default ({ title, timestamp, id }) => (
   <Block>
     <Text>
-      Рабочая встреча гендиректора «Pola Group» с председателем правительства РФ Д. Медведевым
+      {title}
     </Text>
     <Footer>
-      <TimeStamp>10 июля 2017 10:00</TimeStamp>
-      <More to="/">Подробнее</More>
+      <TimeStamp>{timestamp}</TimeStamp>
+      <More to={`/news/${id}`}>Подробнее</More>
     </Footer>
   </Block>
 );
