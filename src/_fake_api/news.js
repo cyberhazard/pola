@@ -39,7 +39,7 @@ export default [
     </div>`,
   },
   {
-    title: 'Hello Fucking World!!!',
+    title: 'Hello World!!!',
     timestamp: '10 июля 2017 10:00',
     id: '1',
 
