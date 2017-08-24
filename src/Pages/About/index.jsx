@@ -34,7 +34,7 @@ export default () => (
         География
       </Block>
       <Block to="/about/projects">
-        <Wave float src={wave} /><FloatImage src={aboutB6} css="right: -5.6rem; bottom: -4.3rem" />
+        <Wave float src={wave} /><FloatImage src={aboutB6} css="right: -17rem; bottom: -9rem" />
         Проекты
       </Block>
     </Blocks>
