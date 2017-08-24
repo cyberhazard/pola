@@ -4,6 +4,7 @@ export default styled.h2`
   color: rgb(0, 0, 0);
   font-family: Lora;
   font-size: 3.6rem;
+  line-height: 5.2rem;
   font-weight: 700;
   transform: translateX(-${p => (p.offset ? p.offset : '10rem')});
   padding-left: 10.6rem;
