@@ -1,7 +1,13 @@
 import React from 'react';
+import styled from 'styled-components';
 import PageTemplate from './../Components/PageTemplate';
 import Breadcrumbs from './../Components/Breadcrumbs';
-import Header from './../Components/HeaderText';
+import HeaderText from './../Components/HeaderText';
+
+const Header = styled(HeaderText)`
+  margin-top: 2.8rem;
+  margin-bottom: 3.1rem;
+`;
 
 export default () => (
   <PageTemplate full>

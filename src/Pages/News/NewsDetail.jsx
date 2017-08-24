@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import Button from './../../Components/Button';
 import news from './../../_fake_api/news';
 import PageTemplate from './../../Components/PageTemplate';
@@ -45,15 +45,7 @@ const Footer = styled.div`
 export default ({ match }) => {
   const id = match.params.id;
   const data = news.find(n => n.id === id);
-  if (!data) {
-    return (
-      <PageTemplate full>
-        <Breadcrumbs to="/news" label="Новости" current="Видимо не верное направление" />
-        <Header>Извините, данной новости не существует!</Header>
-      </PageTemplate>
-    )
-    ;
-  }
+  if (!data) return <Redirect to="/404" />;
   return (
     <PageTemplate full>
       <Breadcrumbs to="/news" label="Новости" current={data.title} />

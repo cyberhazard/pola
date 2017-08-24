@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 import Home from './Pages/Home';
 import About from './Pages/About';
@@ -37,7 +37,8 @@ export default () => (
       <Route path="/news/:id" component={NewsDetail} />
       <Route path="/services" component={Services} />
       <Route path="/stockholders" component={Stockholders} />
-      <Route path="*" component={NotFound} />
+      <Route path="/404" component={NotFound} />
+      <Redirect from="*" to="/404" />
     </Switch>
   </Content>
 );
