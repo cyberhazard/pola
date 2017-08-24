@@ -19,7 +19,7 @@ const Text = styled.p`
   margin-bottom: 3rem;
 `;
 
-const TimeStamp = styled.div`
+export const TimeStamp = styled.div`
   display: inline-block;
   color: rgb(148, 148, 148);
   font-family: Roboto;
