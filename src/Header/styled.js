@@ -24,7 +24,7 @@ export const Header = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 6.6666666667vh;
-  margin: 0 auto;
+  margin-left: 8rem;
   border-bottom: .1rem solid #44484c;
   flex-shrink: 0;
 `;
