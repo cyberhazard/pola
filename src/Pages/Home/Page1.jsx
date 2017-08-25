@@ -88,6 +88,7 @@ export default class extends React.Component {
   }
 
   slideTo(currentOffset) {
+    this.timerSlide();
     this.setState({ currentOffset });
   }
 
