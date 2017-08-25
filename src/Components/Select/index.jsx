@@ -4,6 +4,7 @@ import { Dropdown, Item, Label, Select, Wrapper, Icon } from './styled';
 
 /**
  * props:
+ * backgroundColor - цвет BG
  * width - ширина
  * height - высота
  * label - Начальная подпись
