@@ -41,7 +41,7 @@ export const Dropdown = styled.div`
 export const Item = styled.div`
   padding: .6rem 2rem;
   width: 100%;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(0,0,0,1);
   text-align: center;
   color: #ffffff;
   font-family: Roboto;
@@ -49,7 +49,7 @@ export const Item = styled.div`
   cursor: pointer;
   transition: .3s;
   &:hover {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,1);
     color: #0397d6;
   }
 `;
