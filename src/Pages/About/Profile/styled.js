@@ -13,8 +13,8 @@ export const Page = styled.div`
   padding-right: 23rem;
   padding-bottom: 10rem;
   background: white url('${bg}') right bottom no-repeat;
-  background-image: url('${require('./../../../_assets/images/structure/bg.png')}');
-  background-position: top right;
+  background-image: url('${require('./../../../_assets/images/structure/bg.png')}'), url('${require('./../../../_assets/images/bg-profile-ship.png')}');
+  background-position: top right, 115% 115%;
 `;
 
 export const Header = styled(HeaderText)`
