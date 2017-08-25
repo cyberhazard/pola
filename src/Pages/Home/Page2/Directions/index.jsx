@@ -1,7 +1,9 @@
 import React from 'react';
 import content from './../content';
 import { Button, Buttons, Descriptions, Directions, Text, Title } from './styled';
+import { Ship1, Ship2, Ship3, Ship4 } from './icons';
 
+const ships = [Ship1(), Ship2(), Ship3(), Ship4()];
 export default class extends React.Component {
   constructor(props) {
     super(props);
@@ -22,12 +24,15 @@ export default class extends React.Component {
           <Text>{ selectedItem.description }</Text>
         </Descriptions>
         <Buttons>
-          {content.map(el =>
+          {content.map((el, i) =>
             (<Button
               selected={el.id === this.state.selectedId}
               onClick={() => this.handleClick(el.id)}
               key={el.id}
-            >{el.name}</Button>))}
+            >
+              {ships[i]}
+              {el.name}
+            </Button>))}
         </Buttons>
       </Directions>
     );

@@ -33,6 +33,8 @@ export const Text = styled.p`
 `;
 
 export const Button = styled.button`
+  display: flex;
+  align-items: center;
   position: relative;
   box-shadow: .4rem .7rem 1.2rem rgba(0, 0, 0, 0.14);
   background-color: rgb(243, 243, 243);
@@ -44,11 +46,16 @@ export const Button = styled.button`
   font-size: 1.8rem;
   font-weight: 500;
   border: none;
-  padding: 2.4rem 0;
   margin-left: 6.8rem;
   transition: .3s;
   cursor: pointer;
   margin-bottom: 3.2323232323vh;
+  & svg {
+    height: 7rem;
+    margin: 0 2rem;
+    transition: .3s;
+    ${({ selected }) => selected && 'fill: white;'}
+  }
   &:last-child {
     margin-bottom: 0;
   }
@@ -65,5 +72,8 @@ export const Button = styled.button`
   &:hover {
     color: white;
     background-color: rgb(1, 104, 179);
+  }
+  &:hover svg {
+    fill: white;
   }
 `;
