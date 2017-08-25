@@ -54,18 +54,37 @@ export default class extends React.Component {
 
     this.slides = 4;
     this.breaks = [0, 100, 200, 300];
+    this.timer = 0;
     this.next = this.next.bind(this);
     this.prev = this.prev.bind(this);
     this.slideTo = this.slideTo.bind(this);
+    this.timerSlide = this.timerSlide.bind(this);
   }
 
+  componentDidMount() {
+    this.timerSlide();
+  }
+
+  timerSlide() {
+    this.timer = setTimeout(this.next, 15000);
+  }
+
+
   next() {
-    if (this.state.currentOffset >= 100 * (this.slides - 1)) return null;
+    clearInterval(this.timer);
+    this.timer = setTimeout(this.next, 15000);
+    if (this.state.currentOffset >= 100 * (this.slides - 1)) {
+      return this.setState({ currentOffset: 0 });
+    }
     return this.setState(prev => ({ currentOffset: prev.currentOffset + 100 }));
   }
 
   prev() {
-    if (this.state.currentOffset === 0) return null;
+    clearInterval(this.timer);
+    this.timer = setTimeout(this.next, 15000);
+    if (this.state.currentOffset === 0) {
+      return this.setState({ currentOffset: 100 * (this.slides - 1) });
+    }
     return this.setState(prev => ({ currentOffset: prev.currentOffset - 100 }));
   }
 
@@ -112,6 +131,7 @@ export default class extends React.Component {
           {
             this.breaks.map((el, i) =>
               (<Circle
+                key={el}
                 number={i + 1}
                 isActive={this.state.currentOffset === el}
                 onClick={() => this.slideTo(el)}
