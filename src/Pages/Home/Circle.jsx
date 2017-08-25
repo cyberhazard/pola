@@ -14,6 +14,8 @@ const circleTimer = keyframes`
 const Circle = styled.div`
   width: 4rem;
   height: 4rem;
+  border-radius: 50%;
+  background-color: rgba(108, 106, 108,0.4);
   position: relative;
   display: flex;
   justify-content: center;
