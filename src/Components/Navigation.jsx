@@ -33,10 +33,10 @@ const Right = styled.img`
 `;
 
 
-export default props => (
-  <Navigation {...props}>
-    <Left src={left} />
+export default ({ abs, next, prev }) => (
+  <Navigation abs={abs}>
+    <Left src={left} onClick={prev} />
     <Dot src={dot} />
-    <Right src={right} />
+    <Right src={right} onClick={next} />
   </Navigation>
 );

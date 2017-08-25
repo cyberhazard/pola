@@ -11,7 +11,7 @@ const RightSide = styled.div`
   display: flex;
   flex-direction: column;
   background: url('${require('./_assets/images/big-ship.png')}') center center no-repeat;
-  baackground-size: cover;
+  background-size: cover;
 `;
 
 export default ({ language, changeLang, location, changeLocation }) => (
