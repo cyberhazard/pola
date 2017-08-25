@@ -5,7 +5,7 @@ import Header from './Header';
 import Content from './Content';
 
 const RightSide = styled.div`
-  width: 100%;
+  width: calc(100% - 31rem);
   flex-grow: 1;
   height: 100%;
   display: flex;
