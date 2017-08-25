@@ -4,6 +4,7 @@ import { Page as OriginalPage } from './styled';
 import Button from './../../Components/Button';
 import PageDownButton from './../../Components/PageDownButton';
 import Navigation from './../../Components/Navigation';
+import Circle from './Circle';
 
 const Text = styled.div`
   width: 54.0372670807%;
@@ -39,14 +40,23 @@ const View = styled.div`
   ${({ offset }) => offset && `transform: translateX(-${offset}%);`}
 `;
 
+const Points = styled.div`
+  display: flex;
+  position: absolute;
+  top: 9rem;
+  left: 10rem;
+`;
+
 export default class extends React.Component {
   constructor(props) {
     super(props);
     this.state = { currentOffset: 0 };
 
     this.slides = 4;
+    this.breaks = [0, 100, 200, 300];
     this.next = this.next.bind(this);
     this.prev = this.prev.bind(this);
+    this.slideTo = this.slideTo.bind(this);
   }
 
   next() {
@@ -57,6 +67,10 @@ export default class extends React.Component {
   prev() {
     if (this.state.currentOffset === 0) return null;
     return this.setState(prev => ({ currentOffset: prev.currentOffset - 100 }));
+  }
+
+  slideTo(currentOffset) {
+    this.setState({ currentOffset });
   }
 
   render() {
@@ -94,6 +108,17 @@ export default class extends React.Component {
             </Slide>
           </View>
         </Slider>
+        <Points>
+          {
+            this.breaks.map((el, i) =>
+              (<Circle
+                number={i + 1}
+                isActive={this.state.currentOffset === el}
+                onClick={() => this.slideTo(el)}
+              />),
+            )
+          }
+        </Points>
         <PageDownButton />
         <Navigation next={this.next} prev={this.prev} abs />
       </Content>
