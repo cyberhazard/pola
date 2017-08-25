@@ -23,7 +23,7 @@ const Circle = styled.div`
   cursor: pointer;
   ${({ isActive }) => isActive && 'transform: scale(1.2);'}
   & circle {
-    ${({ isActive }) => isActive && `animation: ${circleTimer} 15s linear;`}
+    ${({ isActive }) => isActive && `animation: ${circleTimer} 8s linear;`}
   }
 `;
 

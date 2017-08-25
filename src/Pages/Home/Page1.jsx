@@ -66,13 +66,13 @@ export default class extends React.Component {
   }
 
   timerSlide() {
-    this.timer = setTimeout(this.next, 15000);
+    clearInterval(this.timer);
+    this.timer = setTimeout(this.next, 8000);
   }
 
 
   next() {
-    clearInterval(this.timer);
-    this.timer = setTimeout(this.next, 15000);
+    this.timerSlide();
     if (this.state.currentOffset >= 100 * (this.slides - 1)) {
       return this.setState({ currentOffset: 0 });
     }
@@ -80,8 +80,7 @@ export default class extends React.Component {
   }
 
   prev() {
-    clearInterval(this.timer);
-    this.timer = setTimeout(this.next, 15000);
+    this.timerSlide();
     if (this.state.currentOffset === 0) {
       return this.setState({ currentOffset: 100 * (this.slides - 1) });
     }
