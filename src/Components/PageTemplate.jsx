@@ -12,6 +12,7 @@ export default styled.div`
   padding-right: 23rem;
   padding-bottom: 10rem;
   background-color: white;
+  ${({ normal }) => normal && 'display: block;'}
   ${({ full }) => full && `
     height: auto;
     min-height: 93.3333333333vh;
