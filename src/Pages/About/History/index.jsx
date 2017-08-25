@@ -17,7 +17,7 @@ export const Page = styled.div`
   padding-left: 10rem;
   padding-right: 23rem;
   padding-bottom: 10rem;
-  background-color: white;
+  background: white url('${require('./../../../_assets/images/bg-history-ship.png')}') 117% 120% no-repeat;
 `;
 
 const Header = styled(HeaderText)`
