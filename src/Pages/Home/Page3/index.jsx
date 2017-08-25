@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Blocks, Page, Last } from './styled';
 import Button from './../../../Components/Button';
 import { Header, Wave } from './../styled';
@@ -16,7 +17,9 @@ export default () => (
           <NewsBlock key={id} id={id} title={title} timestamp={timestamp} />)
       }
       <Last>
-        <Button label="Все новости" />
+        <Link to="/news">
+          <Button label="Все новости" />
+        </Link>
       </Last>
     </Blocks>
   </Page>
