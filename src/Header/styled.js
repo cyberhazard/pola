@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import m from './../media';
 
 export const Icon = styled.img`
   height: 1.4rem;
@@ -16,6 +17,9 @@ export const Wrapper = styled.div`
 export const Cover = styled.div`
   width: 100%;
   background-color: rgba(0,0,0,0.8);
+  ${m.tablet`
+    display: none;
+  `}
 `;
 
 export const Header = styled.div`

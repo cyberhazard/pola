@@ -10,7 +10,7 @@ import iconPhone from './../_assets/images/icon-phone.png';
 import mapFlag from './../_assets/images/map-flag.png';
 import locations from './../locations';
 
-const country = (lang, img) => (
+export const country = (lang, img) => (
   <Wrapper>
     <Icon src={img} />{lang}
   </Wrapper>
