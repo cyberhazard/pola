@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import m from './media';
 
 import Logo from './Logo';
 import Menu from './Menu';
@@ -14,6 +15,9 @@ const Sidebar = styled.div`
   font-family: 'Roboto';
   font-weight: 400;
   background: #000d16 url('${require('./_assets/images/decor_bottom.png')}') left bottom no-repeat;
+  ${m.tablet`
+    display: none;
+  `}
 `;
 
 export default ({ language }) => (
