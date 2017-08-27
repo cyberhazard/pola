@@ -6,7 +6,7 @@ import { Content, Target, Item, Email, City } from './styled';
 
 export const Angle = styled(Icon)`
   margin: 0 1.1rem;
-  font-size:14px;
+  font-size:1.4rem;
 `;
 
 export default class extends React.Component {

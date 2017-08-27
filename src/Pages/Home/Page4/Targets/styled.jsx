@@ -9,8 +9,8 @@ export const Target = styled.div`
 `;
 
 export const Content = styled.div`
-  width: 300px;
-  height: 193px;
+  width: 30rem;
+  height: 19.3rem;
   background: transparent;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@ export const Content = styled.div`
   cursor:pointer;
   border: .2rem solid white;
   margin-bottom: 2rem;
-  ${({ selected }) => selected && 'border: 2px solid white;'}
+  ${({ selected }) => selected && 'border: .2rem solid white;'}
   ${({ selected }) => selected && 'color: black;'}
   ${({ selected }) => selected && 'background: white;'}
   &:last-child {
@@ -29,33 +29,33 @@ export const Content = styled.div`
 `;
 export const City = styled.div`
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
   position:relative;
-  margin-bottom: 36px;
+  margin-bottom: 3.6rem;
   width: 100%;
   text-align:center;
   &:after{
     content: '';
     position: absolute;
-    bottom: -14px;
+    bottom: -1.4rem;
     left: 44%;
-    width: 36px;
-    border-bottom: 2px solid #0168b3;
+    width: 3.6rem;
+    border-bottom: .2rem solid #0168b3;
   }
 `;
 export const Item = styled.div`
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 500;
-  margin-bottom:16px;
-  margin-left: 28px;
+  margin-bottom:1.6rem;
+  margin-left: 2.8rem;
 `;
 export const Email = styled.div`
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 500;
-  margin-left: 28px;
+  margin-left: 2.8rem;
   text-decoration: underline;
 `;
 
