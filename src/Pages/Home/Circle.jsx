@@ -34,6 +34,8 @@ const Icon = styled.svg`
   top: 0;
   left: 0;
   z-index: 1;
+  width: 100%;
+  height: 100%;
   & circle {
     stroke-dasharray: 112.3685531616211;
     stroke-dashoffset: 112.3685531616211;
