@@ -22,6 +22,7 @@ export const Descriptions = styled.div`
    padding-bottom: 4rem;
    text-align: justify;
    border-right: 0;
+   flex-basis: auto;
   `}
 `;
 
@@ -30,6 +31,7 @@ export const Buttons = styled.div`
   order: 2;
   ${m.tablet`
    order: 1;
+   flex-basis: auto;
   `}
 `;
 
