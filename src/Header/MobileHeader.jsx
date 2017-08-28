@@ -5,7 +5,7 @@ import m from './../media';
 
 import Select from './../Components/Select';
 import { country, getAddresses } from './index';
-import { Icon, Contact } from './styled.js';
+import { Icon, Contact } from './styled';
 import locations from './../locations';
 import flagRU from './../_assets/images/flag-ru.jpg';
 import flagEN from './../_assets/images/flag-en.jpg';
