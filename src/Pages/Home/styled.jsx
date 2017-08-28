@@ -16,6 +16,7 @@ export const Header = styled.h2`
   ${m.tablet`
     white-space: nowrap;
     transform: translateX(-15rem);
+    font-size: 3rem;
   `}
 `;
 

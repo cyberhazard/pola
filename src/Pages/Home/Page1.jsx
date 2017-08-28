@@ -18,6 +18,7 @@ const Text = styled.div`
   ${m.tablet`
     width: auto;
     font-size: 3rem;
+    line-height: 4rem;
   `}
 `;
 

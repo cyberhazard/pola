@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import m from './../../../../media';
 
 export const Target = styled.div`
   display: flex;
@@ -26,6 +27,9 @@ export const Content = styled.div`
   &:last-child {
     margin-bottom: 0;
   }
+  ${m.tablet`
+    width: 100%;
+  `}
 `;
 export const City = styled.div`
   font-family: Roboto;
@@ -51,6 +55,7 @@ export const Item = styled.div`
   margin-bottom:1.6rem;
   margin-left: 2.8rem;
 `;
+
 export const Email = styled.div`
   font-family: Roboto;
   font-size: 1.4rem;
