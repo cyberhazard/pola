@@ -49,7 +49,7 @@ export const Text = styled.p`
   line-height: 2.8rem;
 `;
 
-export const Button = styled.button`
+export const Button = styled.div`
   display: flex;
   align-items: center;
   position: relative;
@@ -67,6 +67,7 @@ export const Button = styled.button`
   transition: .3s;
   cursor: pointer;
   margin-bottom: 3.2323232323vh;
+  padding-right: 1rem;
   & svg {
     height: 7rem;
     margin: 0 2rem;
