@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Page as OriginalPage } from './../styled';
+import m from './../../../media';
 
 import Map from './../../../_assets/images/contact-map.png';
 import bg1 from './../../../_assets/images/home-page4-bg-rect.png';
@@ -16,6 +17,11 @@ export const Page = styled(OriginalPage)`
   background-image: url('${bg2}') , url('${bg1}');
   background-position: bottom right, top left;
   background-repeat: no-repeat, no-repeat;
+  ${m.tablet`
+    padding: 8rem 4rem;
+    height: auto;
+    display: block;
+  `}
 `;
 
 export const Contact = styled.div`
@@ -24,6 +30,10 @@ export const Contact = styled.div`
   background: url(${Map}) no-repeat;
   background-size: cover;
   position: relative;
+  ${m.tablet`
+    width: 100%;
+    height: auto;
+  `}
 `;
 
 export const Places = styled.div`
@@ -35,5 +45,10 @@ export const Places = styled.div`
   background-color: #014a7f;
   padding: 2.7rem 2.7rem;
   opacity: 0.85;
+  ${m.tablet`
+    width: 100%;
+    height: auto;
+    position: static;
+  `}
 `;
 

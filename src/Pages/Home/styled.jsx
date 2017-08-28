@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import m from './../../media';
 
 export const Page = styled.div`
   position: relative;
@@ -12,6 +13,10 @@ export const Header = styled.h2`
   font-weight: 700;
   transform: translateX(-17rem);
   margin-bottom: 4.6rem;
+  ${m.tablet`
+    white-space: nowrap;
+    transform: translateX(-15rem);
+  `}
 `;
 
 export const Wave = styled.img`

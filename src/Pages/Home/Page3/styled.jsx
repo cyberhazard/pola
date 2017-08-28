@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Page as OriginalPage } from './../styled';
+import m from './../../../media';
 
 import bg1 from './../../../_assets/images/home-page3-bg-rect.png';
 import bg2 from './../../../_assets/images/home-page3-bg-rect2.png';
@@ -16,6 +17,10 @@ export const Page = styled(OriginalPage)`
   background-image: url('${bg1}') , url('${bg2}');
   background-position: bottom right, top left;
   background-repeat: no-repeat, no-repeat;
+  ${m.tablet`
+    padding: 8rem 1.2rem;
+    height: auto;
+  `}
 `;
 
 export const Header = styled.h2`
@@ -31,6 +36,9 @@ export const Blocks = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  ${m.tablet`
+    display: block;
+  `}
 `;
 
 export const Last = styled.div`

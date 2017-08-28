@@ -5,6 +5,7 @@ import Button from './../../Components/Button';
 import PageDownButton from './../../Components/PageDownButton';
 import Navigation from './../../Components/Navigation';
 import Circle from './Circle';
+import m from './../../media';
 
 const Text = styled.div`
   width: 54.0372670807%;
@@ -14,6 +15,10 @@ const Text = styled.div`
   font-weight: 700;
   line-height: 6.2rem;
   margin-bottom: 9.2929292929vh;
+  ${m.tablet`
+    width: auto;
+    font-size: 3rem;
+  `}
 `;
 
 const Slide = OriginalPage.extend`
@@ -45,6 +50,10 @@ const Points = styled.div`
   position: absolute;
   top: 9rem;
   left: 10rem;
+  ${m.tablet`
+    top: 3rem;
+    left: 2rem;
+  `}
 `;
 
 export default class extends React.Component {
