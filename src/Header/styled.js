@@ -42,4 +42,9 @@ export const Contact = styled.div`
   font-weight: 400;
   margin-right: 7.4534161491%;
   width: 21.2rem;
+  ${m.tablet`
+    width: auto;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  `}
 `;

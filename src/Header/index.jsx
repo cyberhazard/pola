@@ -16,7 +16,7 @@ export const country = (lang, img) => (
   </Wrapper>
 );
 
-const getAddresses = (loc, lang) => {
+export const getAddresses = (loc, lang) => {
   const values = Object.keys(loc);
   return values.reduce((o, val) => [...o, { value: val, name: loc[val][lang].title }], []);
 };

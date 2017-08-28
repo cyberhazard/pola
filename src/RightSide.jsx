@@ -23,7 +23,12 @@ export default ({ language, changeLang, location, changeLocation }) => (
       changeLang={changeLang}
       changeLocation={changeLocation}
     />
-    <MobileHeader language={language} changeLang={changeLang} />
+    <MobileHeader
+      language={language}
+      changeLang={changeLang}
+      location={location}
+      changeLocation={changeLocation}
+    />
     <Content />
   </RightSide>
 );

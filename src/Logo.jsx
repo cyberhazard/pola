@@ -11,6 +11,7 @@ const Logo = styled(Link)`
   background-color:  #141b22;
   margin-bottom: 6vh;
   flex-shrink: 0;
+  ${p => p.transparent && 'background-color: transparent; display: block;'}
 `;
 
 const Image = styled.img`
@@ -18,8 +19,8 @@ const Image = styled.img`
   max-height: 80%;
 `;
 
-export default () => (
-  <Logo to="/">
+export default ({ transparent }) => (
+  <Logo transparent={transparent} to="/">
     <Image src={require('./_assets/images/pola-logo.png')} />
   </Logo>
 );
