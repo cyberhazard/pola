@@ -50,6 +50,8 @@ const Top = styled.div`
 const Close = styled.button`
   color: white;
   font-size: 2.6rem;
+  border: none;
+  background-color: transparent;
 `;
 
 const Content = styled.div`
