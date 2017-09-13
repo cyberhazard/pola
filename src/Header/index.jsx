@@ -21,6 +21,7 @@ export const getAddresses = (loc, lang) => {
   return values.reduce((o, val) => [...o, { value: val, name: loc[val][lang].title }], []);
 };
 
+// eslint-disable-next-line
 export default ({ language, changeLang, changeLocation, location }) => (
   <Cover>
     <Header>
