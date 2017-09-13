@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
+import { changeLang, changeLocation } from './_actions';
 
 import Header from './Header';
 import Content from './Content';
@@ -15,7 +17,8 @@ const RightSide = styled.div`
   background-size: cover;
 `;
 
-export default ({ language, changeLang, location, changeLocation }) => (
+// eslint-disable-next-line
+export const RightSideComponent = ({ language, changeLang, location, changeLocation }) => (
   <RightSide>
     <Header
       language={language}
@@ -32,3 +35,12 @@ export default ({ language, changeLang, location, changeLocation }) => (
     <Content />
   </RightSide>
 );
+
+export default connect(
+  state => ({
+    language: state.language,
+    location: state.location,
+  }),
+  { changeLang, changeLocation },
+)(RightSideComponent);
+
