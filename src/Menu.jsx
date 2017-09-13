@@ -23,7 +23,7 @@ const Link = styled(RouterLink)`
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 2.626vh 0;
+  padding: 2.626vh 1rem 2.626vh 0;
   color: #ffffff;
   font-family: Roboto;
   font-size: 1.8rem;
