@@ -33,7 +33,6 @@ export default () => (
       <Route path="/about/lead" component={Lead} />
       <Route path="/about/history" component={History} />
       <Route path="/about/geography" component={Geography} />
-
       <Route path="/actives" component={Actives} />
       <Route path="/contacts" component={Contacts} />
       <Route exact path="/news" component={News} />
