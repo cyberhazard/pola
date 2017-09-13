@@ -10,13 +10,13 @@ import iconPhone from './../_assets/images/icon-phone.png';
 import mapFlag from './../_assets/images/map-flag.png';
 import locations from './../locations';
 
-const country = (lang, img) => (
+export const country = (lang, img) => (
   <Wrapper>
     <Icon src={img} />{lang}
   </Wrapper>
 );
 
-const getAddresses = (loc, lang) => {
+export const getAddresses = (loc, lang) => {
   const values = Object.keys(loc);
   return values.reduce((o, val) => [...o, { value: val, name: loc[val][lang].title }], []);
 };

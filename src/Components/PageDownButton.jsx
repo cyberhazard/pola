@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import m from './../media';
 
 import page2x from './../_assets/images/page-down@2x.png';
 
@@ -20,6 +21,9 @@ const Image = styled.img`
     80% {transform: translateY(.2rem)}
     100% {transform: translateY(0)}
   }
+  ${m.tablet`
+    display: none;
+  `}
 `;
 
 export default () => (

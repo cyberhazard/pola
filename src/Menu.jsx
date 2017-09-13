@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink as RouterLink } from 'react-router-dom';
+import m from './media';
 
 const Menu = styled.div`
   flex-shrink: 0;
@@ -11,6 +12,9 @@ const Image = styled.img`
   flex-shrink: 0;
   opacity: 0;
   transition: .2s;
+  ${m.tablet`
+    width: 2rem;
+  `}
 `;
 
 const Link = styled(RouterLink)`
@@ -60,21 +64,21 @@ const Translations = {
 };
 
 
-const Item = ({ exact, to, label }) => (
-  <Link exact={exact} to={to}>
+const Item = ({ exact, to, label, onClick }) => (
+  <Link exact={exact} to={to} onClick={() => onClick && onClick()}>
     <Image src={require('./_assets/images/menu-active.png')} />
     <p>{label}</p>
   </Link>
 );
 
-export default ({ language }) => (
+export default ({ language, onClick }) => (
   <Menu>
-    <Item exact to="/" label={Translations[language].home} />
-    <Item to="/about" label={Translations[language].about} />
-    <Item to="/services" label={Translations[language].services} />
-    <Item to="/actives" label={Translations[language].actives} />
-    <Item to="/news" label={Translations[language].news} />
-    <Item to="/stockholders" label={Translations[language].stockholders} />
-    <Item to="/contacts" label={Translations[language].contacts} />
+    <Item onClick={onClick} exact to="/" label={Translations[language].home} />
+    <Item onClick={onClick} to="/about" label={Translations[language].about} />
+    <Item onClick={onClick} to="/services" label={Translations[language].services} />
+    <Item onClick={onClick} to="/actives" label={Translations[language].actives} />
+    <Item onClick={onClick} to="/news" label={Translations[language].news} />
+    <Item onClick={onClick} to="/stockholders" label={Translations[language].stockholders} />
+    <Item onClick={onClick} to="/contacts" label={Translations[language].contacts} />
   </Menu>
 );

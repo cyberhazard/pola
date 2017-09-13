@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Page as OriginalPage } from './../styled';
 import bg1 from './../../../_assets/images/home-page2-bg-rect.png';
 import bg2 from './../../../_assets/images/home-page2-bg-ship.png';
+import m from './../../../media';
 
 export const Page = OriginalPage.extend`
   display: flex;
@@ -14,6 +15,10 @@ export const Page = OriginalPage.extend`
   background-image: url('${bg2}') , url('${bg1}');
   background-position: bottom right, top right;
   background-repeat: no-repeat, no-repeat;
+  ${m.tablet`
+    padding: 8rem 4rem;
+    height: auto;
+  `}
 `;
 
 export const Title = styled.div`
@@ -25,6 +30,11 @@ export const Title = styled.div`
   width: 100%;
   ${p => p.right && 'text-align: right;'}
   ${p => p.left && 'transform: translateX(-10rem);'}
+  ${m.tablet`
+    height: auto;
+    text-align: left;
+    padding-top: 2rem;
+  `}
 `;
 
 export const MainText = styled.p`
@@ -41,4 +51,5 @@ export const Wave = styled.img`
   height: 1.1rem;
   transform: translateY(-50%);
   margin-right: 2.4rem;
+
 `;

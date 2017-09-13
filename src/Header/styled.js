@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import m from './../media';
 
 export const Icon = styled.img`
   height: 1.4rem;
@@ -16,6 +17,9 @@ export const Wrapper = styled.div`
 export const Cover = styled.div`
   width: 100%;
   background-color: rgba(0,0,0,0.8);
+  ${m.tablet`
+    display: none;
+  `}
 `;
 
 export const Header = styled.div`
@@ -38,4 +42,9 @@ export const Contact = styled.div`
   font-weight: 400;
   margin-right: 7.4534161491%;
   width: 21.2rem;
+  ${m.tablet`
+    width: auto;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  `}
 `;

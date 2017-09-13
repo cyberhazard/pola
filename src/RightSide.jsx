@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Header from './Header';
 import Content from './Content';
+import MobileHeader from './Header/MobileHeader';
 
 const RightSide = styled.div`
   width: calc(100% - 31rem);
@@ -20,6 +21,12 @@ export default ({ language, changeLang, location, changeLocation }) => (
       language={language}
       location={location}
       changeLang={changeLang}
+      changeLocation={changeLocation}
+    />
+    <MobileHeader
+      language={language}
+      changeLang={changeLang}
+      location={location}
       changeLocation={changeLocation}
     />
     <Content />

@@ -13,7 +13,7 @@ const Navigation = styled.div`
   height: 2.2rem;
   ${p => p.abs && `
     position: absolute;
-    bottom: 7.0707070707vh;
+    bottom: 3.0707070707vh;
     left: 6.2111801242%;
   `}
 `;

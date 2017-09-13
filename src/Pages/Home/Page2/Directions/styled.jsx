@@ -1,19 +1,38 @@
 import styled from 'styled-components';
+import m from './../../../../media';
 
 export const Directions = styled.div`
   display: flex;
   width: 100%;
   margin-top: 4.6464646465%;
+  ${m.tablet`
+    flex-direction: column;
+  `}
 `;
 
 export const Descriptions = styled.div`
   flex: 0 0 50%;
   border-right: .2rem solid rgb(1, 104, 179);
   padding-right: 10.3896103896%;
+  order: 1;
+  ${m.tablet`
+   order: 2;
+   padding-top: 4rem;
+   padding-right: 0;
+   padding-bottom: 4rem;
+   text-align: justify;
+   border-right: 0;
+   flex-basis: auto;
+  `}
 `;
 
 export const Buttons = styled.div`
   flex: 0 0 50%;
+  order: 2;
+  ${m.tablet`
+   order: 1;
+   flex-basis: auto;
+  `}
 `;
 
 export const Title = styled.h3`
@@ -32,7 +51,7 @@ export const Text = styled.p`
   line-height: 2.8rem;
 `;
 
-export const Button = styled.button`
+export const Button = styled.div`
   display: flex;
   align-items: center;
   position: relative;
@@ -50,6 +69,7 @@ export const Button = styled.button`
   transition: .3s;
   cursor: pointer;
   margin-bottom: 3.2323232323vh;
+  padding-right: 1rem;
   & svg {
     height: 7rem;
     margin: 0 2rem;
@@ -76,4 +96,12 @@ export const Button = styled.button`
   &:hover svg {
     fill: white;
   }
+  ${m.tablet`
+    margin-left: 0;
+    width: 100%;
+    text-align: left;
+    &:before {
+      display: none;
+    }
+  `}
 `;

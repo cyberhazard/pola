@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+  }
+html {
+  font-size: 10px;
+}
+body {
+  overflow: hidden;
+}
+
+@media (max-width: 1600px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (max-width: 1440px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 8px;
+  }
+}
