@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { NavLink as RouterLink } from 'react-router-dom';
 import { connect } from 'react-redux';
+import Translations from './_translations/menu';
 import m from './media';
 
 const Menu = styled.div`
@@ -42,28 +43,6 @@ const Link = styled(RouterLink)`
     color: #0397d6;
   }
 `;
-
-const Translations = {
-  RU: {
-    home: 'Главная',
-    about: 'О группе',
-    services: 'Услуги',
-    actives: 'Активы',
-    news: 'Новости',
-    stockholders: 'Акционерам и инвесторам',
-    contacts: 'Контакты',
-  },
-  EN: {
-    home: 'Home',
-    about: 'About Group',
-    services: 'Services',
-    actives: 'Actives',
-    news: 'News',
-    stockholders: 'Stackholders and investors',
-    contacts: 'Contacts',
-  },
-};
-
 
 const Item = ({ exact, to, label, onClick }) => (
   <Link activeClassName="active" exact={exact} to={to} onClick={() => onClick && onClick()}>
