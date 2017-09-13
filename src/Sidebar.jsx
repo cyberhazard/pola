@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { withRouter } from 'react-router-dom';
 import m from './media';
 
 import Logo from './Logo';
@@ -20,10 +21,12 @@ const Sidebar = styled.div`
   `}
 `;
 
+const WithRouterMenu = withRouter(Menu);
+
 export default ({ language }) => (
   <Sidebar>
     <Logo />
-    <Menu language={language} />
+    <WithRouterMenu language={language} />
     <Socials />
   </Sidebar>
 );
