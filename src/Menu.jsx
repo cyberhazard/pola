@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink as RouterLink } from 'react-router-dom';
+import { connect } from 'react-redux';
 import m from './media';
 
 const Menu = styled.div`
@@ -65,13 +66,13 @@ const Translations = {
 
 
 const Item = ({ exact, to, label, onClick }) => (
-  <Link exact={exact} to={to} onClick={() => onClick && onClick()}>
+  <Link activeClassName="active" exact={exact} to={to} onClick={() => onClick && onClick()}>
     <Image src={require('./_assets/images/menu-active.png')} />
     <p>{label}</p>
   </Link>
 );
 
-export default ({ language, onClick }) => (
+const MenuComponent = ({ language, onClick }) => (
   <Menu>
     <Item onClick={onClick} exact to="/" label={Translations[language].home} />
     <Item onClick={onClick} to="/about" label={Translations[language].about} />
@@ -82,3 +83,9 @@ export default ({ language, onClick }) => (
     <Item onClick={onClick} to="/contacts" label={Translations[language].contacts} />
   </Menu>
 );
+
+export default connect(
+  store => ({
+    language: store.language,
+  }),
+)(MenuComponent);
