@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { changeLang, changeLocation } from './_actions';
 
@@ -36,11 +37,11 @@ export const RightSideComponent = ({ language, changeLang, location, changeLocat
   </RightSide>
 );
 
-export default connect(
+export default withRouter(connect(
   state => ({
     language: state.language,
     location: state.location,
   }),
   { changeLang, changeLocation },
-)(RightSideComponent);
+)(RightSideComponent));
 

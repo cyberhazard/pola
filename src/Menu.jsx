@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { NavLink as RouterLink } from 'react-router-dom';
+import { NavLink as RouterLink, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Translations from './_translations/menu';
 import m from './media';
@@ -63,8 +63,8 @@ const MenuComponent = ({ language, onClick }) => (
   </Menu>
 );
 
-export default connect(
+export default withRouter(connect(
   store => ({
     language: store.language,
   }),
-)(MenuComponent);
+)(MenuComponent));
