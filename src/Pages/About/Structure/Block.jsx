@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Icon as Ficon } from 'react-fa';
+import Button from './../../../Components/Button';
 
 const Block = styled.div`
   display: flex;
   align-items: center;
+  ${({ top }) => top && 'align-items: flex-start;'}
   width: 100%;
   margin-bottom: 5rem;
 `;
@@ -58,13 +60,22 @@ const Icon = styled(Ficon)`
   margin-right: 1.1rem;
 `;
 
-export default ({ children, img, header, right, link }) => (
-  <Block>
+export default ({ children, img, header, right, link, more, top }) => (
+  <Block top={top}>
     <Img src={img} right={right} />
     <Content right={right} >
       <Header>{header}</Header>
-      <Link href={link} target="_blank"><Icon name="external-link" />Перейти на сайт компании</Link>
+      {
+        link &&
+        <Link href={link} target="_blank"><Icon name="external-link" />Перейти на сайт компании</Link>
+      }
       <Text>{children}</Text>
+      {
+        more &&
+        <Link to={`/about/projects/${more}`}>
+          <Button label="Подробнее" />
+        </Link>
+      }
     </Content>
   </Block>
 );
