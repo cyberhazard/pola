@@ -1,9 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { Icon } from 'react-fa';
 import Breadcrumbs from './../../../Components/Breadcrumbs';
 import HeaderText from './../../../Components/HeaderText';
 import projects from './../../../_fake_api/projects';
 import Numbers from './Numbers';
+import Button from './../../../Components/Button';
 
 const Page = styled.div`
   position: relative;
@@ -74,6 +77,34 @@ const Text = styled.p`
   line-height: 3.4rem;
 `;
 
+const Footer = styled.div`
+  padding-top: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+`;
+
+const Downloads = styled.div`
+  display: flex;
+`;
+
+const Download = styled.a`
+  display: flex;
+  align-items: center;
+  margin-right: 12rem;
+  &:last-child {
+    margin-right: 0;
+  }
+`;
+
+const Label = styled.span`
+  color: #0068B4;
+  font-family: Roboto;
+  font-size: 2rem;
+  font-weight: 500;
+  border-bottom: 1px dotted #0068B4;
+  margin-left: 2rem;
+`;
+
 export default ({ match }) => {
   const { id } = match.params;
   const data = projects.find(el => el.name === id);
@@ -98,6 +129,19 @@ export default ({ match }) => {
           {data.text}
         </Text>
       </Content>
+      <Footer>
+        <Link to="/about/projects"><Button label="Назад проектам" /></Link>
+        <Downloads>
+          <Download href="/readme.pdf" download>
+            <img src={require('./../../../_assets/images/icon-pdf.png')} alt="" />
+            <Label>Презентация <Icon name="angle-right" /></Label>
+          </Download>
+          <Download href="/readme.doc" download>
+            <img src={require('./../../../_assets/images/icon-document.png')} alt="" />
+            <Label>Документы <Icon name="angle-right" /></Label>
+          </Download>
+        </Downloads>
+      </Footer>
     </Page>
   );
 };
