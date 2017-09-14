@@ -6,6 +6,6 @@
     "rules": {
       "global-require": "off",
       "react/prop-types": 0,
-      "max-len": ["error", 200]
+      "max-len": "off"
     }
 }
