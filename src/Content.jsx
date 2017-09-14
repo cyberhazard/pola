@@ -16,6 +16,7 @@ import Lead from './Pages/About/Lead';
 import History from './Pages/About/History';
 import Geography from './Pages/About/Geography';
 import Projects from './Pages/About/Projects';
+import Project from './Pages/About/Projects/Project';
 import NewsDetail from './Pages/News/NewsDetail';
 
 const Content = styled.div`
@@ -34,7 +35,8 @@ export default () => (
       <Route path="/about/lead" component={Lead} />
       <Route path="/about/history" component={History} />
       <Route path="/about/geography" component={Geography} />
-      <Route path="/about/projects" component={Projects} />
+      <Route exact path="/about/projects" component={Projects} />
+      <Route path="/about/projects/:id" component={Project} />
       <Route path="/actives" component={Actives} />
       <Route path="/contacts" component={Contacts} />
       <Route exact path="/news" component={News} />
