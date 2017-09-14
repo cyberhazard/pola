@@ -26,8 +26,13 @@ const Current = styled.span`
   font-weight: 400;
 `;
 
-export default ({ to, label, current }) => (
+export default ({ to, label, to2, label2, current }) => (
   <Breadcrumbs>
-    <Root to={to}>{label}</Root><Angle name="angle-right" /><Current>{current}</Current>
+    <Root to={to}>{label}</Root>
+    {
+      to2 && label2 &&
+      <Root to={to2}> <Angle name="angle-right" /> {label2}</Root>
+    }
+    <Angle name="angle-right" /><Current>{current}</Current>
   </Breadcrumbs>
 );
