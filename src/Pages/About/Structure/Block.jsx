@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Icon as Ficon } from 'react-fa';
+import { Link as RouterLink } from 'react-router-dom';
 import Button from './../../../Components/Button';
 
 const Block = styled.div`
@@ -60,6 +61,11 @@ const Icon = styled(Ficon)`
   margin-right: 1.1rem;
 `;
 
+const RLink = styled(RouterLink)`
+  display: block;
+  margin-top: 3rem;
+`;
+
 export default ({ children, img, header, right, link, more, top }) => (
   <Block top={top}>
     <Img src={img} right={right} />
@@ -72,9 +78,9 @@ export default ({ children, img, header, right, link, more, top }) => (
       <Text>{children}</Text>
       {
         more &&
-        <Link to={`/about/projects/${more}`}>
+        <RLink to={`/about/projects/${more}`}>
           <Button label="Подробнее" />
-        </Link>
+        </RLink>
       }
     </Content>
   </Block>
