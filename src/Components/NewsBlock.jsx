@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import More from './../Components/ShowMore';
+import m from './../media';
 
 const Block = styled.div`
   background-color: #fff;
@@ -8,6 +9,9 @@ const Block = styled.div`
   flex-basis: 46%;
   margin-bottom: 3.8383838384vh;
   box-shadow: 0 1.2rem 1.5rem rgba(0, 0, 0, 0.12);
+  ${m.tablet`
+    flex-basis: 100%;
+  `}
 `;
 
 const Text = styled.p`

@@ -6,6 +6,7 @@ import Select from './../../Components/Select';
 import calendar from './../../_assets/images/news/calendar.png';
 import NewsBlock from './../../Components/NewsBlock';
 import news from './../../_fake_api/news';
+import m from './../../media';
 
 const Page = styled(PageTemplate)`
   background-color: #004980;
@@ -13,6 +14,12 @@ const Page = styled(PageTemplate)`
   background-position: bottom right, top left;
   background-repeat: no-repeat, no-repeat;
   padding-right: 35.7rem;
+  ${m.tablet`
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: auto;
+    min-height: 93.3333333333vh;
+  `}
 `;
 
 const HeaderBlock = styled.div`
@@ -29,6 +36,9 @@ const News = styled.div`
 
 const Header = styled(HeaderBlock)`
   margin-bottom: 5rem;
+  ${m.tablet`
+    display: block;
+  `}
 `;
 
 const values = [
