@@ -46,10 +46,10 @@ const Cell = styled.div`
     width: 35.7%;
   }
   &:nth-child(2) {
-    width: 13.3%;
+    width: 15.3%;
   }
   &:nth-child(3) {
-    width: 18.4%;
+    width: 20.4%;
   }
   &:last-child {
     flex-grow: 1;
