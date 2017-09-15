@@ -7,6 +7,7 @@ import PageTemplate from './../../Components/PageTemplate';
 import HeaderText from './../../Components/HeaderText';
 import Breadcrumbs from './../../Components/Breadcrumbs';
 import { TimeStamp as TS } from './../../Components/NewsBlock';
+import m from './../../media';
 
 const TimeStamp = styled(TS)`
   &:before{
@@ -33,6 +34,10 @@ const HTML = styled.div`
     margin: 3.3rem 0;
     & img {
       position: absolute;
+      ${m.tablet`
+        position: static;
+        width: 100%;
+      `}
     }
   }
 `;

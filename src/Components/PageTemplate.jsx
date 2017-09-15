@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import m from './../media';
 
 export default styled.div`
   display: flex;
@@ -18,5 +19,9 @@ export default styled.div`
     min-height: 93.3333333333vh;
     display: block;
     padding-bottom: 7rem;
+  `}
+  ${m.tablet`
+    padding-left: 2rem;
+    padding-right: 2rem;
   `}
 `;
