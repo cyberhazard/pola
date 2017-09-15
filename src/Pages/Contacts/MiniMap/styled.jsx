@@ -17,4 +17,9 @@ export const Show = styled.div`
   font-weight: 400;
   border-bottom: 0.3rem dotted #ffffff;
   cursor: pointer;
+  transition:0.3s;
+  &:hover{
+    color: #0168b3;
+    border-bottom: 0.3rem dotted #0168b3;
+  }
 `;

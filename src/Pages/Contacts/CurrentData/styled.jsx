@@ -31,4 +31,5 @@ export const CurrentEmail = styled(Email)`
   color:white;
   margin-left: 0;
   font-size:1.8rem;
+  cursor: pointer;
 `;
