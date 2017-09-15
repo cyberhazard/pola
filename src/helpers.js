@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom';
 
 export const generateID = () => `${Math.round(Math.random() * 10000000)}${Date.now()}`;
 
@@ -10,7 +10,7 @@ class Scroll extends Component {
     if (this.props.location !== prevProps.location) {
       try {
         document.querySelector('.content').scrollTop = 0;
-      } catch (e) { console.log('error'); }
+      } catch (e) { console.log(e); }
     }
   }
 
