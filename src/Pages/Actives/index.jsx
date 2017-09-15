@@ -31,10 +31,16 @@ const Title = styled.div`
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 3rem;
+  ${m.tablet`
+    font-size: 2.4rem;
+  `}
   & svg {
     margin-right: 2rem;
     height: 7.2rem;
     transform: translate(-1rem, 2rem);
+    ${m.tablet`
+      margin-right: 0;
+    `}
   }
 `;
 

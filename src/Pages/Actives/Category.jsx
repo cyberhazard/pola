@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Icon } from 'react-fa';
+import m from './../../media';
 
 const Category = styled.div`
   width: 100%;
@@ -39,20 +40,21 @@ const Cell = styled.div`
   color: rgb(0, 0, 0);
   font-family: Roboto;
   font-size: 1.6rem;
-  font-weight: 500;
   flex-shrink: 0;
   flex-grow: 0;
+  padding-left: 1rem;
   &:nth-child(1) {
-    width: 35.7%;
+    width: 45.7%;
+    ${m.tablet`width: 35.7%;`}
   }
   &:nth-child(2) {
     width: 15.3%;
   }
   &:nth-child(3) {
-    width: 20.4%;
+    width: 24.4%;
   }
   &:last-child {
-    flex-grow: 1;
+    width: 1%;
   }
 `;
 
@@ -60,6 +62,9 @@ const Line = styled.div`
   padding: 2.4rem 2rem 1.5rem 3rem;
   display: flex;
   cursor: pointer;
+  ${m.tablet`
+    padding-left: 1.5rem;
+  `}
   ${({ th }) => th && 'font-weight: 700; cursor: auto;'}
   ${({ isSelected }) => isSelected && `
     background-color: rgb(8, 107, 181);

@@ -5,6 +5,7 @@ import Button from './../../Components/Button';
 import HeaderText from './../../Components/HeaderText';
 import ships from './../../_fake_api/ships';
 import Breadcrumbs from './../../Components/Breadcrumbs';
+import m from './../../media';
 
 const Page = styled.div`
   position: relative;
@@ -14,6 +15,10 @@ const Page = styled.div`
   padding-right: 23rem;
   padding-bottom: 10rem;
   background: white url('${require('./../../_assets/images/structure/bg.png')}') top right no-repeat;
+  ${m.tablet`
+    padding-left: 2rem;
+    padding-right: 2rem;
+  `}
 `;
 
 const Header = HeaderText.extend`
@@ -25,6 +30,9 @@ const Line = styled.div`
   border-bottom: 1px solid #E5E5E5;
   padding-top: 1.6rem;
   padding-bottom: 1.8rem;
+  ${m.tablet`
+    display: block;
+  `}
   &:first-child {
     padding-top: 0;
   }
@@ -51,6 +59,9 @@ const Image = styled.img`
   float: left;
   margin-right: 5rem;
   margin-bottom: 2rem;
+  ${m.tablet`
+    float: none;
+  `}
 `;
 
 const Footer = styled.div`
