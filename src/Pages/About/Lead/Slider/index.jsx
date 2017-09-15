@@ -3,6 +3,7 @@ import { Icon as Ficon } from 'react-fa';
 import styled from 'styled-components';
 import Person from './Person';
 import persons from './data';
+import m from './../../../../media';
 
 const Slider = styled.div`
   width: 100%;
@@ -14,6 +15,9 @@ const Content = styled.div`
   width: 106.4rem;
   overflow: hidden;
   margin: 0 auto;
+  ${m.tablet`
+    width: 24rem;
+  `}
 `;
 
 const MovingBlock = styled.div`
@@ -51,7 +55,9 @@ export default class extends React.Component {
     super(props);
     this.state = { currentOffset: 0 };
     this.blockOffset = 27.6;
-    this.maxOffset = this.blockOffset * (persons.length - 5);
+    this.slidesPerFrame = 5;
+    if (window.innerWidth < 700) this.slidesPerFrame = 1;
+    this.maxOffset = this.blockOffset * (persons.length - this.slidesPerFrame);
     this.next = this.next.bind(this);
     this.prev = this.prev.bind(this);
   }
@@ -62,7 +68,7 @@ export default class extends React.Component {
   }
 
   prev() {
-    if (this.state.currentOffset === 0) return null;
+    if (this.state.currentOffset <= 0) return this.setState({ currentOffset: 0 });
     return this.setState(p => ({ currentOffset: p.currentOffset - this.blockOffset }));
   }
 

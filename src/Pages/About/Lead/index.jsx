@@ -5,6 +5,7 @@ import Breadcrumbs from './../../../Components/Breadcrumbs';
 import HeaderText from './../../../Components/HeaderText';
 import Button from './../../../Components/Button';
 import Slider from './Slider';
+import m from './../../../media';
 
 import bg1 from './../../../_assets/images/home-page3-bg-rect2.png';
 import bg2 from './../../../_assets/images/home-page2-bg-rect.png';
@@ -23,6 +24,11 @@ export const Page = styled.div`
   background-image: url('${bg1}'), url('${bg2}');
   background-position: bottom right, top right;
   background-repeat: no-repeat, no-repeat;
+  ${m.tablet`
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: auto;
+  `}
 `;
 
 const Footer = styled.div`
