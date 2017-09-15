@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import HeaderText from './../../Components/HeaderText';
 import SerivcesItems from './ServicesItems';
+import backg from './../../_assets/images/home-page4-bg-rect.png';
 
 export const Page = styled.div`
   display: flex;
@@ -13,8 +14,8 @@ export const Page = styled.div`
   padding-top: 6.2626262626vh;
   padding-left: 10rem;
   padding-right: 23rem;
-  padding-bottom: 10rem;
-  background-color: white;
+  padding-bottom: 4rem;
+  background: white url('${backg}') left top no-repeat;
 `;
 
 export const Header = styled(HeaderText)`
