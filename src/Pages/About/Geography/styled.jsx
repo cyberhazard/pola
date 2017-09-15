@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import HeaderText from './../../../Components/HeaderText';
 import bg from './../../../_assets/images/profile-bg.png';
+import m from './../../../media';
 
 export const Page = styled.div`
   display: flex;
@@ -16,6 +17,10 @@ export const Page = styled.div`
   background: white url('${bg}') right bottom no-repeat;
   background-image: url('${require('./../../../_assets/images/structure/bg.png')}')
   background-position: top right, 115% 115%;
+  ${m.tablet`
+    padding-left: 2rem;
+    padding-right: 2rem;
+  `}
 `;
 
 export const Header = styled(HeaderText)`
@@ -43,6 +48,9 @@ export const Text = styled.p`
   text-align: justify;
   padding-right: 4rem;
   margin-bottom: 3rem;
+  ${m.tablet`
+    padding-right: 0;
+  `}
 `;
 
 export const Img = styled.img`
