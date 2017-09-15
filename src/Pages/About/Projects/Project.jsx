@@ -99,6 +99,7 @@ const Footer = styled.div`
   ${m.tablet`
     flex-direction: column;
     text-align: center;
+    padding-top: 0;
   `}
 `;
 
@@ -107,6 +108,7 @@ const Downloads = styled.div`
   ${m.tablet`
     flex-direction: column;
     align-items: center;
+    order: -1;
   `}
 `;
 
@@ -119,6 +121,9 @@ const Download = styled.a`
   }
   ${m.tablet`
     margin: 2rem 0;
+    &:last-child {
+      margin-bottom: 4rem;
+    }
   `}
 `;
 
