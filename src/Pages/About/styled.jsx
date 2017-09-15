@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import bg from './../../_assets/images/home-page4-bg-rect.png';
+import media from './../../media';
 
 export const Page = styled.div`
   display: flex;
@@ -10,6 +11,10 @@ export const Page = styled.div`
   height: 93.3333333333vh;
   background: white url('${bg}') top left no-repeat;
   background-size: 45.2rem;
+  ${media.tablet`
+    min-height: 93.3333333333vh;
+    height: auto;
+  `}
 `;
 
 export const Title = styled.h2`
@@ -36,6 +41,11 @@ export const Blocks = styled.div`
   justify-content: space-between;
   padding-left: 4.9689440994%;
   padding-right: 12.4223602484%;
+  ${media.tablet`
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex-direction: column;
+  `}
 `;
 
 export const Block = styled(Link)`
@@ -55,11 +65,19 @@ export const Block = styled(Link)`
   will-change: box-shadow;
   &:hover {
     box-shadow: .1rem .1rem 2.6rem black;
-    transform: translate(-.1rem,-.1rem)
+    transform: translate(-.1rem,-.1rem);
   }
+  ${media.tablet`
+    height: auto;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  `}
 `;
 
 export const FloatImage = styled.img`
   position: absolute;
+  ${media.tablet`
+    display: none;
+  `}
   ${p => p.css && p.css}
 `;
