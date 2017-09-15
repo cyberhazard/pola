@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import HeaderText from './../../Components/HeaderText';
-import bg from './../../_assets/images/contacts-bg.png';
+// import bg from './../../_assets/images/contacts-bg.png';
+import backg from './../../_assets/images/home-page4-bg-rect.png';
+import bg2 from './../../_assets/images/home-page2-bg-rect.png';
 
 export const Page = styled.div`
   display: flex;
@@ -11,9 +13,12 @@ export const Page = styled.div`
   padding-top: 6.2626262626vh;
   padding-left: 10rem;
   padding-right: 23rem;
-  padding-bottom: 10rem;
-  background: #012641 url('${bg}') right top no-repeat;
-  background-position: top right, 115% 115%;
+  padding-bottom: 5rem;
+  background-color: #012641;
+  background-image: url('${backg}'), url('${bg2}');
+  background-position: top left, center right;
+  background-repeat: no-repeat, no-repeat
+
 `;
 
 export const Header = styled(HeaderText)`
@@ -28,12 +33,14 @@ export const Top = styled.div`
   display: flex;
   justify-content: space-between;
   align-items:center;
+  margin-bottom: 8.6rem;
 `;
 
 export const Bottom = styled.div`
-display: flex;
-justify-content: flex-start;
-align-items:center;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items:flex-start;
 `;
 
 export const LeftSide = styled.div`
