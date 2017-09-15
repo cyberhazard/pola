@@ -30,6 +30,7 @@ const Img = styled.img`
   `}
   ${m.tablet`
     margin-left: 0;
+    width: 100%;
   `}
 `;
 
