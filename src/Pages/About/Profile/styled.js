@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import HeaderText from './../../../Components/HeaderText';
 import bg from './../../../_assets/images/profile-bg.png';
+import m from './../../../media';
 
 export const Page = styled.div`
   display: flex;
@@ -15,6 +16,11 @@ export const Page = styled.div`
   background: white url('${bg}') right bottom no-repeat;
   background-image: url('${require('./../../../_assets/images/structure/bg.png')}'), url('${require('./../../../_assets/images/bg-profile-ship.png')}');
   background-position: top right, 115% 115%;
+  ${m.tablet`
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: auto;
+  `}
 `;
 
 export const Header = styled(HeaderText)`
@@ -24,6 +30,9 @@ export const Header = styled(HeaderText)`
 export const Content = styled.div`
   display: flex;
   margin-bottom: 5rem;
+  ${m.tablet`
+    display: block;
+  `}
 `;
 
 export const Text = styled.p`
@@ -35,4 +44,7 @@ export const Text = styled.p`
   line-height: 3.4rem;
   text-align: justify;
   padding-right: 4rem;
+  ${m.tablet`
+    padding-right: 0;
+  `}
 `;
