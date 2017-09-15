@@ -61,6 +61,7 @@ const Image = styled.img`
   margin-bottom: 2rem;
   ${m.tablet`
     float: none;
+    width: 100%;
   `}
 `;
 
