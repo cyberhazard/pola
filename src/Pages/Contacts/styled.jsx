@@ -5,9 +5,9 @@ import bg from './../../_assets/images/contacts-bg.png';
 export const Page = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   position: relative;
-  height: 93.3333333333vh;
+  min-height: 93.3333333333vh;
   padding-top: 6.2626262626vh;
   padding-left: 10rem;
   padding-right: 23rem;
@@ -17,7 +17,7 @@ export const Page = styled.div`
 `;
 
 export const Header = styled(HeaderText)`
-  margin: 2rem 0 2.8rem 0;
+  margin: 2rem 0 5rem 0;
   color: white;
   &:before{
     background-size:cover;
@@ -26,7 +26,7 @@ export const Header = styled(HeaderText)`
 
 export const Top = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items:center;
 `;
 
@@ -34,11 +34,14 @@ export const LeftSide = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin-right: 18rem;
 `;
 
 export const RightSide = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items:flex-start
   flex-direction: column;
+  flex-basis:40%
 `;
 
