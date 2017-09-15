@@ -21,9 +21,10 @@ const MobileHeader = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 6.6666666667vh;
     background-color: black;
     padding: 0 4rem;
+    flex-shrink: 0;
+    height: 6%;
   `}
 `;
 
