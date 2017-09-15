@@ -18,6 +18,7 @@ import Geography from './Pages/About/Geography';
 import Projects from './Pages/About/Projects';
 import Project from './Pages/About/Projects/Project';
 import NewsDetail from './Pages/News/NewsDetail';
+import ActivesSinglePage from './Pages/Actives/Single';
 
 const Content = styled.div`
   flex-grow: 1;
@@ -37,7 +38,8 @@ export default () => (
       <Route path="/about/geography" component={Geography} />
       <Route exact path="/about/projects" component={Projects} />
       <Route path="/about/projects/:id" component={Project} />
-      <Route path="/actives" component={Actives} />
+      <Route exact path="/actives" component={Actives} />
+      <Route path="/actives/:id" component={ActivesSinglePage} />
       <Route path="/contacts" component={Contacts} />
       <Route exact path="/news" component={News} />
       <Route path="/news/:id" component={NewsDetail} />
