@@ -1,16 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { Icon } from 'react-fa';
 import Button from './../../Components/Button';
+import m from './../../media';
 
 const Preview = styled.div`
   background-color: rgb(249, 248, 248);
   max-width: 56rem;
   padding: 3rem;
-  margin-top: 11rem;
-  position: fixed;
-  top: 6rem;
-  left: 120rem;
+  position: relative;
+  ${m.tablet`
+    max-width: 90%;
+  `}
 `;
 
 const Title = styled.h3`
@@ -46,20 +48,53 @@ const Footer = styled.div`
   padding-top: 3rem;
 `;
 
-export default ({ shipName, photo, flag, portOfRegistry, typeOfVessel, id }) => {
+const Wrapper = styled.div`
+  margin-top: 11rem;
+  position: fixed;
+  top: 6rem;
+  left: 120rem;
+  ${m.tablet`
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `}
+`;
+
+const Close = styled(Icon)`
+  display: none;
+  ${m.tablet`
+    display: block;
+    position: absolute;
+    top: -5rem;
+    right: 0;
+    font-size: 4rem;
+    color: white;
+  `}
+`;
+
+export default ({ shipName, photo, flag, portOfRegistry, typeOfVessel, id, close }) => {
   if (!shipName) return <div />;
   return (
-    <Preview>
-      <Title>{shipName}</Title>
-      <Image src={photo} />
-      <Label>Flag: <Text>{flag}</Text></Label>
-      <Label>Port of Registry: <Text>{portOfRegistry}</Text></Label>
-      <Label>Type of vessel: <Text>{typeOfVessel}</Text></Label>
-      <Footer>
-        <Link to={`/actives/${id}`}>
-          <Button label="Подробнее" />
-        </Link>
-      </Footer>
-    </Preview>
+    <Wrapper>
+      <Preview>
+        <Close name="times" onClick={close} />
+        <Title>{shipName}</Title>
+        <Image src={photo} />
+        <Label>Flag: <Text>{flag}</Text></Label>
+        <Label>Port of Registry: <Text>{portOfRegistry}</Text></Label>
+        <Label>Type of vessel: <Text>{typeOfVessel}</Text></Label>
+        <Footer>
+          <Link to={`/actives/${id}`}>
+            <Button label="Подробнее" />
+          </Link>
+        </Footer>
+      </Preview>
+    </Wrapper>
   );
 };

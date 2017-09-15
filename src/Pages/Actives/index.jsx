@@ -5,6 +5,7 @@ import { Ship1, Ship2, Ship4 } from './../Home/Page2/Directions/icons';
 import Category from './Category';
 import Preview from './Preview';
 import shipsData from './../../_fake_api/ships';
+import m from './../../media';
 
 const Page = styled.div`
   position: relative;
@@ -14,6 +15,10 @@ const Page = styled.div`
   padding-right: 23rem;
   padding-bottom: 10rem;
   background: white url('${require('./../../_assets/images/structure/bg.png')}') top right no-repeat;
+  ${m.tablet`
+    padding-left: 2rem;
+    padding-right: 2rem;
+  `}
 `;
 
 const Header = HeaderText.extend`
@@ -49,10 +54,15 @@ export default class extends React.Component {
     super(props);
     this.state = { selectedID: '' };
     this.selectID = this.selectID.bind(this);
+    this.closePopup = this.closePopup.bind(this);
   }
 
   selectID(selectedID) {
     this.setState({ selectedID });
+  }
+
+  closePopup() {
+    this.setState({ selectedID: '' });
   }
 
   render() {
@@ -68,7 +78,7 @@ export default class extends React.Component {
             <Title><Ship1 />Вспомогательный флот</Title>
             <Title><Ship4 />Судостроительно-судоремонтные мощности</Title>
           </Ships>
-          <Preview {...selected} />
+          <Preview {...selected} close={this.closePopup} />
         </Content>
       </Page>
     );
