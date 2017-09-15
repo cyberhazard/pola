@@ -52,9 +52,9 @@ export default ({ shipName, photo, flag, portOfRegistry, typeOfVessel, id }) => 
     <Preview>
       <Title>{shipName}</Title>
       <Image src={photo} />
-      <Label>Flag:<Text>{flag}</Text></Label>
-      <Label>Port of Registry:<Text>{portOfRegistry}</Text></Label>
-      <Label>Type of vessel:<Text>{typeOfVessel}</Text></Label>
+      <Label>Flag: <Text>{flag}</Text></Label>
+      <Label>Port of Registry: <Text>{portOfRegistry}</Text></Label>
+      <Label>Type of vessel: <Text>{typeOfVessel}</Text></Label>
       <Footer>
         <Link to={`/actives/${id}`}>
           <Button label="Подробнее" />
