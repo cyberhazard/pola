@@ -71,10 +71,10 @@ const Close = styled(Icon)`
   ${m.tablet`
     display: block;
     position: absolute;
-    top: -5rem;
-    right: 0;
+    top: 0.5rem;
+    right: 0.8rem;
     font-size: 4rem;
-    color: white;
+    color: black;
   `}
 `;
 
