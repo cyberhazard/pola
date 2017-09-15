@@ -28,6 +28,9 @@ const Img = styled.img`
     margin-right: 0;
     margin-left: 3.8rem;
   `}
+  ${m.tablet`
+    margin-left: 0;
+  `}
 `;
 
 const Content = styled.div`

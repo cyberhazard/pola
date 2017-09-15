@@ -71,6 +71,7 @@ export const Block = styled(Link)`
     height: auto;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+    font-size: 2.2rem;
   `}
 `;
 
