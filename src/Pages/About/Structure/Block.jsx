@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Icon as Ficon } from 'react-fa';
 import { Link as RouterLink } from 'react-router-dom';
 import Button from './../../../Components/Button';
+import m from './../../../media';
 
 const Block = styled.div`
   display: flex;
@@ -10,6 +11,9 @@ const Block = styled.div`
   ${({ top }) => top && 'align-items: flex-start;'}
   width: 100%;
   margin-bottom: 5rem;
+  ${m.tablet`
+    display: block;
+  `}
 `;
 
 const Img = styled.img`
@@ -45,6 +49,9 @@ const Header = styled.h3`
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 3.1rem;
+  ${m.tablet`
+    margin-bottom: 0;
+  `}
 `;
 
 const Link = styled.a`
@@ -55,6 +62,10 @@ const Link = styled.a`
   line-height: 5.6rem;
   text-decoration: underline;
   margin-left: 6rem;
+  ${m.tablet`
+    margin-left: 0;
+    display: block;
+  `}
 `;
 
 const Icon = styled(Ficon)`

@@ -5,6 +5,7 @@ import Button from './../../../Components/Button';
 import Breadcrumbs from './../../../Components/Breadcrumbs';
 import HeaderText from './../../../Components/HeaderText';
 import Block from './Block';
+import m from './../../../media';
 
 import ship1 from './../../../_assets/images/structure/ship1.png';
 import ship2 from './../../../_assets/images/structure/ship2.png';
@@ -24,6 +25,10 @@ const Page = styled.div`
   padding-right: 23rem;
   padding-bottom: 10rem;
   background: white url('${require('./../../../_assets/images/structure/bg.png')}') top right no-repeat;
+  ${m.tablet`
+    padding-left: 2rem;
+    padding-right: 2rem;
+  `}
 `;
 
 const Header = HeaderText.extend`
