@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import HeaderText from './../../Components/HeaderText';
 import { Ship1, Ship2, Ship4 } from './../Home/Page2/Directions/icons';
 import Category from './Category';
-import { transport } from './../../_fake_api/ships';
+import Preview from './Preview';
+import shipsData from './../../_fake_api/ships';
 
 const Page = styled.div`
   position: relative;
@@ -32,6 +33,16 @@ const Title = styled.div`
   }
 `;
 
+const Content = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+`;
+
+const Ships = styled.div`
+  max-width: 75.1rem;
+`;
+
 
 export default class extends React.Component {
   constructor(props) {
@@ -45,14 +56,20 @@ export default class extends React.Component {
   }
 
   render() {
-    const seaTransport = transport.filter(el => el.type === 'sea');
+    const seaTransport = shipsData.filter(el => el.type === 'sea' && el.category === 'transport');
+    const selected = shipsData.find(el => el.id === this.state.selectedID);
     return (
       <Page>
         <Header>Активы</Header>
-        <Title><Ship2 />Транспортный флот</Title>
-        <Category label="Морской" ships={seaTransport} selectedID={this.state.selectedID} selectID={this.selectID} />
-        <Title><Ship1 />Вспомогательный флот</Title>
-        <Title><Ship4 />Судостроительно-судоремонтные мощности</Title>
+        <Content>
+          <Ships>
+            <Title><Ship2 />Транспортный флот</Title>
+            <Category label="Морской" ships={seaTransport} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Title><Ship1 />Вспомогательный флот</Title>
+            <Title><Ship4 />Судостроительно-судоремонтные мощности</Title>
+          </Ships>
+          <Preview {...selected} />
+        </Content>
       </Page>
     );
   }
