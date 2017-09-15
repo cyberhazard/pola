@@ -4,6 +4,7 @@ import Breadcrumbs from './../../../Components/Breadcrumbs';
 import HeaderText from './../../../Components/HeaderText';
 import Block from './../Structure/Block';
 import projects from './../../../_fake_api/projects';
+import m from './../../../media';
 
 const Page = styled.div`
   position: relative;
@@ -13,6 +14,10 @@ const Page = styled.div`
   padding-right: 23rem;
   padding-bottom: 10rem;
   background: white url('${require('./../../../_assets/images/structure/bg.png')}') top right no-repeat;
+  ${m.tablet`
+    padding-left: 2rem;
+    padding-right: 2rem;
+  `}
 `;
 
 const Header = HeaderText.extend`

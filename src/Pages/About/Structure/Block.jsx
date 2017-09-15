@@ -20,6 +20,9 @@ const Img = styled.img`
   max-width: 38rem;
   order: 1;
   margin-right: 3.8rem;
+  ${m.tablet`
+    margin-bottom: 2rem;
+  `}
   ${p => p.right && `
     order: 2;
     margin-right: 0;
@@ -50,7 +53,7 @@ const Header = styled.h3`
   font-weight: 700;
   margin-bottom: 3.1rem;
   ${m.tablet`
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   `}
 `;
 
