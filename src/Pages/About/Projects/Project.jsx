@@ -7,6 +7,7 @@ import HeaderText from './../../../Components/HeaderText';
 import projects from './../../../_fake_api/projects';
 import Numbers from './Numbers';
 import Button from './../../../Components/Button';
+import m from './../../../media';
 
 const Page = styled.div`
   position: relative;
@@ -16,6 +17,10 @@ const Page = styled.div`
   padding-right: 23rem;
   padding-bottom: 10rem;
   background: white url('${require('./../../../_assets/images/structure/bg.png')}') top right no-repeat;
+  ${m.tablet`
+    padding-left: 2rem;
+    padding-right: 2rem;
+  `}
 `;
 
 const Header = HeaderText.extend`
@@ -32,17 +37,27 @@ const Top = styled.div`
   width: 100%;
   padding-bottom: 2rem;
   border-bottom: 1px solid #E5E5E5;
+  ${m.tablet`
+    display: block;
+  `}
 `;
 
 const Image = styled.img`
   width: 36.5%;
   flex-shrink: 0;
   flex-grow: 0;
+  ${m.tablet`
+    width: 100%;
+  `}
 `;
 
 const Promo = styled.div`
   padding-left: 4.8rem;
   width: 63.5%;
+  ${m.tablet`
+    width: 100%;
+    padding-left: 0;
+  `}
 `;
 
 const Title = styled.h3`
@@ -81,10 +96,18 @@ const Footer = styled.div`
   padding-top: 4.5rem;
   display: flex;
   justify-content: space-between;
+  ${m.tablet`
+    flex-direction: column;
+    text-align: center;
+  `}
 `;
 
 const Downloads = styled.div`
   display: flex;
+  ${m.tablet`
+    flex-direction: column;
+    align-items: center;
+  `}
 `;
 
 const Download = styled.a`
@@ -94,6 +117,9 @@ const Download = styled.a`
   &:last-child {
     margin-right: 0;
   }
+  ${m.tablet`
+    margin: 2rem 0;
+  `}
 `;
 
 const Label = styled.span`
