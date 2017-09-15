@@ -2,7 +2,8 @@ import React from 'react';
 import CurrentData from './CurrentData';
 import MiniMap from './MiniMap';
 import Feedback from './Feedback';
-import { Page, Header, Top, LeftSide, RightSide } from './styled';
+import Footer from './Footer';
+import { Page, Header, Top, Bottom, LeftSide, RightSide } from './styled';
 
 export default () => (
   <Page>
@@ -16,5 +17,8 @@ export default () => (
         <Feedback />
       </RightSide>
     </Top>
+    <Bottom>
+      <Footer />
+    </Bottom>
   </Page>
 );

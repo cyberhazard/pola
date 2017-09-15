@@ -26,8 +26,14 @@ export const Header = styled(HeaderText)`
 
 export const Top = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items:center;
+`;
+
+export const Bottom = styled.div`
+display: flex;
+justify-content: flex-start;
+align-items:center;
 `;
 
 export const LeftSide = styled.div`
