@@ -27,7 +27,7 @@ const Content = styled.div`
 export default class extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { currentSlide: 0 };
     this.setScroll = this.setScroll.bind(this);
   }
 
@@ -40,11 +40,15 @@ export default class extends React.Component {
     const self = this;
     el.addEventListener('wheel', function scroll({ deltaY }) {
       if (deltaY > 0) {
-        smoothScrollTo(el, el.scrollTop + el.clientHeight, 800).then(() => self.setScroll());
+        const delta = el.scrollTop + el.clientHeight;
+        console.log(delta);
+        smoothScrollTo(el, delta, 800).then(() => self.setScroll());
         el.removeEventListener('wheel', scroll);
       }
       if (deltaY < 0) {
-        smoothScrollTo(el, el.scrollTop - el.clientHeight, 800).then(() => self.setScroll());
+        const delta = el.scrollTop - el.clientHeight;
+        console.log(delta);
+        smoothScrollTo(el, delta, 800).then(() => self.setScroll());
         el.removeEventListener('wheel', scroll);
       }
     });
@@ -59,7 +63,7 @@ export default class extends React.Component {
           <Page3 />
           <Page4 />
         </Content>
-        <PageDownButton />
+        <PageDownButton top={this.state.currentSlide !== 0} />
       </HomePage>
     );
   }
