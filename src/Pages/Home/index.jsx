@@ -1,6 +1,7 @@
 /* eslint-disable no-return-assign */
 import React from 'react';
 import styled from 'styled-components';
+import PageDownButton from './../../Components/PageDownButton';
 import { smoothScrollTo } from './../../helpers';
 import m from './../../media';
 
@@ -58,6 +59,7 @@ export default class extends React.Component {
           <Page3 />
           <Page4 />
         </Content>
+        <PageDownButton />
       </HomePage>
     );
   }

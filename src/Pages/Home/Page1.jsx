@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { Page as OriginalPage } from './styled';
 import Button from './../../Components/Button';
-import PageDownButton from './../../Components/PageDownButton';
 import Navigation from './../../Components/Navigation';
 import Circle from './Circle';
 import m from './../../media';
@@ -149,7 +148,6 @@ export default class extends React.Component {
             )
           }
         </Points>
-        <PageDownButton />
         <Navigation next={this.next} prev={this.prev} abs />
       </Content>
     );
