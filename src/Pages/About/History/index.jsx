@@ -5,6 +5,7 @@ import Breadcrumbs from './../../../Components/Breadcrumbs';
 import HeaderText from './../../../Components/HeaderText';
 import Button from './../../../Components/Button';
 import Slider from './Slider';
+import m from './../../../media';
 
 export const Page = styled.div`
   display: flex;
@@ -18,6 +19,11 @@ export const Page = styled.div`
   padding-right: 23rem;
   padding-bottom: 10rem;
   background: white url('${require('./../../../_assets/images/home-page2-bg-ship.png')}') bottom right no-repeat;
+  ${m.tablet`
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height: auto;
+  `}
 `;
 
 const Header = styled(HeaderText)`

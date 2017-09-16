@@ -5,9 +5,14 @@ import { Icon as Ficon } from 'react-fa';
 import Slide from './Slide';
 import Point from './Point';
 import data from './../data';
+import m from './../../../../media';
 
 const Slider = styled.div`
   width: 100%;
+  ${m.tablet`
+    display: flex;
+    flex-direction: column;
+  `}
 `;
 
 const Slides = styled.div`
@@ -16,6 +21,9 @@ const Slides = styled.div`
   height: 30.4rem;
   overflow: hidden;
   margin-bottom: 3rem;
+  ${m.tablet`
+    height: 90rem;
+  `}
 `;
 
 const TimeLine = styled.div`
@@ -25,6 +33,9 @@ const TimeLine = styled.div`
   height: 5.9rem;
   margin-bottom: 2rem;
   z-index: 1;
+  ${m.tablet`
+    margin-bottom: 7rem;
+  `}
 `;
 
 const Button = styled.div`
@@ -54,6 +65,9 @@ const Buttons = styled.div`
   justify-content: center;
   margin-top: 3rem;
   margin-bottom: 6rem;
+  ${m.tablet`
+    order: -1;
+  `}
 `;
 
 const Counter = styled.div`

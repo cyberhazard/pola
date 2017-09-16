@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import m from './../../../../media';
 
 const Point = styled.div`
   position: absolute;
@@ -33,8 +34,12 @@ const Text = styled.div`
   font-family: Lora;
   font-size: 1.8rem;
   font-weight: 700;
+  ${m.tablet`
+    font-size: 1.4rem;
+  `}
   ${p => p.isSelected && `
-    top: -6.6rem
+    top: -6.6rem;
+    font-size: 1.8rem !important;
   `}
 `;
 

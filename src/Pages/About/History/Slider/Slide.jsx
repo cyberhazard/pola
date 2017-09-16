@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import m from './../../../../media';
 
 const Slide = styled.div`
   position: absolute;
@@ -7,10 +8,16 @@ const Slide = styled.div`
   left: 0;
   display: flex;
   align-items: center;
+  ${m.tablet`
+    display: block;
+  `}
 `;
 
 const Image = styled.img`
   width: 40rem;
+  ${m.tablet`
+    margin-bottom: 2rem;
+  `}
 `;
 
 const Content = styled.div`
@@ -19,6 +26,10 @@ const Content = styled.div`
   justify-content: center;
   padding-left: 5rem;
   height: 100px;
+  ${m.tablet`
+    padding-left: 0;
+    height: auto;
+  `}
 `;
 
 const Title = styled.h3`
