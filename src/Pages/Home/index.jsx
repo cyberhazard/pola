@@ -1,5 +1,7 @@
+/* eslint-disable no-return-assign */
 import React from 'react';
 import styled from 'styled-components';
+import { smoothScrollTo } from './../../helpers';
 
 import Page1 from './Page1';
 import Page2 from './Page2';
@@ -13,19 +15,39 @@ const HomePage = styled.div`
 
 const Content = styled.div`
   height: 93.3333333333vh;
-  overflow-y: auto;
+  overflow: hidden;
 `;
 
 export default class extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.setScroll = this.setScroll.bind(this);
+  }
+
+  componentDidMount() {
+    this.setScroll();
+  }
+
+  setScroll() {
+    const el = this.cont;
+    const self = this;
+    el.addEventListener('wheel', function scroll({ deltaY }) {
+      if (deltaY > 0) {
+        smoothScrollTo(el, el.scrollTop + el.clientHeight, 800).then(() => self.setScroll());
+        el.removeEventListener('wheel', scroll);
+      }
+      if (deltaY < 0) {
+        smoothScrollTo(el, el.scrollTop - el.clientHeight, 800).then(() => self.setScroll());
+        el.removeEventListener('wheel', scroll);
+      }
+    });
   }
 
   render() {
     return (
       <HomePage>
-        <Content>
+        <Content innerRef={c => this.cont = c}>
           <Page1 />
           <Page2 />
           <Page3 />
