@@ -2,6 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { smoothScrollTo } from './../../helpers';
+import m from './../../media';
 
 import Page1 from './Page1';
 import Page2 from './Page2';
@@ -16,6 +17,10 @@ const HomePage = styled.div`
 const Content = styled.div`
   height: 93.3333333333vh;
   overflow: hidden;
+  ${m.tablet`
+    overflow: auto;
+    overflow-x: hidden;
+  `}
 `;
 
 export default class extends React.Component {
