@@ -45,16 +45,19 @@ const Cell = styled.div`
   padding-left: 1rem;
   &:nth-child(1) {
     width: 45.7%;
-    ${m.tablet`width: 35.7%;`}
+    ${m.tablet`width: 70%;`}
   }
   &:nth-child(2) {
     width: 15.3%;
+    ${m.tablet`width: 30%;`}
   }
   &:nth-child(3) {
     width: 24.4%;
+    ${m.tablet`display: none;`}
   }
   &:last-child {
     width: 1%;
+    ${m.tablet`display: none;`}
   }
 `;
 
