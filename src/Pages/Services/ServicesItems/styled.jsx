@@ -18,6 +18,30 @@ export const Items = styled.div`
   flex: 0 0 30%;
   padding-right: 9.8rem;
   border-right: .2rem solid rgb(1,104,179);
+  ${m.tablet`
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      right: -2px;
+      width: 50%;
+      border-top: 1px solid #0168B3;
+      border-left: 1px solid #0168B3;
+      height: 5rem;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: calc(100% + 5rem);
+      right: calc(50% - 6px);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 4px 0 5px;
+      border-color: #0168B3 transparent transparent transparent;
+    }
+  `}
 `;
 
 export const Item = styled.div`
@@ -35,6 +59,9 @@ export const Item = styled.div`
   ${({ selected }) => selected && 'color: rgb(1, 104, 179);'}
   &:last-child{
     margin-bottom:0;
+    ${m.tablet`
+      margin-bottom: 3.4rem;
+    `}
   }
   &:hover{
     color: rgb(1, 104, 179);
@@ -58,7 +85,6 @@ export const Item = styled.div`
     background-color: transparent;
     ${({ selected }) => selected && 'background-color: rgb(1, 104, 179);'}
   }
-
 `;
 export const Description = styled.div`
   displya: flex;
@@ -67,6 +93,7 @@ export const Description = styled.div`
   padding-left: 6.7rem;
   ${m.tablet`
     padding-left: 0;
+    margin-top: 8rem;
   `}
 `;
 
