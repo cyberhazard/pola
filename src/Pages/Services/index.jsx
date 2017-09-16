@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import HeaderText from './../../Components/HeaderText';
 import SerivcesItems from './ServicesItems';
 import backg from './../../_assets/images/home-page4-bg-rect.png';
+import m from './../../media';
 
 export const Page = styled.div`
   display: flex;
@@ -16,6 +17,10 @@ export const Page = styled.div`
   padding-right: 23rem;
   padding-bottom: 4rem;
   background: white url('${backg}') left top no-repeat;
+  ${m.tablet`
+    padding-left: 2rem;
+    padding-right: 2rem;
+  `}
 `;
 
 export const Header = styled(HeaderText)`

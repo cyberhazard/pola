@@ -1,11 +1,15 @@
 import styled from 'styled-components';
-
+import m from './../../../media';
 
 export const ServicesItems = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items:flex-start;
+  ${m.tablet`
+    display: block;
+  `}
 `;
+
 export const Items = styled.div`
   display: flex;
   flex-direction:column;
@@ -15,6 +19,7 @@ export const Items = styled.div`
   padding-right: 9.8rem;
   border-right: .2rem solid rgb(1,104,179);
 `;
+
 export const Item = styled.div`
   width:100%;
   position: relative;
@@ -60,10 +65,18 @@ export const Description = styled.div`
   justify-content: flex-start;
   align-items:flex-start;
   padding-left: 6.7rem;
+  ${m.tablet`
+    padding-left: 0;
+  `}
 `;
+
 export const Img = styled.img`
   margin-bottom: 4.5rem;
+  ${m.tablet`
+    width: 100%;
+  `}
 `;
+
 export const Title = styled.div`
   color: #000000;
   font-family: Roboto;
@@ -71,6 +84,7 @@ export const Title = styled.div`
   font-weight: 500;
   margin-bottom:2.2rem;
 `;
+
 export const Text = styled.div`
   color: #000000;
   font-family: Roboto;
