@@ -3,6 +3,7 @@ import HeaderText from './../../Components/HeaderText';
 // import bg from './../../_assets/images/contacts-bg.png';
 import backg from './../../_assets/images/home-page4-bg-rect.png';
 import bg2 from './../../_assets/images/home-page2-bg-rect.png';
+import m from './../../media';
 
 export const Page = styled.div`
   display: flex;
@@ -17,7 +18,11 @@ export const Page = styled.div`
   background-color: #012641;
   background-image: url('${backg}'), url('${bg2}');
   background-position: top left, center right;
-  background-repeat: no-repeat, no-repeat
+  background-repeat: no-repeat, no-repeat;
+  ${m.tablet`
+    padding-left: 2rem;
+    padding-right: 2rem;
+  `}
 
 `;
 
@@ -34,6 +39,9 @@ export const Top = styled.div`
   justify-content: space-between;
   align-items:center;
   margin-bottom: 8.6rem;
+  ${m.tablet`
+    display: block;
+  `}
 `;
 
 export const Bottom = styled.div`
@@ -48,6 +56,9 @@ export const LeftSide = styled.div`
   justify-content: space-between;
   flex-direction: column;
   margin-right: 18rem;
+  ${m.tablet`
+    margin-right: 0;
+  `}
 `;
 
 export const RightSide = styled.div`

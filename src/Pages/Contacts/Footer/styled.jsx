@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import m from './../../../media';
 
 export const Footer = styled.div`
   display:flex;
@@ -6,6 +7,10 @@ export const Footer = styled.div`
   align-items: center;
   width:100%;
   margin-top: 8.4rem;
+  ${m.tablet`
+    display: block;
+    text-align: center;
+  `}
 `;
 
 export const Logo = styled.img`
@@ -23,6 +28,10 @@ export const RightSide = styled.div`
   flex-direction:column;
   align-items:center;
   justify-content: flex-start;
+  ${m.tablet`
+    flex-direction: row;
+    justify-content: space-around;
+  `}
 `;
 
 export const Text = styled.div`
@@ -32,5 +41,8 @@ export const Text = styled.div`
   font-weight: 500;
   align-self: flex-end;
   margin-bottom: 0.8rem;
+  ${m.tablet`
+    align-self: flex-start;
+  `}
 `;
 

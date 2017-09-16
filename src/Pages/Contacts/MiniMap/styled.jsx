@@ -1,9 +1,13 @@
 import styled from 'styled-components';
+import m from './../../../media';
 
 export const Wrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items:center;
+  ${m.tablet`
+    display: none;
+  `}
 `;
 
 export const MiniMapa = styled.img`
