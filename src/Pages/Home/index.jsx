@@ -1,14 +1,17 @@
 /* eslint-disable no-return-assign */
 import React from 'react';
 import styled from 'styled-components';
+import { polyfill } from 'smoothscroll-polyfill';
 import PageDownButton from './../../Components/PageDownButton';
-import { smoothScrollTo } from './../../helpers';
 import m from './../../media';
+// import { smoothScrollTo } from './../../helpers';
 
 import Page1 from './Page1';
 import Page2 from './Page2';
 import Page3 from './Page3';
 import Page4 from './Page4';
+
+polyfill();
 
 const HomePage = styled.div`
   width: 100%;
@@ -40,16 +43,14 @@ export default class extends React.Component {
     const self = this;
     el.addEventListener('wheel', function scroll({ deltaY }) {
       if (deltaY > 0) {
-        const delta = el.scrollTop + el.clientHeight;
-        console.log(delta);
-        smoothScrollTo(el, delta, 800).then(() => self.setScroll());
+        el.scrollBy({ top: el.clientHeight, left: 0, behavior: 'smooth' });
         el.removeEventListener('wheel', scroll);
+        setTimeout(self.setScroll, 700);
       }
       if (deltaY < 0) {
-        const delta = el.scrollTop - el.clientHeight;
-        console.log(delta);
-        smoothScrollTo(el, delta, 800).then(() => self.setScroll());
+        el.scrollBy({ top: -el.clientHeight, left: 0, behavior: 'smooth' });
         el.removeEventListener('wheel', scroll);
+        setTimeout(self.setScroll, 700);
       }
     });
   }
