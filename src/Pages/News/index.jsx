@@ -14,6 +14,9 @@ const Page = styled(PageTemplate)`
   background-position: bottom right, top left;
   background-repeat: no-repeat, no-repeat;
   padding-right: 35.7rem;
+  ${m.ipad`
+    padding-right: 10rem;
+  `}
   ${m.tablet`
     padding-left: 2rem;
     padding-right: 2rem;

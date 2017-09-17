@@ -19,6 +19,9 @@ export const Page = styled.div`
   background-image: url('${backg}'), url('${bg2}');
   background-position: top left, center right;
   background-repeat: no-repeat, no-repeat;
+  ${m.ipad`
+    padding-right: 10rem;
+  `}
   ${m.tablet`
     padding-left: 2rem;
     padding-right: 2rem;

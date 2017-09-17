@@ -3,6 +3,7 @@ import { css } from 'styled-components';
 const sizes = {
   big: 1600,
   medium: 1440,
+  ipad: 1024,
   desktop: 992,
   tablet: 768,
   phone: 376,

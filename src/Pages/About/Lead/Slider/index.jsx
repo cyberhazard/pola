@@ -15,6 +15,9 @@ const Content = styled.div`
   width: 106.4rem;
   overflow: hidden;
   margin: 0 auto;
+  ${m.ipad`
+    width: 80rem;;
+  `}
   ${m.tablet`
     width: 24rem;
   `}

@@ -11,6 +11,9 @@ export const Page = styled.div`
   height: 93.3333333333vh;
   background: white url('${bg}') top left no-repeat;
   background-size: 45.2rem;
+  ${media.ipad`
+    padding-right: 10rem;
+  `}
   ${media.tablet`
     min-height: 93.3333333333vh;
     height: auto;

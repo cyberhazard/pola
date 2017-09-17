@@ -24,6 +24,9 @@ export const Page = styled.div`
   background-image: url('${bg1}'), url('${bg2}');
   background-position: bottom right, top right;
   background-repeat: no-repeat, no-repeat;
+  ${m.ipad`
+    padding-right: 10rem;
+  `}
   ${m.tablet`
     padding-left: 2rem;
     padding-right: 2rem;

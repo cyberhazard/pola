@@ -53,6 +53,10 @@ const Wrapper = styled.div`
   position: fixed;
   top: 6rem;
   left: 120rem;
+  ${m.ipad`
+    top: 14rem;
+    left: 100rem;
+  `}
   ${m.tablet`
     margin-top: 0;
     top: 0;

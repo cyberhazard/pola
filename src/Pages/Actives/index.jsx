@@ -15,6 +15,9 @@ const Page = styled.div`
   padding-right: 23rem;
   padding-bottom: 10rem;
   background: white url('${require('./../../_assets/images/structure/bg.png')}') top right no-repeat;
+  ${m.ipad`
+    padding-right: 10rem;
+  `}
   ${m.tablet`
     padding-left: 2rem;
     padding-right: 2rem;
@@ -52,6 +55,9 @@ const Content = styled.div`
 
 const Ships = styled.div`
   max-width: 75.1rem;
+  ${m.ipad`
+   max-width: 60rem;
+  `}
 `;
 
 

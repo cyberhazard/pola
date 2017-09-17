@@ -17,6 +17,9 @@ export const Page = styled.div`
   background: white url('${bg}') right bottom no-repeat;
   background-image: url('${require('./../../../_assets/images/structure/bg.png')}')
   background-position: top right, 115% 115%;
+  ${m.ipad`
+    padding-right: 10rem;
+  `}
   ${m.tablet`
     padding-left: 2rem;
     padding-right: 2rem;

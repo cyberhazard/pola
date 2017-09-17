@@ -19,6 +19,9 @@ export const Page = styled.div`
   padding-right: 23rem;
   padding-bottom: 10rem;
   background: white url('${require('./../../../_assets/images/home-page2-bg-ship.png')}') bottom right no-repeat;
+  ${m.ipad`
+    padding-right: 10rem;
+  `}
   ${m.tablet`
     padding-left: 3rem;
     padding-right: 3rem;
