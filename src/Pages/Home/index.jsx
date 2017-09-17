@@ -30,8 +30,9 @@ const Content = styled.div`
 export default class extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { currentSlide: 0 };
+    this.state = { topSlide: true };
     this.setScroll = this.setScroll.bind(this);
+    this.scrollButton = this.scrollButton.bind(this);
   }
 
   componentDidMount() {
@@ -55,6 +56,16 @@ export default class extends React.Component {
     });
   }
 
+  scrollButton() {
+    if (this.cont.scrollTop > 20) {
+      this.cont.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+      this.setState({ topSlide: true });
+    } else {
+      this.cont.scrollTo({ top: this.cont.clientHeight, left: 0, behavior: 'smooth' });
+      this.setState({ topSlide: false });
+    }
+  }
+
   render() {
     return (
       <HomePage>
@@ -64,7 +75,7 @@ export default class extends React.Component {
           <Page3 />
           <Page4 />
         </Content>
-        <PageDownButton top={this.state.currentSlide !== 0} />
+        <PageDownButton top={!this.state.topSlide} onClick={this.scrollButton} />
       </HomePage>
     );
   }

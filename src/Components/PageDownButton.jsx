@@ -7,6 +7,8 @@ import page2x from './../_assets/images/page-down@2x.png';
 const Image = styled.img`
   width: 10.4rem;
   height: 10.4rem;
+  transition: .5s;
+  transform-origin: 51.1904761905% 40.4761904762%;
   ${({ top }) => top && 'transform: rotate(180deg);'}
 `;
 
@@ -27,8 +29,8 @@ const Wrapper = styled.div`
   `}
 `;
 
-export default ({ top }) => (
-  <Wrapper>
+export default ({ top, onClick }) => (
+  <Wrapper onClick={onClick}>
     <Image top={top} src={page2x} />
   </Wrapper>
 );
