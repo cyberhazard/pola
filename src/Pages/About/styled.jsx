@@ -16,6 +16,7 @@ export const Page = styled.div`
   `}
   ${media.tablet`
     min-height: 93.3333333333vh;
+    padding-right: 2rem;
     height: auto;
   `}
 `;
