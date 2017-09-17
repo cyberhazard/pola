@@ -47,11 +47,13 @@ export default class extends React.Component {
         el.scrollBy({ top: el.clientHeight, left: 0, behavior: 'smooth' });
         el.removeEventListener('wheel', scroll);
         setTimeout(self.setScroll, 700);
+        self.setState({ topSlide: false });
       }
       if (deltaY < 0) {
         el.scrollBy({ top: -el.clientHeight, left: 0, behavior: 'smooth' });
         el.removeEventListener('wheel', scroll);
         setTimeout(self.setScroll, 700);
+        if (el.scrollTop < el.clientHeight + 200) self.setState({ topSlide: true });
       }
     });
   }
