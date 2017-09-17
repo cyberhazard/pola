@@ -12,9 +12,15 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1900px) {
   html {
     font-size: 9px;
+  }
+}
+
+@media (max-width: 1681px) {
+  html {
+    font-size: 8.5px;
   }
 }
 @media (max-width: 1440px) {
@@ -22,6 +28,12 @@ body {
     font-size: 8px;
   }
 }
+@media (max-width: 1025px) {
+  html {
+    font-size: 7px;
+  }
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 9px;
