@@ -19,7 +19,7 @@ export default [
     mouldedDepth: '14,70 m',
     type: 'sea',
     category: 'transport',
-    photo: require('./../_assets/images/ships/ship1.png'),
+    photo: require('./../../../_assets/images/ships/ship1.png'),
   },
   {
     id: 1,
@@ -41,7 +41,7 @@ export default [
     mouldedDepth: '14,70 m',
     type: 'sea',
     category: 'transport',
-    photo: require('./../_assets/images/ships/ship2.png'),
+    photo: require('./../../../_assets/images/ships/ship2.png'),
   },
   {
     id: 2,
@@ -63,7 +63,7 @@ export default [
     mouldedDepth: '14,70 m',
     type: 'sea',
     category: 'transport',
-    photo: require('./../_assets/images/ships/ship3.png'),
+    photo: require('./../../../_assets/images/ships/ship3.png'),
   },
   {
     id: 3,
@@ -85,7 +85,7 @@ export default [
     mouldedDepth: '14,70 m',
     type: 'sea',
     category: 'transport',
-    photo: require('./../_assets/images/ships/ship4.png'),
+    photo: require('./../../../_assets/images/ships/ship4.png'),
   },
   {
     id: 4,
@@ -107,7 +107,7 @@ export default [
     mouldedDepth: '14,70 m',
     type: 'sea',
     category: 'transport',
-    photo: require('./../_assets/images/ships/ship5.png'),
+    photo: require('./../../../_assets/images/ships/ship5.png'),
   },
   {
     id: 5,
@@ -129,7 +129,7 @@ export default [
     mouldedDepth: '14,70 m',
     type: 'sea',
     category: 'transport',
-    photo: require('./../_assets/images/ships/ship6.png'),
+    photo: require('./../../../_assets/images/ships/ship6.png'),
   },
   {
     id: 6,
@@ -151,7 +151,7 @@ export default [
     mouldedDepth: '14,70 m',
     type: 'sea',
     category: 'transport',
-    photo: require('./../_assets/images/ships/ship7.png'),
+    photo: require('./../../../_assets/images/ships/ship7.png'),
   },
   {
     id: 7,
@@ -173,7 +173,7 @@ export default [
     mouldedDepth: '14,70 m',
     type: 'sea',
     category: 'transport',
-    photo: require('./../_assets/images/ships/ship8.png'),
+    photo: require('./../../../_assets/images/ships/ship8.png'),
   },
   {
     id: 8,
@@ -195,7 +195,7 @@ export default [
     mouldedDepth: '14,70 m',
     type: 'sea',
     category: 'transport',
-    photo: require('./../_assets/images/ships/ship9.png'),
+    photo: require('./../../../_assets/images/ships/ship9.png'),
   },
   {
     id: 9,
@@ -217,7 +217,7 @@ export default [
     mouldedDepth: '14,70 m',
     type: 'sea',
     category: 'transport',
-    photo: require('./../_assets/images/ships/ship1.png'),
+    photo: require('./../../../_assets/images/ships/ship1.png'),
   },
   {
     id: 10,
@@ -239,7 +239,7 @@ export default [
     mouldedDepth: '14,70 m',
     type: 'sea',
     category: 'transport',
-    photo: require('./../_assets/images/ships/ship2.png'),
+    photo: require('./../../../_assets/images/ships/ship2.png'),
   },
   {
     id: 11,
@@ -261,7 +261,7 @@ export default [
     mouldedDepth: '14,70 m',
     type: 'sea',
     category: 'transport',
-    photo: require('./../_assets/images/ships/ship3.png'),
+    photo: require('./../../../_assets/images/ships/ship3.png'),
   },
   {
     id: 12,
@@ -283,7 +283,7 @@ export default [
     mouldedDepth: '14,70 m',
     type: 'sea',
     category: 'transport',
-    photo: require('./../_assets/images/ships/ship4.png'),
+    photo: require('./../../../_assets/images/ships/ship4.png'),
   },
   {
     id: 13,
@@ -305,7 +305,7 @@ export default [
     mouldedDepth: '14,70 m',
     type: 'sea',
     category: 'transport',
-    photo: require('./../_assets/images/ships/ship5.png'),
+    photo: require('./../../../_assets/images/ships/ship5.png'),
   },
   {
     id: 14,
@@ -327,7 +327,7 @@ export default [
     mouldedDepth: '14,70 m',
     type: 'sea',
     category: 'transport',
-    photo: require('./../_assets/images/ships/ship6.png'),
+    photo: require('./../../../_assets/images/ships/ship6.png'),
   },
   {
     id: 15,
@@ -349,7 +349,7 @@ export default [
     mouldedDepth: '14,70 m',
     type: 'sea',
     category: 'transport',
-    photo: require('./../_assets/images/ships/ship7.png'),
+    photo: require('./../../../_assets/images/ships/ship7.png'),
   },
   {
     id: 16,
@@ -371,7 +371,7 @@ export default [
     mouldedDepth: '14,70 m',
     type: 'sea',
     category: 'transport',
-    photo: require('./../_assets/images/ships/ship8.png'),
+    photo: require('./../../../_assets/images/ships/ship8.png'),
   },
   {
     id: 17,
@@ -393,7 +393,7 @@ export default [
     mouldedDepth: '14,70 m',
     type: 'sea',
     category: 'transport',
-    photo: require('./../_assets/images/ships/ship9.png'),
+    photo: require('./../../../_assets/images/ships/ship9.png'),
   },
   {
     id: 18,
@@ -415,6 +415,6 @@ export default [
     mouldedDepth: '14,70 m',
     type: 'sea',
     category: 'transport',
-    photo: require('./../_assets/images/ships/ship1.png'),
+    photo: require('./../../../_assets/images/ships/ship1.png'),
   },
 ];
