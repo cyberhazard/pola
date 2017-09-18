@@ -28,10 +28,16 @@ export const Page = styled(OriginalPage)`
 `;
 
 export const Contact = styled.div`
-  width: 100%;
-  height: 67.8787878788vh;
   background: url(${map}) no-repeat;
   background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+`;
+
+export const Contacts = styled.div`
+  width: 100%;
+  height: 67.8787878788vh;
   position: relative;
   ${m.tablet`
     width: 100%;
