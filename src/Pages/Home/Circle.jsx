@@ -67,6 +67,6 @@ const SVG = () => (
 export default ({ number, isActive, onClick }) => (
   <Circle isActive={isActive} onClick={onClick}>
     <SVG />
-    <Text>0{number}</Text>
+    <Text>{number < 10 ? `0${number}` : number}</Text>
   </Circle>
 );
