@@ -25,10 +25,11 @@ export default class extends React.Component {
         <Header><Wave src={waveWhite} /> Контакты </Header>
         <Contacts>
           <Gmaps
+            className="google-maps"
             width={'100%'}
             height={'100%'}
             lat={this.state.coords.lat}
-            lng={this.state.coords.lng - 0.01}
+            lng={this.state.coords.lng - (window.innerWidth < 768 ? 0 : 0.01)}
             zoom={14}
             loadingMessage={'Pola GROUP'}
             params={params}

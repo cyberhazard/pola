@@ -36,12 +36,20 @@ export const Contact = styled.div`
 `;
 
 export const Contacts = styled.div`
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 67.8787878788vh;
   position: relative;
+  & .google-maps {
+    order: 2;
+  }
   ${m.tablet`
     width: 100%;
     height: auto;
+    & .google-maps {
+      height: 600px !important;
+    }
   `}
 `;
 
@@ -54,6 +62,7 @@ export const Places = styled.div`
   background-color: #014a7f;
   padding: 2.7rem 2.7rem;
   opacity: 0.85;
+  order: 1;
   ${m.tablet`
     width: 100%;
     height: auto;
