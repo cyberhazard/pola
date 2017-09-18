@@ -40,8 +40,8 @@ export const Contact = styled.div`
   font-family: Roboto;
   font-size: 1.4rem;
   font-weight: 400;
-  margin-right: 7.4534161491%;
-  width: 21.2rem;
+  margin-right: 5.4534161491%;
+  width: 24.2rem;
   ${m.tablet`
     width: auto;
     font-size: 2rem;
