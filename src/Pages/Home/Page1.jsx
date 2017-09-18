@@ -6,6 +6,10 @@ import Navigation from './../../Components/Navigation';
 import Circle from './Circle';
 import m from './../../media';
 
+import slide1 from './../../_assets/images/home-slide-1.jpg';
+import slide2 from './../../_assets/images/home-slide-2.jpg';
+import slide3 from './../../_assets/images/home-slide-3.jpg';
+
 const Text = styled.div`
   width: 54.0372670807%;
   color: rgb(255, 255, 255);
@@ -27,7 +31,18 @@ const Slide = OriginalPage.extend`
   flex-shrink: 0;
   flex-direction: column;
   justify-content: center;
+  background-size: cover;
+  ${({ bg }) => bg && `background-image: url('${bg}') ;`}
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
   padding-left: 6.2111801242%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
 `;
 
 const Slider = styled.div`
@@ -106,33 +121,41 @@ export default class extends React.Component {
       <Content>
         <Slider>
           <View offset={this.state.currentOffset} >
-            <Slide>
-              <Text>
-                Комплекс Стройопторг в Москве: контейнерный терминал, экспедирование,
-                складская логистика
-              </Text>
-              <Button label="Подробнее" />
+            <Slide bg={slide1}>
+              <Wrapper>
+                <Text>
+                  Комплекс Стройопторг в Москве: контейнерный терминал, экспедирование,
+                  складская логистика
+                </Text>
+                <Button label="Подробнее" />
+              </Wrapper>
+            </Slide>
+            <Slide bg={slide2}>
+              <Wrapper>
+                <Text>
+                  Комплекс Стройопторг в Москве: контейнерный терминал, экспедирование,
+                  складская логистика
+                </Text>
+                <Button label="Подробнее" />
+              </Wrapper>
+            </Slide>
+            <Slide bg={slide3}>
+              <Wrapper>
+                <Text>
+                  Комплекс Стройопторг в Москве: контейнерный терминал, экспедирование,
+                  складская логистика
+                </Text>
+                <Button label="Подробнее" />
+              </Wrapper>
             </Slide>
             <Slide>
-              <Text>
-                Комплекс Стройопторг в Москве: контейнерный терминал, экспедирование,
-                складская логистика
-              </Text>
-              <Button label="Подробнее" />
-            </Slide>
-            <Slide>
-              <Text>
-                Комплекс Стройопторг в Москве: контейнерный терминал, экспедирование,
-                складская логистика
-              </Text>
-              <Button label="Подробнее" />
-            </Slide>
-            <Slide>
-              <Text>
-                Комплекс Стройопторг в Москве: контейнерный терминал, экспедирование,
-                складская логистика
-              </Text>
-              <Button label="Подробнее" />
+              <Wrapper>
+                <Text>
+                  Комплекс Стройопторг в Москве: контейнерный терминал, экспедирование,
+                  складская логистика
+                </Text>
+                <Button label="Подробнее" />
+              </Wrapper>
             </Slide>
           </View>
         </Slider>
