@@ -14,10 +14,27 @@ const Text = styled.div`
   width: 54.0372670807%;
   color: rgb(255, 255, 255);
   font-family: Lora;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
-  line-height: 6.2rem;
+  line-height: 4.2rem;
   margin-bottom: 9.2929292929vh;
+  ${m.tablet`
+    width: auto;
+    font-size: 2rem;
+    line-height: 4rem;
+  `}
+`;
+
+const Title = styled.span`
+  width: 64.0372670807%;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-family: Lora;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 2vh;
+  text-decoration: underline;
+  text-decoration-color: #0168B3;
   ${m.tablet`
     width: auto;
     font-size: 3rem;
@@ -40,9 +57,14 @@ const Wrapper = styled.div`
   flex-shrink: 0;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   padding-left: 6.2111801242%;
   height: 100%;
   background-color: rgba(0,0,0,0.5);
+  ${m.tablet`
+    padding-left: 2rem;
+    padding-right: 2rem;
+  `}
 `;
 
 const Slider = styled.div`
@@ -76,8 +98,7 @@ export default class extends React.Component {
     super(props);
     this.state = { currentOffset: 0 };
 
-    this.slides = 4;
-    this.breaks = [0, 100, 200, 300];
+    this.slides = 3; // КОЛИЧЕСТВО СЛАЙДОВ!!!
     this.timer = 0;
     this.next = this.next.bind(this);
     this.prev = this.prev.bind(this);
@@ -123,36 +144,33 @@ export default class extends React.Component {
           <View offset={this.state.currentOffset} >
             <Slide bg={slide1}>
               <Wrapper>
+                <Title>
+                  Выход на рынок Short Sea перевозок
+                </Title>
                 <Text>
-                  Комплекс Стройопторг в Москве: контейнерный терминал, экспедирование,
-                  складская логистика
+                  Построение 9 судов RSD 59 и 1 RSD 49 для Short Sea перевозок с использованием внутренних водных путей РФ
                 </Text>
                 <Button label="Подробнее" />
               </Wrapper>
             </Slide>
             <Slide bg={slide2}>
               <Wrapper>
+                <Title>
+                  Перевозка бокситов в Западной Гвинее
+                </Title>
                 <Text>
-                  Комплекс Стройопторг в Москве: контейнерный терминал, экспедирование,
-                  складская логистика
+                  Участие в проекте по перевозке и перевалке 50млн. тонн бокситов для нужд UC Rusal
                 </Text>
                 <Button label="Подробнее" />
               </Wrapper>
             </Slide>
             <Slide bg={slide3}>
               <Wrapper>
+                <Title>
+                  Паромная переправа Усть-Луга – Балтийск
+                </Title>
                 <Text>
-                  Комплекс Стройопторг в Москве: контейнерный терминал, экспедирование,
-                  складская логистика
-                </Text>
-                <Button label="Подробнее" />
-              </Wrapper>
-            </Slide>
-            <Slide>
-              <Wrapper>
-                <Text>
-                  Комплекс Стройопторг в Москве: контейнерный терминал, экспедирование,
-                  складская логистика
+                  Пола Менеджмент совместно с РЖД принимает участие в проекте по строительству и эксплуатации паромов на отрезке Усть-Луга-Балтийск
                 </Text>
                 <Button label="Подробнее" />
               </Wrapper>
@@ -161,7 +179,7 @@ export default class extends React.Component {
         </Slider>
         <Points>
           {
-            this.breaks.map((el, i) =>
+            Array.from({ length: this.slides }).map((e, i) => i * 100).map((el, i) =>
               (<Circle
                 key={el}
                 number={i + 1}
