@@ -142,17 +142,6 @@ export default class extends React.Component {
       <Content>
         <Slider>
           <View offset={this.state.currentOffset} >
-            <Slide bg={slide1}>
-              <Wrapper>
-                <Title>
-                  Выход на рынок Short Sea перевозок
-                </Title>
-                <Text>
-                  Построение 9 судов RSD 59 и 1 RSD 49 для Short Sea перевозок с использованием внутренних водных путей РФ
-                </Text>
-                <Button label="Подробнее" />
-              </Wrapper>
-            </Slide>
             <Slide bg={slide2}>
               <Wrapper>
                 <Title>
@@ -171,6 +160,17 @@ export default class extends React.Component {
                 </Title>
                 <Text>
                   Пола Менеджмент совместно с РЖД принимает участие в проекте по строительству и эксплуатации паромов на отрезке Усть-Луга-Балтийск
+                </Text>
+                <Button label="Подробнее" />
+              </Wrapper>
+            </Slide>
+            <Slide bg={slide1}>
+              <Wrapper>
+                <Title>
+                  Выход на рынок Short Sea перевозок
+                </Title>
+                <Text>
+                  Построение 9 судов RSD 59 и 1 RSD 49 для Short Sea перевозок с использованием внутренних водных путей РФ
                 </Text>
                 <Button label="Подробнее" />
               </Wrapper>
