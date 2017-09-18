@@ -1587,7 +1587,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-create-react-class@^15.6.0:
+create-react-class@^15.5.2, create-react-class@^15.6.0:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/create-react-class/-/create-react-class-15.6.0.tgz#ab448497c26566e1e29413e883207d57cfe7bed4"
   dependencies:
@@ -5158,6 +5158,13 @@ react-fa@^4.2.0:
   dependencies:
     font-awesome "^4.3.0"
     prop-types "^15.5.8"
+
+react-gmaps@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/react-gmaps/-/react-gmaps-1.6.0.tgz#ad96726f1519be2a5c825d6b3915a7d5c4f19600"
+  dependencies:
+    create-react-class "^15.5.2"
+    object-assign "^4.0.1"
 
 react-redux@^5.0.6:
   version "5.0.6"

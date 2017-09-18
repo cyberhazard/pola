@@ -17,8 +17,9 @@ class TargetClass extends React.Component {
     this.state = { selectedId: 0 };
     this.handleClick = this.handleClick.bind(this);
   }
-  handleClick(selectedId) {
+  handleClick(selectedId, coords) {
     this.setState({ selectedId });
+    this.props.changetCoord(coords);
   }
   render() {
     const content = Object.keys(locations).map(loc => locations[loc][this.props.language]);
@@ -28,7 +29,7 @@ class TargetClass extends React.Component {
           content.map(el => (
             <Content
               selected={el.title === this.state.selectedId}
-              onClick={() => this.handleClick(el.title)}
+              onClick={() => this.handleClick(el.title, el.coords)}
               key={el.title}
             >
               <City>  {el.title} </City>
