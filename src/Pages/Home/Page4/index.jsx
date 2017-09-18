@@ -6,7 +6,7 @@ import Targets from './Targets';
 
 import waveWhite from './../../../_assets/images/wave-white.png';
 
-const params = { v: '3.exp', key: 'YOUR_API_KEY' };
+const params = { v: '3.exp', key: 'AIzaSyDWWWRlTTqNtKMMdHnSl9-Xqf9HS_HVsbQ' };
 
 export default class extends React.Component {
   constructor(props) {
