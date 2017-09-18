@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { polyfill } from 'smoothscroll-polyfill';
 import PageDownButton from './../../Components/PageDownButton';
+import Pagintation from './Pagination';
 import m from './../../media';
 // import { smoothScrollTo } from './../../helpers';
 
@@ -21,6 +22,10 @@ const HomePage = styled.div`
 const Content = styled.div`
   height: 93.3333333333vh;
   overflow: hidden;
+  ${m.ipad`
+    overflow: auto;
+    overflow-x: hidden;
+  `}
   ${m.tablet`
     overflow: auto;
     overflow-x: hidden;
@@ -30,9 +35,10 @@ const Content = styled.div`
 export default class extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { topSlide: true };
+    this.state = { topSlide: true, activeSlide: 0 };
     this.setScroll = this.setScroll.bind(this);
     this.scrollButton = this.scrollButton.bind(this);
+    this.setSlide = this.setSlide.bind(this);
   }
 
   componentDidMount() {
@@ -44,31 +50,43 @@ export default class extends React.Component {
     const self = this;
     el.addEventListener('wheel', function scroll({ deltaY }) {
       if (deltaY > 0) {
+        let activeSlide = Math.round(el.scrollTop / el.clientHeight) + 1;
+        if (activeSlide === 4) activeSlide = 3;
         el.scrollBy({ top: el.clientHeight, left: 0, behavior: 'smooth' });
         el.removeEventListener('wheel', scroll);
         setTimeout(self.setScroll, 700);
-        self.setState({ topSlide: false });
+        self.setState({ topSlide: false, activeSlide });
       }
       if (deltaY < 0) {
+        let activeSlide = Math.round(el.scrollTop / el.clientHeight) - 1;
+        if (activeSlide === -1) activeSlide = 0;
         el.scrollBy({ top: -el.clientHeight, left: 0, behavior: 'smooth' });
         el.removeEventListener('wheel', scroll);
         setTimeout(self.setScroll, 700);
-        if (el.scrollTop < el.clientHeight + 200) self.setState({ topSlide: true });
+        self.setState({ topSlide: el.scrollTop < el.clientHeight + 200, activeSlide });
+        // if (el.scrollTop < el.clientHeight + 200) self.setState({ topSlide: true });
       }
     });
+  }
+
+  setSlide(activeSlide) {
+    // console.log(activeSlide, activeSlide * this.cont.clientHeight);
+    this.cont.scrollTo({ top: activeSlide * this.cont.clientHeight, left: 0, behavior: 'smooth' });
+    this.setState({ topSlide: activeSlide === 0, activeSlide });
   }
 
   scrollButton() {
     if (this.cont.scrollTop > 20) {
       this.cont.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-      this.setState({ topSlide: true });
+      this.setState({ topSlide: true, activeSlide: 0 });
     } else {
       this.cont.scrollTo({ top: this.cont.clientHeight, left: 0, behavior: 'smooth' });
-      this.setState({ topSlide: false });
+      this.setState({ topSlide: false, activeSlide: 1 });
     }
   }
 
   render() {
+    console.log(this.state);
     return (
       <HomePage>
         <Content innerRef={c => this.cont = c}>
@@ -77,6 +95,7 @@ export default class extends React.Component {
           <Page3 />
           <Page4 />
         </Content>
+        <Pagintation bg={this.state.activeSlide.toString()} onClick={this.setSlide} />
         <PageDownButton top={!this.state.topSlide} onClick={this.scrollButton} />
       </HomePage>
     );
