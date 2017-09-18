@@ -25,7 +25,6 @@ export default class extends React.Component {
   }
 
   changetCoord(coords) {
-    console.log(coords);
     this.setState({ coords });
   }
   render() {

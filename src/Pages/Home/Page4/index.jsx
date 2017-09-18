@@ -16,7 +16,6 @@ export default class extends React.Component {
   }
 
   changetCoord(coords) {
-    console.log(coords);
     this.setState({ coords });
   }
 
@@ -29,15 +28,14 @@ export default class extends React.Component {
             width={'100%'}
             height={'100%'}
             lat={this.state.coords.lat}
-            lng={this.state.coords.lng}
-            zoom={12}
+            lng={this.state.coords.lng - 0.01}
+            zoom={14}
             loadingMessage={'Pola GROUP'}
             params={params}
           >
             <Marker
               lat={this.state.coords.lat}
               lng={this.state.coords.lng}
-              draggable
             />
           </Gmaps>
           <Places>
