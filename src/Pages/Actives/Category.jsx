@@ -5,6 +5,7 @@ import m from './../../media';
 
 const Category = styled.div`
   width: 100%;
+  margin-bottom: 1rem;
 `;
 
 const Label = styled.div`

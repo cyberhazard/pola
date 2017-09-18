@@ -79,6 +79,13 @@ export default class extends React.Component {
 
   render() {
     const seaTransport = shipsData.filter(el => el.type === 'sea' && el.category === 'transport');
+    const riverTransport = shipsData.filter(el => el.type === 'river' && el.category === 'transport');
+    const riverseaTransport = shipsData.filter(el => el.type === 'riversea' && el.category === 'transport');
+    const towSupply = shipsData.filter(el => el.type === 'tow' && el.category === 'supply');
+    const craneSupply = shipsData.filter(el => el.type === 'crane' && el.category === 'supply');
+    const otherSupply = shipsData.filter(el => el.type === 'other' && el.category === 'supply');
+    const loaderConstructional = shipsData.filter(el => el.type === 'loader' && el.category === 'constructional');
+    const otherConstructional = shipsData.filter(el => el.type === 'other' && el.category === 'constructional');
     const selected = shipsData.find(el => el.id === this.state.selectedID);
     return (
       <Page>
@@ -87,8 +94,15 @@ export default class extends React.Component {
           <Ships>
             <Title><Ship2 />Транспортный флот</Title>
             <Category label="Морской" ships={seaTransport} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Category label="Речной флот" ships={riverTransport} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Category label="Флот река-море" ships={riverseaTransport} selectedID={this.state.selectedID} selectID={this.selectID} />
             <Title><Ship1 />Вспомогательный флот</Title>
+            <Category label="Буксиры" ships={towSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Category label="Плавкраны" ships={craneSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Category label="Прочее" ships={otherSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
             <Title><Ship4 />Судостроительно-судоремонтные мощности</Title>
+            <Category label="Погрузчики" ships={loaderConstructional} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Category label="Прочее" ships={otherConstructional} selectedID={this.state.selectedID} selectID={this.selectID} />
           </Ships>
           <Preview {...selected} close={this.closePopup} />
         </Content>
