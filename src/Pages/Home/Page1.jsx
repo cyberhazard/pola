@@ -79,6 +79,7 @@ const View = styled.div`
   position: relative;
   display: flex;
   transition: 1s;
+  will-change: transform;
   ${({ offset }) => offset && `transform: translateX(-${offset}%);`}
 `;
 
