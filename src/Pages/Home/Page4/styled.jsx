@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Page as OriginalPage } from './../styled';
 import m from './../../../media';
 
-import Map from './../../../_assets/images/contact-map.png';
+import map from './../../../_assets/images/contact-map.png';
 import bg1 from './../../../_assets/images/home-page4-bg-rect.png';
 import bg2 from './../../../_assets/images/home-page4-bg-rect2.png';
 
@@ -30,7 +30,7 @@ export const Page = styled(OriginalPage)`
 export const Contact = styled.div`
   width: 100%;
   height: 67.8787878788vh;
-  background: url(${Map}) no-repeat;
+  background: url(${map}) no-repeat;
   background-size: cover;
   position: relative;
   ${m.tablet`
