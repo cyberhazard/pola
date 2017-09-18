@@ -10,7 +10,7 @@ import Actives from './Pages/Actives';
 import Contacts from './Pages/Contacts';
 import News from './Pages/News';
 import Services from './Pages/Services';
-import Stockholders from './Pages/Stockholders';
+// import Stockholders from './Pages/Stockholders';
 import NotFound from './Pages/NotFound';
 import Structure from './Pages/About/Structure';
 import Profile from './Pages/About/Profile';
@@ -47,7 +47,7 @@ export default () => (
         <Route exact path="/news" component={News} />
         <Route path="/news/:id" component={NewsDetail} />
         <Route path="/services" component={Services} />
-        <Route path="/stockholders" component={Stockholders} />
+        <Route path="/stockholders" component={NotFound} />
         <Route path="/404" component={NotFound} />
         <Redirect from="*" to="/404" />
       </Switch>
