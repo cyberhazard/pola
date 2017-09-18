@@ -47,6 +47,13 @@ export const City = styled.div`
     width: 3.6rem;
     border-bottom: .2rem solid #0168b3;
   }
+  ${m.tablet`
+    padding-left: 3.9rem;
+    text-align:left;
+    &:after {
+      left: 3.9rem;
+    }
+  `}
 `;
 export const Item = styled.div`
   font-family: Roboto;

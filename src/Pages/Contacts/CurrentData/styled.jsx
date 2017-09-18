@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { City, Item, Email } from './../../Home/Page4/Targets/styled';
+import { Item, Email } from './../../Home/Page4/Targets/styled';
 
 export const Data = styled.div`
   display: flex;
@@ -16,15 +16,25 @@ export const Element = styled(Item)`
   margin-bottom:3.2rem;
 `;
 
-export const CurrentCity = styled(City)`
-  color:white;
-  text-align: start;
+export const CurrentCity = styled.div`
+  font-family: Roboto;
   font-size: 2.4rem;
+  font-weight: 700;
+  position:relative;
   margin-bottom:6.4rem;
+  width: 100%;
+  text-align:center;
+  color:white;
+  text-align:left;
   &:after{
-    left: 0;
-    bottom:-2.4rem;
+    content: '';
+    position: absolute;
+    bottom: -1.4rem;
+    left: 0%;
+    width: 3.6rem;
+    border-bottom: .2rem solid #0168b3;
   }
+
 `;
 
 export const CurrentEmail = styled(Email)`
