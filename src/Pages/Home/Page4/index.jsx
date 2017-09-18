@@ -7,7 +7,7 @@ import waveWhite from './../../../_assets/images/wave-white.png';
 
 export default () => (
   <Page>
-    <Header> <Wave src={waveWhite} /> Контакты </Header>
+    <Header><Wave src={waveWhite} /> Контакты </Header>
     <Contacts>
       <Contact />
       <Places>
