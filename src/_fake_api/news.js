@@ -8,7 +8,7 @@ export default [
     timestamp: '01-22-2014-10:00',
     id: '0',
     html: `<div>
-      <p>
+      <p style="margin-bottom: 3rem;">
         Cyprus based Shipowner and Operator Pola Maritime Ltd has added to the existing fleet their
         first Seahorse (MV Pola Indian, 37500 dwt, ice class, e-Engine, mewis duct and BWTS) of a
         total of six firm units at the Qingshan Shipyard. The ships were quietly ordered in 2012
@@ -34,27 +34,27 @@ export default [
     timestamp: '02-28-2014-10:00',
     id: '1',
     html: `<div>
-      <p>
+      <p style="margin-bottom: 3rem;">
         “Gazprombank” (Open Joint Stock Company) started to finance the Group’s companies Pola in a
         single non-revolving credit line of 91.2 million U.S. dollars for the construction of six bulk
         carriers Seahorse 375 series built by leading Chinese Qingshan Shipyard.
       </p>
-      <p>
+      <p style="margin-bottom: 3rem;">
         These Handysizes will be operated under the Maltese flag and with deadweight each of about 37500
         tons. Completion of construction and access to all the dry cargo flights are planned before the end
         of July 2014.
       </p>
-      <p>
+      <p style="margin-bottom: 3rem;">
         Gazprombank mediated the classic finance project with recourse to the existing business and by
         attracting funding from The Export-Import Bank of China. Each vessel was approved for a direct
         long-term financing of up to 12 years.
       </p>
-      <p>
+      <p style="margin-bottom: 3rem;">
         According to Alexey Belous, Vice President – Head of Project and Structured Finance GPB (OJSC),
         “Gazprombank continues to confirm the presence in the international arena with a highly qualified
         team realizing complex structured transactions in different industries and jurisdictions.”
       </p>
-      <p>
+      <p style="margin-bottom: 3rem;">
         “Gazprombank Team once again proved itself as a reliable and highly professional partner that you can rely”-
         said Andrei Gorlenko, director of TA Management (UCL Holding), which is a strategic consultant of the Pola
         Maritime group.
