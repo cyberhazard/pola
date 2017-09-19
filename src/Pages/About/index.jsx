@@ -14,27 +14,27 @@ export default () => (
     <Title><Wave src={wave} />О группе</Title>
     <Blocks>
       <Block to="/about/structure">
-        <Wave float src={wave} /><FloatImage src={aboutB1} css="top: -1rem; left: -4rem;" />
+        <Wave float src={wave} /><FloatImage className="float-image" src={aboutB1} css="top: -1rem; left: -4rem;" />
         Структура группы
       </Block>
       <Block to="/about/profile">
-        <Wave float src={wave} /><FloatImage src={aboutB2} css="top: -4.2rem; left: -6rem" />
+        <Wave float src={wave} /><FloatImage className="float-image" src={aboutB2} css="top: -4.2rem; left: -6rem;" />
         Профиль группы
       </Block>
       <Block to="/about/history">
-        <Wave float src={wave} /><FloatImage src={aboutB3} css="right: -10rem; bottom: -1rem" />
+        <Wave float src={wave} /><FloatImage className="float-image" src={aboutB3} css="right: -10rem; bottom: -1rem;" />
         История
       </Block>
       <Block to="/about/lead">
-        <Wave float src={wave} /><FloatImage src={aboutB4} css="top: -1.3rem; left: -4rem" />
+        <Wave float src={wave} /><FloatImage className="float-image" src={aboutB4} css="top: -1.3rem; left: -4rem;" />
         Руководство
       </Block>
       <Block to="/about/geography">
-        <Wave float src={wave} /><FloatImage src={aboutB5} css="top: -2.4rem; left: -1.7rem" />
+        <Wave float src={wave} /><FloatImage className="float-image" src={aboutB5} css="top: -2.4rem; left: -1.7rem;" />
         География
       </Block>
       <Block to="/about/projects">
-        <Wave float src={wave} /><FloatImage src={aboutB6} css="right: -17rem; bottom: -9rem" />
+        <Wave float src={wave} /><FloatImage className="float-image" src={aboutB6} css="right: -17rem; bottom: -9rem;" />
         Проекты
       </Block>
     </Blocks>

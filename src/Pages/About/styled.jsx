@@ -8,11 +8,13 @@ export const Page = styled.div`
   flex-direction: column;
   justify-content: center;
   position: relative;
-  height: 93.3333333333vh;
+  min-height: 93.3333333333vh;
   background: white url('${bg}') top left no-repeat;
   background-size: 45.2rem;
+  overflow-x: hidden;
   ${media.ipad`
-    padding-right: 10rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   `}
   ${media.tablet`
     min-height: 93.3333333333vh;
@@ -31,6 +33,8 @@ export const Title = styled.h2`
 
 export const Wave = styled.img`
   margin-right: 2.8rem;
+  ${media.ipad`display: none;`}
+  ${media.tablet`display: block;`}
   ${prop => prop.float && `
     position: absolute;
     top: 4.2rem;
@@ -67,9 +71,26 @@ export const Block = styled(Link)`
   font-weight: 700;
   transition: .4s;
   will-change: box-shadow;
+  @media (max-width: 1680px) {
+    flex-basis: 35%;
+  }
   &:hover {
     box-shadow: .1rem .1rem 2.6rem black;
     transform: translate(-.1rem,-.1rem);
+  }
+  @media (max-width: 1366px) {
+    &:nth-child(6) .float-image {
+      bottom: 0;
+    }
+  }
+  @media (max-width: 1240px) {
+    &:nth-child(3) .float-image {
+      bottom: 6rem;
+    }
+    &:nth-child(6) .float-image {
+      bottom: 4rem;
+      right: -24rem;
+    }
   }
   ${media.tablet`
     height: auto;
@@ -81,8 +102,12 @@ export const Block = styled(Link)`
 
 export const FloatImage = styled.img`
   position: absolute;
+  ${p => p.css && p.css}
   ${media.tablet`
     display: none;
   `}
-  ${p => p.css && p.css}
+  @media (max-width: 1440px) {
+    max-width: 260px;
+    margin-right: 10rem;
+  }
 `;
