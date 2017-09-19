@@ -47,7 +47,7 @@ export default () => (
         <Route exact path="/news" component={News} />
         <Route path="/news/:id" component={NewsDetail} />
         <Route path="/services" component={Services} />
-        <Route path="/stockholders" component={NotFound} />
+        {/* <Route path="/stockholders" component={NotFound} /> */}
         <Route path="/404" component={NotFound} />
         <Redirect from="*" to="/404" />
       </Switch>
