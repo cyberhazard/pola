@@ -22,6 +22,15 @@ const HomePage = styled.div`
 const Content = styled.div`
   height: 93.3333333333vh;
   overflow: hidden;
+  ${() => {
+    if (navigator.userAgent.includes('iPad')) {
+      return `
+        overflow: auto;
+        overflow-x: hidden;
+      `;
+    }
+    return '';
+  }}
   ${m.ipad`
     overflow: auto;
     overflow-x: hidden;
