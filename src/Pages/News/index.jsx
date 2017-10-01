@@ -84,7 +84,7 @@ export default class extends React.Component {
         <NewsBlock title={title} timestamp={timestamp} id={id} key={id} />);
     newses.length = 6;
     return (
-      <Page normal>
+      <Page full normal>
         <Header>
           <HeaderText white>Новости</HeaderText>
           <Select
