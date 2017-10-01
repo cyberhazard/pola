@@ -1,6 +1,6 @@
-import person1 from './../../../../_assets/images/lead/person1.png';
-import person2 from './../../../../_assets/images/lead/person2.png';
-import person3 from './../../../../_assets/images/lead/person3.png';
+import person1 from './../../../../_assets/images/lead/no-ava.png';
+// import person2 from './../../../../_assets/images/lead/person2.png';
+// import person3 from './../../../../_assets/images/lead/person3.png';
 
 export default [
   {
@@ -12,14 +12,14 @@ export default [
   },
   {
     id: 1,
-    img: person2,
+    img: person1,
     title: 'Петров Игорь Анатольевич',
     position: 'Исполнительный директор',
     description: 'Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию.',
   },
   {
     id: 2,
-    img: person3,
+    img: person1,
     title: 'Максимов Александр Александрович',
     position: 'Руководитель проектов',
     description: 'Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию.',
@@ -40,14 +40,14 @@ export default [
   },
   {
     id: 5,
-    img: person2,
+    img: person1,
     title: 'Петров Игорь Анатольевич',
     position: 'Исполнительный директор',
     description: 'Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию.',
   },
   {
     id: 6,
-    img: person3,
+    img: person1,
     title: 'Максимов Александр Александрович',
     position: 'Руководитель проектов',
     description: 'Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию.',
@@ -68,14 +68,14 @@ export default [
   },
   {
     id: 9,
-    img: person2,
+    img: person1,
     title: 'Петров Игорь Анатольевич',
     position: 'Исполнительный директор',
     description: 'Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию.',
   },
   {
     id: 10,
-    img: person3,
+    img: person1,
     title: 'Максимов Александр Александрович',
     position: 'Руководитель проектов',
     description: 'Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию.',
