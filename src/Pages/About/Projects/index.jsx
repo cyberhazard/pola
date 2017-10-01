@@ -13,6 +13,7 @@ const Page = styled.div`
   padding-left: 10rem;
   padding-right: 23rem;
   padding-bottom: 10rem;
+  height: 100%;
   background: white url('${require('./../../../_assets/images/structure/bg.png')}') top right no-repeat;
   ${m.ipad`
     padding-right: 10rem;
