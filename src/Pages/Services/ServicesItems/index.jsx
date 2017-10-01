@@ -30,7 +30,7 @@ export default class extends React.Component {
         <Description>
           <Img src={selectedItem.image} />
           <Title>Описание услуги:</Title>
-          <Text>{selectedItem.description}</Text>
+          <Text dangerouslySetInnerHTML={{ __html: selectedItem.description }} />
         </Description>
       </ServicesItems>
     );
