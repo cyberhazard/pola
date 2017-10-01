@@ -159,9 +159,7 @@ export default ({ match }) => {
             </Nums>
           </Promo>
         </Top>
-        <Text>
-          {data.text}
-        </Text>
+        <Text dangerouslySetInnerHTML={{ __html: data.text }} />
       </Content>
       <Footer>
         <Link to="/about/projects"><Button label="Назад проектам" /></Link>
