@@ -10,7 +10,6 @@ import m from './../../media';
 
 const Page = styled(PageTemplate)`
   background-color: #004980;
-  height:100%;
   background-image: url('${require('./../../_assets/images/home-page3-bg-rect.png')}'), url('${require('./../../_assets/images/home-page3-bg-rect2.png')}');
   background-position: bottom right, top left;
   background-repeat: no-repeat, no-repeat;
