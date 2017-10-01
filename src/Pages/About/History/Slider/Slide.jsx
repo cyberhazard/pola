@@ -55,7 +55,7 @@ export default ({ img, title, text }) => (
     <Image src={img} />
     <Content>
       <Title>{title}</Title>
-      <Text>{text}</Text>
+      <Text dangerouslySetInnerHTML={{ __html: text }} />
     </Content>
   </Slide>
 );
