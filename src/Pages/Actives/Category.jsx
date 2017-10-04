@@ -96,6 +96,26 @@ export default class extends React.Component {
   }
 
   render() {
+    if (this.props.empty) {
+      return (
+        <Category>
+          <Label isActive={this.state.isOpen} onClick={this.toggleOpen}>{this.props.label}</Label>
+          { this.state.isOpen && (
+            <Table>
+              <Line th>
+                <Cell>Судно</Cell>
+                <Cell>Год</Cell>
+                <Cell>Дедвейт</Cell>
+                <Cell>Флаг</Cell>
+              </Line>
+              <Line>
+                <Cell style={{ width: '100%' }}>В стадии наполнения</Cell>
+              </Line>
+            </Table>
+          ) }
+        </Category>
+      );
+    }
     return (
       <Category>
         <Label isActive={this.state.isOpen} onClick={this.toggleOpen}>{this.props.label}</Label>

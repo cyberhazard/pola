@@ -62,6 +62,7 @@ const Image = styled.img`
   float: left;
   margin-right: 5rem;
   margin-bottom: 2rem;
+  max-width: 56rem;
   ${m.tablet`
     float: none;
     width: 100%;

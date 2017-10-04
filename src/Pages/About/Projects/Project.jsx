@@ -164,14 +164,18 @@ export default ({ match }) => {
       <Footer>
         <Link to="/about/projects"><Button label="Назад проектам" /></Link>
         <Downloads>
-          <Download href="/readme.pdf" download>
-            <img src={require('./../../../_assets/images/icon-pdf.png')} alt="" />
-            <Label>Презентация <Icon name="angle-right" /></Label>
-          </Download>
-          <Download href="/readme.doc" download>
-            <img src={require('./../../../_assets/images/icon-document.png')} alt="" />
-            <Label>Документы <Icon name="angle-right" /></Label>
-          </Download>
+          { data.presentation && (
+            <Download href={data.presentation} download>
+              <img src={require('./../../../_assets/images/icon-pdf.png')} alt="" />
+              <Label>Презентация <Icon name="angle-right" /></Label>
+            </Download>
+          ) }
+          {data.documents && (
+            <Download href={data.documents} download>
+              <img src={require('./../../../_assets/images/icon-document.png')} alt="" />
+              <Label>Документы <Icon name="angle-right" /></Label>
+            </Download>
+          )}
         </Downloads>
       </Footer>
     </Page>

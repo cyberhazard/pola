@@ -26,6 +26,7 @@ const Content = styled.div`
   flex-grow: 1;
   background-color: rgba(0,0,0,0.4);
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
 `;
 
 export default () => (

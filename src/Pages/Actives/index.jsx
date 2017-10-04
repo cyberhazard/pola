@@ -94,15 +94,15 @@ export default class extends React.Component {
           <Ships>
             <Title><Ship2 />Транспортный флот</Title>
             <Category label="Морской" ships={seaTransport} selectedID={this.state.selectedID} selectID={this.selectID} />
-            <Category label="Речной флот" ships={riverTransport} selectedID={this.state.selectedID} selectID={this.selectID} />
-            <Category label="Флот река-море" ships={riverseaTransport} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Category empty label="Речной флот" ships={riverTransport} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Category empty label="Флот река-море" ships={riverseaTransport} selectedID={this.state.selectedID} selectID={this.selectID} />
             <Title><Ship1 />Вспомогательный флот</Title>
-            <Category label="Буксиры" ships={towSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
-            <Category label="Плавкраны" ships={craneSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
-            <Category label="Прочее" ships={otherSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Category empty label="Буксиры" ships={towSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Category empty label="Плавкраны" ships={craneSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Category empty label="Прочее" ships={otherSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
             <Title><Ship4 />Судостроительно-судоремонтные мощности</Title>
-            <Category label="Погрузчики" ships={loaderConstructional} selectedID={this.state.selectedID} selectID={this.selectID} />
-            <Category label="Прочее" ships={otherConstructional} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Category empty label="Погрузчики" ships={loaderConstructional} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Category empty label="Прочее" ships={otherConstructional} selectedID={this.state.selectedID} selectID={this.selectID} />
           </Ships>
           <Preview {...selected} close={this.closePopup} />
         </Content>

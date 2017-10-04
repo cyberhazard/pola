@@ -16,7 +16,7 @@ export default [
     lengthBetweenPerpendiculars: '176,75 m',
     extremeBreadth: '30,00 m',
     mouldedDepth: '14,70 m',
-    photo: require('./../../../_assets/images/ships/ship1.png'),
+    photo: require('./../../../_assets/images/ships/pola_atlantic.jpg'),
   },
   {
     shipName: 'POLA PACIFIC',
@@ -35,7 +35,7 @@ export default [
     lengthBetweenPerpendiculars: '176,75 m',
     extremeBreadth: '30,00 m',
     mouldedDepth: '14,70 m',
-    photo: require('./../../../_assets/images/ships/ship2.png'),
+    photo: require('./../../../_assets/images/ships/pola_pacific.jpg'),
   },
   {
     shipName: 'POLA INDIAN',
@@ -54,7 +54,7 @@ export default [
     lengthBetweenPerpendiculars: '176,75 m',
     extremeBreadth: '30,00 m',
     mouldedDepth: '14,70 m',
-    photo: require('./../../../_assets/images/ships/ship3.png'),
+    photo: require('./../../../_assets/images/ships/pola_indian.jpg'),
   },
   {
     shipName: 'POLA LADOGA',
@@ -73,7 +73,7 @@ export default [
     lengthBetweenPerpendiculars: '176,75 m',
     extremeBreadth: '30,00 m',
     mouldedDepth: '14,70 m',
-    photo: require('./../../../_assets/images/ships/ship4.png'),
+    photo: require('./../../../_assets/images/ships/pola_ladoga.JPG'),
   },
   {
     shipName: 'POLA ONEGA',
@@ -92,7 +92,7 @@ export default [
     lengthBetweenPerpendiculars: '176,75 m',
     extremeBreadth: '30,00 m',
     mouldedDepth: '14,70 m',
-    photo: require('./../../../_assets/images/ships/ship5.png'),
+    photo: require('./../../../_assets/images/ships/pola_onega.jpg'),
   },
   {
     shipName: 'POLA UGLICH',
@@ -111,7 +111,7 @@ export default [
     lengthBetweenPerpendiculars: '176,75 m',
     extremeBreadth: '30,00 m',
     mouldedDepth: '14,70 m',
-    photo: require('./../../../_assets/images/ships/ship6.png'),
+    photo: require('./../../../_assets/images/ships/pola_uglich.jpg'),
   },
   {
     shipName: 'POLA MUROM',
@@ -130,7 +130,7 @@ export default [
     lengthBetweenPerpendiculars: '176,75 m',
     extremeBreadth: '30,00 m',
     mouldedDepth: '14,70 m',
-    photo: require('./../../../_assets/images/ships/ship7.png'),
+    photo: require('./../../../_assets/images/ships/pola_murom.jpg'),
   },
   {
     shipName: 'POLA PALEKH',
@@ -149,7 +149,7 @@ export default [
     lengthBetweenPerpendiculars: '176,75 m',
     extremeBreadth: '30,00 m',
     mouldedDepth: '14,70 m',
-    photo: require('./../../../_assets/images/ships/ship8.png'),
+    photo: require('./../../../_assets/images/ships/pola_palekh.jpg'),
   },
   {
     shipName: 'POLA ANISIA',
@@ -168,7 +168,7 @@ export default [
     lengthBetweenPerpendiculars: '176,75 m',
     extremeBreadth: '30,00 m',
     mouldedDepth: '14,70 m',
-    photo: require('./../../../_assets/images/ships/ship9.png'),
+    photo: require('./../../../_assets/images/ships/pola_atlantic.jpg'),
   },
   {
     shipName: 'POLA ILARIA',
@@ -187,7 +187,7 @@ export default [
     lengthBetweenPerpendiculars: '176,75 m',
     extremeBreadth: '30,00 m',
     mouldedDepth: '14,70 m',
-    photo: require('./../../../_assets/images/ships/ship1.png'),
+    photo: require('./../../../_assets/images/ships/pola_atlantic.jpg'),
   },
   {
     shipName: 'POLA AUGUSTA',
@@ -225,7 +225,7 @@ export default [
     lengthBetweenPerpendiculars: '176,75 m',
     extremeBreadth: '30,00 m',
     mouldedDepth: '14,70 m',
-    photo: require('./../../../_assets/images/ships/ship3.png'),
+    photo: require('./../../../_assets/images/ships/HANZE_GDANSK.jpg'),
   },
   {
     shipName: 'HANZE GOTEBORG',
@@ -244,7 +244,7 @@ export default [
     lengthBetweenPerpendiculars: '176,75 m',
     extremeBreadth: '30,00 m',
     mouldedDepth: '14,70 m',
-    photo: require('./../../../_assets/images/ships/ship4.png'),
+    photo: require('./../../../_assets/images/ships/hanze_gotenberg.jpg'),
   },
   {
     shipName: 'HANZE GENDT',
@@ -263,7 +263,7 @@ export default [
     lengthBetweenPerpendiculars: '176,75 m',
     extremeBreadth: '30,00 m',
     mouldedDepth: '14,70 m',
-    photo: require('./../../../_assets/images/ships/ship5.png'),
+    photo: require('./../../../_assets/images/ships/hanze_gendt.jpg'),
   },
   {
     shipName: 'HANZE GENUA',
@@ -282,7 +282,7 @@ export default [
     lengthBetweenPerpendiculars: '176,75 m',
     extremeBreadth: '30,00 m',
     mouldedDepth: '14,70 m',
-    photo: require('./../../../_assets/images/ships/ship6.png'),
+    photo: require('./../../../_assets/images/ships/hanze_genua.jpg'),
   },
   {
     shipName: 'INTERLINK ABILITY',
@@ -301,7 +301,7 @@ export default [
     lengthBetweenPerpendiculars: '176,75 m',
     extremeBreadth: '30,00 m',
     mouldedDepth: '14,70 m',
-    photo: require('./../../../_assets/images/ships/ship7.png'),
+    photo: require('./../../../_assets/images/ships/interlink_levity.jpg'),
   },
   {
     shipName: 'INTERLINK ACTIVITY',
@@ -320,7 +320,7 @@ export default [
     lengthBetweenPerpendiculars: '176,75 m',
     extremeBreadth: '30,00 m',
     mouldedDepth: '14,70 m',
-    photo: require('./../../../_assets/images/ships/ship8.png'),
+    photo: require('./../../../_assets/images/ships/interlink_activity.jpg'),
   },
   {
     shipName: 'INTERLINK SAGACITY',
@@ -339,7 +339,7 @@ export default [
     lengthBetweenPerpendiculars: '176,75 m',
     extremeBreadth: '30,00 m',
     mouldedDepth: '14,70 m',
-    photo: require('./../../../_assets/images/ships/ship9.png'),
+    photo: require('./../../../_assets/images/ships/INTERLINK_SAGACITY.jpg'),
   },
   {
     shipName: 'NORDTIGRIS',
@@ -358,6 +358,6 @@ export default [
     lengthBetweenPerpendiculars: '176,75 m',
     extremeBreadth: '30,00 m',
     mouldedDepth: '14,70 m',
-    photo: require('./../../../_assets/images/ships/ship1.png'),
+    photo: require('./../../../_assets/images/ships/NORDTIGRIS.jpg'),
   },
 ];
