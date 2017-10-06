@@ -15,7 +15,7 @@ export default () => (
     <Blocks>
       <Block to="/about/structure">
         <Wave float src={wave} /><FloatImage className="float-image" src={aboutB1} css="top: -7rem; left: -11rem;" />
-        Структура группы
+        Компании группы
       </Block>
       <Block to="/about/profile">
         <Wave float src={wave} /><FloatImage className="float-image" src={aboutB2} css="top: -4.2rem; left: -6rem;" />

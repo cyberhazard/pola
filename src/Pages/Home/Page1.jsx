@@ -6,7 +6,7 @@ import Navigation from './../../Components/Navigation';
 import Circle from './Circle';
 import m from './../../media';
 
-import slide1 from './../../_assets/images/home-slide-1.jpg';
+import slide1 from './../../_assets/images/home-slide-1.JPG';
 import slide2 from './../../_assets/images/home-slide-2.jpg';
 import slide3 from './../../_assets/images/home-slide-3.jpg';
 
@@ -171,7 +171,7 @@ export default class extends React.Component {
                   Выход на рынок Short Sea перевозок
                 </Title>
                 <Text>
-                  Построение 9 судов RSD 59 и 1 RSD 49 для Short Sea перевозок с использованием внутренних водных путей РФ
+                  В 2018 году будет введено в эксплуатацию 9 судов RSD 59 и 1 RSD 49 для Short Sea перевозок
                 </Text>
                 <Button label="Подробнее" />
               </Wrapper>
