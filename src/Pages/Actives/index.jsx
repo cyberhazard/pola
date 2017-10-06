@@ -101,8 +101,8 @@ export default class extends React.Component {
             <Category empty label="Плавкраны" ships={craneSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
             <Category empty label="Прочее" ships={otherSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
             <Title><Ship4 />Судостроительно-судоремонтные мощности</Title>
-            <Category empty label="Погрузчики" ships={loaderConstructional} selectedID={this.state.selectedID} selectID={this.selectID} />
-            <Category empty label="Прочее" ships={otherConstructional} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Category nevsky label="Невский судостроительный и судоремонтный завод" ships={loaderConstructional} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Category lakeverf label="Озерная судоверфь" ships={otherConstructional} selectedID={this.state.selectedID} selectID={this.selectID} />
           </Ships>
           <Preview {...selected} close={this.closePopup} />
         </Content>
