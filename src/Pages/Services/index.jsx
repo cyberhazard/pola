@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 import HeaderText from './../../Components/HeaderText';
 import SerivcesItems from './ServicesItems';
 import backg from './../../_assets/images/home-page4-bg-rect.png';
@@ -27,18 +28,22 @@ export const Header = styled(HeaderText)`
   margin-bottom: 2.2rem;
 `;
 
-export default class extends React.Component {
+class Services extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
   render() {
+    const { l } = this.props;
     return (
       <Page>
-        <Header> Услуги </Header>
-        <SerivcesItems />
+        <Header>{l === 'RU' ? 'Услуги' : 'Services'}</Header>
+        <SerivcesItems l={l} />
       </Page>
     );
   }
 }
 
+export default connect(
+  state => ({ l: state.language }),
+)(Services);

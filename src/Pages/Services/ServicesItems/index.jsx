@@ -14,11 +14,12 @@ export default class extends React.Component {
     this.setState({ selectedId });
   }
   render() {
-    const selectedItem = content.find(el => el.id === this.state.selectedId);
+    const { l } = this.props;
+    const selectedItem = content[l].find(el => el.id === this.state.selectedId);
     return (
       <ServicesItems>
         <Items>
-          { content.map(el =>
+          { content[l].map(el =>
             (<Item
               selected={el.id === this.state.selectedId}
               onClick={() => this.handleClick(el.id)}
@@ -29,7 +30,7 @@ export default class extends React.Component {
         </Items>
         <Description>
           <Img src={selectedItem.image} />
-          <Title>Описание услуги:</Title>
+          <Title>{l === 'RU' ? 'Описание услуги' : 'Description'}:</Title>
           <Text dangerouslySetInnerHTML={{ __html: selectedItem.description }} />
         </Description>
       </ServicesItems>
