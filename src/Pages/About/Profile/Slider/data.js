@@ -1,6 +1,9 @@
-import ship1 from './../../../../_assets/images/structure/ship1.png';
-import ship2 from './../../../../_assets/images/structure/ship2.png';
-import ship3 from './../../../../_assets/images/structure/ship3.png';
+import ship1 from './../../../../_assets/images/profile/1.jpg';
+import ship2 from './../../../../_assets/images/profile/2.JPG';
+import ship3 from './../../../../_assets/images/profile/3.JPG';
+import ship4 from './../../../../_assets/images/profile/4.jpg';
+import ship5 from './../../../../_assets/images/profile/5.jpg';
+import ship6 from './../../../../_assets/images/profile/6.JPG';
 
 export default [
   {
@@ -20,7 +23,8 @@ export default [
   },
   {
     id: 3,
-    preview: ship2,
-    big: ship2,
+    preview: ship4,
+    big: ship4,
   },
+
 ];

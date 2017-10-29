@@ -12,7 +12,7 @@ export default () => (
   <Data>
     <CurrentCity> Москва </CurrentCity>
     <Element> <Angle name="map-marker" /> Пресненская наб. д.6 стр. 2 </Element>
-    <Element> <Angle name="phone" /> +7 (495) 055-12-12 </Element>
-    <CurrentEmail> <Angle name="envelope" /> moscow@pola-group.com </CurrentEmail>
+    <Element> <Angle name="phone" /> +7 (495) 185-11-21 </Element>
+    <CurrentEmail> <Angle name="envelope" /> office@pola-group.com </CurrentEmail>
   </Data>
 );

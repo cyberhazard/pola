@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { Page as OriginalPage } from './styled';
 import Button from './../../Components/Button';
 import Navigation from './../../Components/Navigation';
@@ -151,7 +152,7 @@ export default class extends React.Component {
                 <Text>
                   Под управлением группы Pola находится 19 судов типа Handysize суммарным дедвейтом более 650тыс. тонн
                 </Text>
-                <Button label="Подробнее" />
+                <Link to="/about/projects/Проект%20«Handysize»" > <Button label="Подробнее" /> </Link>
               </Wrapper>
             </Slide>
             <Slide bg={slide2}>
@@ -162,7 +163,7 @@ export default class extends React.Component {
                 <Text>
                   Компания ВодоходЪ, входящая в группу оперирует крупнейшим круизным флотом в России.
                 </Text>
-                <Button label="Подробнее" />
+                <Link to="/about/structure" > <Button label="Подробнее" /> </Link>
               </Wrapper>
             </Slide>
             <Slide bg={slide1}>
@@ -173,7 +174,7 @@ export default class extends React.Component {
                 <Text>
                   В 2018 году будет введено в эксплуатацию 9 судов RSD 59 и 1 RSD 49 для Short Sea перевозок
                 </Text>
-                <Button label="Подробнее" />
+                <Link to="/about/projects/Проект%20«RSD%2059»" > <Button label="Подробнее" /> </Link>
               </Wrapper>
             </Slide>
           </View>
