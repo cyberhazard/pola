@@ -32,7 +32,7 @@ const About = ({ l }) => (
       </Block>
       <Block to="/about/geography">
         <Wave float src={wave} /><FloatImage className="float-image" src={aboutB5} css="top: -2.4rem; left: -1.7rem;" />
-        {l === 'RU' ? 'Географияе' : 'Geography'}
+        {l === 'RU' ? 'География' : 'Geography'}
       </Block>
       <Block to="/about/projects">
         <Wave float src={wave} /><FloatImage className="float-image" src={aboutB6} css="right: -17rem; bottom: -9rem;" />

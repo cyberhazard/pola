@@ -60,7 +60,7 @@ export default class extends React.Component {
     this.blockOffset = 27.6;
     this.slidesPerFrame = 5;
     if (window.innerWidth < 700) this.slidesPerFrame = 1;
-    this.maxOffset = this.blockOffset * (persons.length - this.slidesPerFrame);
+    this.maxOffset = this.blockOffset * (persons[this.props.l].length - this.slidesPerFrame);
     this.next = this.next.bind(this);
     this.prev = this.prev.bind(this);
   }
@@ -76,12 +76,13 @@ export default class extends React.Component {
   }
 
   render() {
+    const { l } = this.props;
     return (
       <Slider>
         <Content>
           <MovingBlock offset={this.state.currentOffset}>
             {
-              persons.map(p =>
+              persons[l].map(p =>
                 (<Person
                   key={p.id}
                   img={p.img}

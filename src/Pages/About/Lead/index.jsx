@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 import Breadcrumbs from './../../../Components/Breadcrumbs';
 import HeaderText from './../../../Components/HeaderText';
 import Button from './../../../Components/Button';
@@ -44,15 +45,19 @@ const Header = styled(HeaderText)`
   margin-bottom: 5rem;
 `;
 
-export default () => (
+const Lead = ({ l }) => (
   <Page>
-    <Breadcrumbs to="/about" label="О группе" current="Руководство" />
-    <Header>Руководство</Header>
-    <Slider />
+    <Breadcrumbs to="/about" label={l === 'RU' ? 'О группе' : 'About group'} current={l === 'RU' ? 'Руководство' : 'Management'} />
+    <Header>{l === 'RU' ? 'Руководство' : 'Management'}</Header>
+    <Slider l={l} />
     <Footer>
       <Link to="/about/geography">
-        <Button label="География" />
+        <Button label={l === 'RU' ? 'География' : 'Geography'} />
       </Link>
     </Footer>
   </Page>
 );
+
+export default connect(
+  state => ({ l: state.language }),
+)(Lead);
