@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 import Breadcrumbs from './../../../Components/Breadcrumbs';
 import HeaderText from './../../../Components/HeaderText';
 import Block from './../Structure/Block';
@@ -27,13 +28,14 @@ const Header = HeaderText.extend`
   margin: 3rem 0 5rem 0;
 `;
 
-export default () => (
+const Projects = ({ l }) => (
   <Page>
-    <Breadcrumbs to="/about" label="О группе" current="Проекты" />
-    <Header>Структура группы</Header>
+    <Breadcrumbs to="/about" label={l === 'RU' ? 'О группе' : 'About group'} current={l === 'RU' ? 'Проекты' : 'Projects'} />
+    <Header>{l === 'RU' ? 'Проекты' : 'Projects'}</Header>
     {
-      projects.map((project, index) => (
+      projects[l].map((project, index) => (
         <Block
+          l={l}
           top
           key={project.name}
           header={project.name}
@@ -47,3 +49,7 @@ export default () => (
     }
   </Page>
 );
+
+export default connect(
+  state => ({ l: state.language }),
+)(Projects);

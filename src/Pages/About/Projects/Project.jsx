@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { Icon } from 'react-fa';
+import { connect } from 'react-redux';
 import Breadcrumbs from './../../../Components/Breadcrumbs';
 import HeaderText from './../../../Components/HeaderText';
 import projects from './../../../_fake_api/projects';
@@ -139,12 +140,13 @@ const Label = styled.span`
   margin-left: 2rem;
 `;
 
-export default ({ match }) => {
+const Project = ({ match, l }) => {
   const { id } = match.params;
-  const data = projects.find(el => el.name === id);
+  let data = projects[l].find(el => el.name === id);
+  if (!data) data = projects.EN.find(el => el.name === id);
   return (
     <Page>
-      <Breadcrumbs to="/about" label="О группе" to2="/about/projects" label2="Проекты" current={id} />
+      <Breadcrumbs to="/about" label={l === 'RU' ? 'О группе' : 'About group'} to2="/about/projects" label2={l === 'RU' ? 'Проекты' : 'Projects'} current={id} />
       <Header>{id}</Header>
       <Content>
         <Top>
@@ -162,18 +164,18 @@ export default ({ match }) => {
         <Text dangerouslySetInnerHTML={{ __html: data.text }} />
       </Content>
       <Footer>
-        <Link to="/about/projects"><Button label="Назад проектам" /></Link>
+        <Link to="/about/projects"><Button label={l === 'RU' ? 'Назад проектам' : 'Back to projects'} /></Link>
         <Downloads>
           { data.presentation && (
             <Download href={data.presentation} download>
               <img src={require('./../../../_assets/images/icon-pdf.png')} alt="" />
-              <Label>Презентация <Icon name="angle-right" /></Label>
+              <Label>{l === 'RU' ? 'Презентация' : 'Presentation'} <Icon name="angle-right" /></Label>
             </Download>
           ) }
           {data.documents && (
             <Download href={data.documents} download>
               <img src={require('./../../../_assets/images/icon-document.png')} alt="" />
-              <Label>Документы <Icon name="angle-right" /></Label>
+              <Label>{l === 'RU' ? 'Документы' : 'Documents'} <Icon name="angle-right" /></Label>
             </Download>
           )}
         </Downloads>
@@ -181,3 +183,7 @@ export default ({ match }) => {
     </Page>
   );
 };
+
+export default connect(
+  state => ({ l: state.language }),
+)(Project);
