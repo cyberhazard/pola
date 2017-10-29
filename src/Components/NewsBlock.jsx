@@ -47,14 +47,14 @@ const Footer = styled.div`
   justify-content: space-between;
 `;
 
-export default ({ title, timestamp, id }) => (
+export default ({ title, timestamp, id, l }) => (
   <Block>
     <Text>
       {title}
     </Text>
     <Footer>
       <TimeStamp>{timestamp}</TimeStamp>
-      <More to={`/news/${id}`}>Подробнее</More>
+      <More to={`/news/${id}`}>{l === 'RU' ? 'Подробнее' : 'More'}</More>
     </Footer>
   </Block>
 );

@@ -20,9 +20,10 @@ export default class extends React.Component {
   }
 
   render() {
+    const { l } = this.props;
     return (
       <Page>
-        <Header><Wave src={waveWhite} /> Контакты </Header>
+        <Header><Wave src={waveWhite} />{l === 'RU' ? 'Контакты' : 'Contacts'}</Header>
         <Contacts>
           <Gmaps
             className="google-maps"

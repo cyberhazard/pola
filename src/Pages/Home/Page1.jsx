@@ -6,6 +6,7 @@ import Button from './../../Components/Button';
 import Navigation from './../../Components/Navigation';
 import Circle from './Circle';
 import m from './../../media';
+import t from './t';
 
 import slide1 from './../../_assets/images/home-slide-1.JPG';
 import slide2 from './../../_assets/images/home-slide-2.jpg';
@@ -140,6 +141,7 @@ export default class extends React.Component {
   }
 
   render() {
+    const { l } = this.props;
     return (
       <Content>
         <Slider>
@@ -147,34 +149,34 @@ export default class extends React.Component {
             <Slide bg={slide3}>
               <Wrapper>
                 <Title>
-                  Перевозка грузов морским флотом
+                  {t[l].slide1.title}
                 </Title>
                 <Text>
-                  Под управлением группы Pola находится 19 судов типа Handysize суммарным дедвейтом более 650тыс. тонн
+                  {t[l].slide1.text}
                 </Text>
-                <Link to="/about/projects/Проект%20«Handysize»" > <Button label="Подробнее" /> </Link>
+                <Link to="/about/projects/Проект%20«Handysize»" > <Button label={l === 'RU' ? 'Подробнее' : 'More'} /> </Link>
               </Wrapper>
             </Slide>
             <Slide bg={slide2}>
               <Wrapper>
                 <Title>
-                  Речные круизы по внутренним водным путям РФ
+                  {t[l].slide2.title}
                 </Title>
                 <Text>
-                  Компания ВодоходЪ, входящая в группу оперирует крупнейшим круизным флотом в России.
+                  {t[l].slide2.text}
                 </Text>
-                <Link to="/about/structure" > <Button label="Подробнее" /> </Link>
+                <Link to="/about/structure" > <Button label={l === 'RU' ? 'Подробнее' : 'More'} /> </Link>
               </Wrapper>
             </Slide>
             <Slide bg={slide1}>
               <Wrapper>
                 <Title>
-                  Выход на рынок Short Sea перевозок
+                  {t[l].slide3.title}
                 </Title>
                 <Text>
-                  В 2018 году будет введено в эксплуатацию 9 судов RSD 59 и 1 RSD 49 для Short Sea перевозок
+                  {t[l].slide3.text}
                 </Text>
-                <Link to="/about/projects/Проект%20«RSD%2059»" > <Button label="Подробнее" /> </Link>
+                <Link to="/about/projects/Проект%20«RSD%2059»" > <Button label={l === 'RU' ? 'Подробнее' : 'More'} /> </Link>
               </Wrapper>
             </Slide>
           </View>

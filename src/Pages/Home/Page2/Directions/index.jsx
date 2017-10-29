@@ -16,15 +16,16 @@ export default class extends React.Component {
   }
 
   render() {
-    const selectedItem = content.find(el => el.id === this.state.selectedId);
+    const { l } = this.props;
+    const selectedItem = content[l].find(el => el.id === this.state.selectedId);
     return (
       <Directions>
         <Descriptions>
-          <Title>Описание направления:</Title>
+          <Title>{l === 'RU' ? 'Описание направления' : 'Direction description' }:</Title>
           <Text>{ selectedItem.description }</Text>
         </Descriptions>
         <Buttons>
-          {content.map((el, i) =>
+          {content[l].map((el, i) =>
             (<Button
               selected={el.id === this.state.selectedId}
               onClick={() => this.handleClick(el.id)}

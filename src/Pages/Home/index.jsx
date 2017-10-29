@@ -2,6 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { polyfill } from 'smoothscroll-polyfill';
+import { connect } from 'react-redux';
 import PageDownButton from './../../Components/PageDownButton';
 import Pagintation from './Pagination';
 import m from './../../media';
@@ -41,7 +42,7 @@ const Content = styled.div`
   `}
 `;
 
-export default class extends React.Component {
+class Pages extends React.Component {
   constructor(props) {
     super(props);
     this.state = { topSlide: true, activeSlide: 0 };
@@ -98,10 +99,10 @@ export default class extends React.Component {
     return (
       <HomePage>
         <Content innerRef={c => this.cont = c}>
-          <Page1 />
-          <Page2 />
-          <Page3 />
-          <Page4 />
+          <Page1 l={this.props.l} />
+          <Page2 l={this.props.l} />
+          <Page3 l={this.props.l} />
+          <Page4 l={this.props.l} />
         </Content>
         <Pagintation bg={this.state.activeSlide.toString()} onClick={this.setSlide} />
         <PageDownButton top={!this.state.topSlide} onClick={this.scrollButton} />
@@ -109,3 +110,7 @@ export default class extends React.Component {
     );
   }
 }
+
+export default connect(
+  state => ({ l: state.language }),
+)(Pages);
