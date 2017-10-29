@@ -2,8 +2,8 @@ import ship1 from './../../../../_assets/images/profile/1.jpg';
 import ship2 from './../../../../_assets/images/profile/2.JPG';
 import ship3 from './../../../../_assets/images/profile/3.JPG';
 import ship4 from './../../../../_assets/images/profile/4.jpg';
-import ship5 from './../../../../_assets/images/profile/5.jpg';
-import ship6 from './../../../../_assets/images/profile/6.JPG';
+// import ship5 from './../../../../_assets/images/profile/5.jpg';
+// import ship6 from './../../../../_assets/images/profile/6.JPG';
 
 export default [
   {
