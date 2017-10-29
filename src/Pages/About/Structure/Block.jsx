@@ -85,20 +85,20 @@ const RLink = styled(RouterLink)`
   margin-top: 3rem;
 `;
 
-export default ({ children, img, header, right, link, more, top }) => (
+export default ({ children, img, header, right, link, more, top, l }) => (
   <Block top={top}>
     <Img src={img} right={right} />
     <Content right={right} >
       <Header>{header}</Header>
       {
         link &&
-        <Link href={link} target="_blank"><Icon name="external-link" />Перейти на сайт компании</Link>
+        <Link href={link} target="_blank"><Icon name="external-link" />{l === 'RU' ? 'Перейти на сайт компании' : 'Go to website'}</Link>
       }
       <Text>{children}</Text>
       {
         more &&
         <RLink to={`/about/projects/${more}`}>
-          <Button label="Подробнее" />
+          <Button label={l === 'RU' ? 'Подробнее' : 'More'} />
         </RLink>
       }
     </Content>
