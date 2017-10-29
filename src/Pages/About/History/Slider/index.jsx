@@ -104,7 +104,7 @@ export default class extends React.Component {
   }
 
   next() {
-    if (this.state.selectedIndex === data.length - 1) return null;
+    if (this.state.selectedIndex === data[this.props.l].length - 1) return null;
     return this.setState(p => ({ selectedIndex: p.selectedIndex + 1 }));
   }
 
@@ -114,12 +114,13 @@ export default class extends React.Component {
   }
 
   render() {
+    const { l } = this.props;
     return (
       <Slider>
         <Slides>
           <TransitionGroup>
             {
-              data.filter((el, i) => i === this.state.selectedIndex).map(el =>
+              data[l].filter((el, i) => i === this.state.selectedIndex).map(el =>
                 (<CSSTransition key={el.id} classNames="history" timeout={500}>
                   <Slide img={el.img} title={el.title} text={el.text} />
                 </CSSTransition>),
@@ -129,7 +130,7 @@ export default class extends React.Component {
         </Slides>
         <TimeLine>
           {
-            data.map((el, i) =>
+            data[l].map((el, i) =>
               (<Point
                 isSelected={i === this.state.selectedIndex}
                 key={el.id}
@@ -143,7 +144,7 @@ export default class extends React.Component {
           <Button left onClick={this.prev}><Icon name="angle-right" /></Button>
           <Counter>
             <CurrentSlide>{this.state.selectedIndex + 1} /</CurrentSlide>
-            <AllSlides>{data.length}</AllSlides>
+            <AllSlides>{data[l].length}</AllSlides>
           </Counter>
           <Button onClick={this.next}><Icon name="angle-right" /></Button>
         </Buttons>

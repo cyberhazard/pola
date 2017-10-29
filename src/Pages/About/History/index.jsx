@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import Breadcrumbs from './../../../Components/Breadcrumbs';
@@ -38,15 +39,19 @@ const Footer = styled.div`
   text-align: center;
 `;
 
-export default () => (
+const History = ({ l }) => (
   <Page>
-    <Breadcrumbs to="/about" label="О группе" current="История" />
-    <Header>История</Header>
-    <Slider />
+    <Breadcrumbs to="/about" label={l === 'RU' ? 'О группе' : 'About group'} current={l === 'RU' ? 'История' : 'History'} />
+    <Header>{l === 'RU' ? 'История' : 'History'}</Header>
+    <Slider l={l} />
     <Footer>
       <Link to="/about/lead">
-        <Button label="Руководство групы" />
+        <Button label={l === 'RU' ? 'Руководство групы' : 'Management'} />
       </Link>
     </Footer>
   </Page>
 );
+
+export default connect(
+  state => ({ l: state.language }),
+)(History);
