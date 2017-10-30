@@ -51,22 +51,22 @@ export default {
     {
       id: 0,
       img: person1,
-      title: 'Выговский Альберт Николаевич',
-      position: 'Генеральный директор "Пола Менеджмент"',
+      title: 'Albert Vygovsii',
+      position: 'CEO Pola Management',
       description: '',
     },
     {
       id: 1,
       img: person1,
-      title: 'Трофимов Александр Александрович',
-      position: 'Генеральный директор "ВодоходЪ" ',
+      title: 'Alexandr Trofimov',
+      position: 'CEO “Vodohod”',
       description: '',
     },
     {
       id: 2,
       img: person1,
-      title: 'Кузнецов Евгений Яковлевич',
-      position: 'Генеральный директор "НССЗ"',
+      title: 'Evgeny Kuznetsov',
+      position: 'CEO «NSSZ»',
       description: '',
     },
     {
@@ -79,8 +79,8 @@ export default {
     {
       id: 4,
       img: person1,
-      title: 'Бондаренко Сергей Григорьевич',
-      position: 'Генеральный директор "Inok TM"',
+      title: 'Bondarenko Sergey',
+      position: 'CEO «INOK TM»',
       description: '',
     },
     {
