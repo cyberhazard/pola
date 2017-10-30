@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 import HeaderText from './../../Components/HeaderText';
 import { Ship1, Ship2, Ship4 } from './../Home/Page2/Directions/icons';
 import Category from './Category';
@@ -61,7 +62,7 @@ const Ships = styled.div`
 `;
 
 
-export default class extends React.Component {
+class Actives extends React.Component {
   constructor(props) {
     super(props);
     this.state = { selectedID: '' };
@@ -78,6 +79,7 @@ export default class extends React.Component {
   }
 
   render() {
+    const { l } = this.props;
     const seaTransport = shipsData.filter(el => el.type === 'sea' && el.category === 'transport');
     const riverTransport = shipsData.filter(el => el.type === 'river' && el.category === 'transport');
     const riverseaTransport = shipsData.filter(el => el.type === 'riversea' && el.category === 'transport');
@@ -89,24 +91,28 @@ export default class extends React.Component {
     const selected = shipsData.find(el => el.id === this.state.selectedID);
     return (
       <Page>
-        <Header>Активы</Header>
+        <Header>{l === 'RU' ? 'Активы' : 'Actives'}</Header>
         <Content>
           <Ships>
-            <Title><Ship2 />Транспортный флот</Title>
-            <Category label="Морской" ships={seaTransport} selectedID={this.state.selectedID} selectID={this.selectID} />
-            <Category empty label="Речной флот" ships={riverTransport} selectedID={this.state.selectedID} selectID={this.selectID} />
-            <Category empty label="Флот река-море" ships={riverseaTransport} selectedID={this.state.selectedID} selectID={this.selectID} />
-            <Title><Ship1 />Вспомогательный флот</Title>
-            <Category empty label="Буксиры" ships={towSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
-            <Category empty label="Плавкраны" ships={craneSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
-            <Category empty label="Прочее" ships={otherSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
-            <Title><Ship4 />Судостроительно-судоремонтные мощности</Title>
-            <Category nevsky label="Невский судостроительный и судоремонтный завод" ships={loaderConstructional} selectedID={this.state.selectedID} selectID={this.selectID} />
-            <Category lakeverf label="Озерная судоверфь" ships={otherConstructional} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Title><Ship2 />{l === 'RU' ? 'Транспортный флот' : 'Transport fleet'}</Title>
+            <Category l={l} label={l === 'RU' ? 'Морской' : 'Maritime fleet'} ships={seaTransport} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Category l={l} empty label={l === 'RU' ? 'Речной флот' : 'River fleet '} ships={riverTransport} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Category l={l} empty label={l === 'RU' ? 'Флот река-море' : 'sea-river fleet '} ships={riverseaTransport} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Title><Ship1 />{l === 'RU' ? 'Вспомогательный флот' : 'Auxiliary fleet'}</Title>
+            <Category l={l} empty label={l === 'RU' ? 'Буксиры' : 'Tug boat'} ships={towSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Category l={l} empty label={l === 'RU' ? 'Плавкраны' : 'floating crane'} ships={craneSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Category l={l} empty label={l === 'RU' ? 'Прочее' : 'etc'} ships={otherSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Title><Ship4 />{l === 'RU' ? 'Судостроительно-судоремонтные мощности' : 'Shipbuilding and shiprepairing capacities'}</Title>
+            <Category l={l} nevsky label={l === 'RU' ? 'Невский судостроительный и судоремонтный завод' : 'NSSZ'} ships={loaderConstructional} selectedID={this.state.selectedID} selectID={this.selectID} />
+            <Category l={l} lakeverf label={l === 'RU' ? 'Озерная судоверфь' : 'Laky Verf'} ships={otherConstructional} selectedID={this.state.selectedID} selectID={this.selectID} />
           </Ships>
-          <Preview {...selected} close={this.closePopup} />
+          <Preview l={l} {...selected} close={this.closePopup} />
         </Content>
       </Page>
     );
   }
 }
+
+export default connect(
+  state => ({ l: state.language }),
+)(Actives);

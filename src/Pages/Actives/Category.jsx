@@ -99,6 +99,7 @@ export default class extends React.Component {
   }
 
   render() {
+    const { l } = this.props;
     if (this.props.empty) {
       return (
         <Category>
@@ -106,10 +107,10 @@ export default class extends React.Component {
           { this.state.isOpen && (
             <Table>
               <Line th>
-                <Cell>Судно</Cell>
-                <Cell>Год</Cell>
-                <Cell>Дедвейт</Cell>
-                <Cell>Флаг</Cell>
+                <Cell>{l === 'RU' ? 'Судно' : 'Vessel'}</Cell>
+                <Cell>{l === 'RU' ? 'Год' : 'Year'}</Cell>
+                <Cell>{l === 'RU' ? 'Дедвейт' : 'Dwt'}</Cell>
+                <Cell>{l === 'RU' ? 'Флаг' : 'Flag'}</Cell>
               </Line>
               <Line>
                 <Cell style={{ width: '100%' }}>В стадии наполнения</Cell>
@@ -167,10 +168,10 @@ export default class extends React.Component {
           this.state.isOpen &&
           <Table>
             <Line th>
-              <Cell>Судно</Cell>
-              <Cell>Год</Cell>
-              <Cell>Дедвейт</Cell>
-              <Cell>Флаг</Cell>
+              <Cell>{l === 'RU' ? 'Судно' : 'Vessel'}</Cell>
+              <Cell>{l === 'RU' ? 'Год' : 'Year'}</Cell>
+              <Cell>{l === 'RU' ? 'Дедвейт' : 'Dwt'}</Cell>
+              <Cell>{l === 'RU' ? 'Флаг' : 'Flag'}</Cell>
             </Line>
             {
               this.props.ships &&

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Button from './../../Components/Button';
 import HeaderText from './../../Components/HeaderText';
@@ -76,12 +77,12 @@ const Footer = styled.div`
 `;
 
 
-export default ({ match }) => {
+const SinglePage = ({ match, l }) => {
   const { id } = match.params;
   const data = ships.find(ship => ship.id === +id);
   return (
     <Page>
-      <Breadcrumbs to="/actives" label="Активы" current={data.shipName} />
+      <Breadcrumbs to="/actives" label={l === 'RU' ? 'Активы' : 'Actives'} current={data.shipName} />
       <Header>{data.shipName}</Header>
       <Image src={data.photo} />
       <div>
@@ -103,9 +104,13 @@ export default ({ match }) => {
       </div>
       <Footer>
         <Link to="/actives">
-          <Button label="Назад к активам" />
+          <Button label={l === 'RU' ? 'Назад к активам' : 'Back to actives'} />
         </Link>
       </Footer>
     </Page>
   );
 };
+
+export default connect(
+  state => ({ l: state.language }),
+)(SinglePage);

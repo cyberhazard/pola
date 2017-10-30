@@ -82,7 +82,7 @@ const Close = styled(Icon)`
   `}
 `;
 
-export default ({ shipName, photo, flag, portOfRegistry, typeOfVessel, id, close }) => {
+export default ({ shipName, photo, flag, portOfRegistry, typeOfVessel, id, close, l }) => {
   if (!shipName) return <div />;
   return (
     <Wrapper>
@@ -95,7 +95,7 @@ export default ({ shipName, photo, flag, portOfRegistry, typeOfVessel, id, close
         <Label>Type of vessel: <Text>{typeOfVessel}</Text></Label>
         <Footer>
           <Link to={`/actives/${id}`}>
-            <Button label="Подробнее" />
+            <Button label={l === 'RU' ? 'Подробнее' : 'More'} />
           </Link>
         </Footer>
       </Preview>
