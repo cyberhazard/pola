@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 import PageTemplate from './../../Components/PageTemplate';
 import HeaderText from './../../Components/HeaderText';
 import Select from './../../Components/Select';
@@ -44,12 +45,20 @@ const Header = styled(HeaderBlock)`
   `}
 `;
 
-const values = [
-  { name: 'За день', value: 'day' },
-  { name: 'За неделю', value: 'week' },
-  { name: 'За месяц', value: 'month' },
-  { name: 'За все время', value: '' },
-];
+const values = {
+  RU: [
+    { name: 'За день', value: 'day' },
+    { name: 'За неделю', value: 'week' },
+    { name: 'За месяц', value: 'month' },
+    { name: 'За все время', value: '' },
+  ],
+  EN: [
+    { name: 'For day', value: 'day' },
+    { name: 'For week', value: 'week' },
+    { name: 'For month', value: 'month' },
+    { name: 'For all time', value: '' },
+  ],
+};
 
 const getRange = (val) => {
   switch (val) {
@@ -64,7 +73,7 @@ const getRange = (val) => {
   }
 };
 
-export default class extends React.Component {
+class NewsClass extends React.Component {
   constructor(props) {
     super(props);
     this.state = { filter: '' };
@@ -76,17 +85,18 @@ export default class extends React.Component {
   }
 
   render() {
+    const { l } = this.props;
     const filter = this.state.filter;
-    const label = values.find(el => el.value === filter).name;
+    const label = values[l].find(el => el.value === filter).name;
     const newses = news
       .filter(el => new Date(el.timestamp).valueOf() >= getRange(this.state.filter) || this.state.filter === '')
       .map(({ title, timestamp, id }) =>
-        <NewsBlock title={title} timestamp={timestamp} id={id} key={id} />);
+        <NewsBlock l={l} title={title} timestamp={timestamp} id={id} key={id} />);
     newses.length = 6;
     return (
       <Page full normal>
         <Header>
-          <HeaderText white>Новости</HeaderText>
+          <HeaderText white>{l === 'RU' ? 'Новости' : 'News'}</HeaderText>
           <Select
             left
             label={label}
@@ -95,7 +105,7 @@ export default class extends React.Component {
             height="5.4rem"
             backgroundColor="#0397D6"
             iconStyle="margin-right: 1.2rem;"
-            values={values}
+            values={values[l]}
             onChange={this.handleClick}
           />
         </Header>
@@ -106,3 +116,7 @@ export default class extends React.Component {
     );
   }
 }
+
+export default connect(
+  state => ({ l: state.language }),
+)(NewsClass);

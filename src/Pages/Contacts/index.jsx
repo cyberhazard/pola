@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 import { Gmaps, Marker } from 'react-gmaps';
 import CurrentData from './CurrentData';
 import MiniMap from './MiniMap';
@@ -17,7 +18,7 @@ export const MapBlock = styled(Map)`
 
 const params = { v: '3.exp', key: 'AIzaSyDWWWRlTTqNtKMMdHnSl9-Xqf9HS_HVsbQ' };
 
-export default class extends React.Component {
+class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = { coords: { lat: 55.7482413, lng: 37.5404932 } };
@@ -28,16 +29,17 @@ export default class extends React.Component {
     this.setState({ coords });
   }
   render() {
+    const { l } = this.props;
     return (
       <Page>
-        <Header> Контакты </Header>
+        <Header>{l === 'RU' ? 'Контакты' : 'Contacts'}</Header>
         <Top>
           <LeftSide>
             <CurrentData />
-            <MiniMap />
+            <MiniMap l={l} />
           </LeftSide>
           <RightSide>
-            <Feedback />
+            <Feedback l={l} />
           </RightSide>
         </Top>
         <Bottom>
@@ -61,9 +63,13 @@ export default class extends React.Component {
               <Targets changetCoord={this.changetCoord} />
             </Places>
           </Contacts>
-          <Footer />
+          <Footer l={l} />
         </Bottom>
       </Page>
     );
   }
 }
+
+export default connect(
+  state => ({ l: state.language }),
+)(Main);

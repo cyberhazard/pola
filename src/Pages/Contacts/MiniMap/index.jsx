@@ -10,9 +10,9 @@ export const Angle = styled(Icon)`
   font-size: 1.6rem;
 `;
 
-export default () => (
+export default ({ l }) => (
   <Wrap>
     <MiniMapa src={Map} />
-    <Show>Показать на карте <Angle name="angle-right" /> </Show>
+    <Show>{l === 'RU' ? 'Показать на карте' : 'Show on map'} <Angle name="angle-right" /> </Show>
   </Wrap>
 );

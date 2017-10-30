@@ -11,23 +11,24 @@ export default class extends React.Component {
     };
   }
   render() {
+    const { l } = this.props;
     return (
       <Form>
-        <Title> Обратная связь </Title>
+        <Title>{l === 'RU' ? 'Обратная связь' : 'Feedback'}  </Title>
         <Element>
-          <SubTitle>* Ваше имя:</SubTitle>
+          <SubTitle>* {l === 'RU' ? 'Ваше имя' : 'Your name'}:</SubTitle>
           <Input />
         </Element>
         <Element>
-          <SubTitle>* Ваша эл. почта:</SubTitle>
+          <SubTitle>* {l === 'RU' ? 'Ваша эл. почта' : 'Your e-mail'}:</SubTitle>
           <Input />
         </Element>
         <Element>
-          <SubTitle>* Ваше сообщение:</SubTitle>
+          <SubTitle>* {l === 'RU' ? 'Ваше сообщение' : 'Your message'}:</SubTitle>
           <TextArea />
         </Element>
         <Element>
-          <Button label="Отправить" />
+          <Button label={l === 'RU' ? 'Отправить' : 'Send'} />
         </Element>
       </Form>
     );
