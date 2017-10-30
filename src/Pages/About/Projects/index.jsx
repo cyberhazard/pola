@@ -39,7 +39,7 @@ const Projects = ({ l }) => (
           top
           key={project.name}
           header={project.name}
-          more={project.name}
+          more={project.id}
           img={project.photo}
           right={index % 2 !== 0}
         >

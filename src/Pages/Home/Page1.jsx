@@ -154,7 +154,7 @@ export default class extends React.Component {
                 <Text>
                   {t[l].slide1.text}
                 </Text>
-                <Link to="/about/projects/Проект%20«Handysize»" > <Button label={l === 'RU' ? 'Подробнее' : 'More'} /> </Link>
+                <Link to="/about/projects/project-1" > <Button label={l === 'RU' ? 'Подробнее' : 'More'} /> </Link>
               </Wrapper>
             </Slide>
             <Slide bg={slide2}>
@@ -176,7 +176,7 @@ export default class extends React.Component {
                 <Text>
                   {t[l].slide3.text}
                 </Text>
-                <Link to="/about/projects/Проект%20«RSD%2059»" > <Button label={l === 'RU' ? 'Подробнее' : 'More'} /> </Link>
+                <Link to="/about/projects/project-2" > <Button label={l === 'RU' ? 'Подробнее' : 'More'} /> </Link>
               </Wrapper>
             </Slide>
           </View>

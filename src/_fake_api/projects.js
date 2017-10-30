@@ -7,6 +7,7 @@ import ship5 from './../_assets/images/structure/project-5.jpg';
 export default {
   RU: [
     {
+      id: 'project-1',
       name: 'Проект «Handysize»',
       description: 'В настоящий момент группа Pola оперирует судами типа Handysize, дедвейтом более 650 тыс. тонн',
       photo: ship1,
@@ -22,6 +23,7 @@ export default {
       documents: '',
     },
     {
+      id: 'project-2',
       name: 'Проект «RSD 59»',
       description: 'Суда данного проекта предназначены для «Short Sea» перевозок и облажают классом река-море',
       photo: ship2,
@@ -37,6 +39,7 @@ export default {
       documents: '',
     },
     {
+      id: 'project-3',
       name: 'Проект «Белмакс»',
       description: 'Для транспортировки нефтепродуктов по внутренним водным путям РФ с недостаточными глубинами группа Pola  реализует строительство барж проекта «Белмакс», позволяющих достичь оптимальной загруженности на небольшой осадке',
       photo: ship3,
@@ -52,6 +55,7 @@ export default {
       documents: '',
     },
     {
+      id: 'project-4',
       name: 'Проект «Гвинея»',
       description: 'Для реализации проекта Гвинея будут применены сложные логистические решения.',
       photo: ship4,
@@ -66,6 +70,7 @@ export default {
       documents: '',
     },
     {
+      id: 'project-5',
       name: 'Проект «БПК»',
       description: 'Цель проекта – необходимость надежного альтернативного маршрута из/в Калининградскую обл. для обеспечения транспортной доступности, экономической и гуманитарной безопасности региона',
       photo: ship5,
@@ -83,6 +88,7 @@ export default {
   ],
   EN: [
     {
+      id: 'project-1',
       name: 'Handysize Project',
       description: 'Currently, Pola Group operates the vessels of Handysize type, with the deadweight over 650 thousand tons.',
       photo: ship1,
@@ -99,6 +105,7 @@ export default {
       documents: '',
     },
     {
+      id: 'project-2',
       name: 'Project RSD-59',
       description: 'The vessels of this project are intended for the Short Sea transportation and have a river-sea class',
       photo: ship2,
@@ -115,6 +122,7 @@ export default {
       documents: '',
     },
     {
+      id: 'project-3',
       name: 'Belmax Project',
       description: 'For transportation of petroleum products by inland waterways of the Russian Federation with insufficient depths, the Pola Group is implementing construction of barges of Belmax Project, allowing for optimal loading on a small draft',
       photo: ship3,
@@ -131,6 +139,7 @@ export default {
       documents: '',
     },
     {
+      id: 'project-4',
       name: 'Guinea Project',
       description: 'In order to implement the Guinea project, comprehensive logistics solutions will be applied.',
       photo: ship4,
@@ -146,6 +155,7 @@ export default {
       documents: '',
     },
     {
+      id: 'project-5',
       name: 'BPK Project',
       description: 'The purpose of the project consists in the need for a reliable alternative route from / to Kaliningrad Region to ensure transport accessibility, economic and humanitarian security of the region',
       photo: ship5,

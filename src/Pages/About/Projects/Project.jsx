@@ -142,12 +142,12 @@ const Label = styled.span`
 
 const Project = ({ match, l }) => {
   const { id } = match.params;
-  let data = projects[l].find(el => el.name === id);
-  if (!data) data = projects.EN.find(el => el.name === id);
+  let data = projects[l].find(el => el.id === id);
+  if (!data) data = projects.EN.find(el => el.id === id);
   return (
     <Page>
-      <Breadcrumbs to="/about" label={l === 'RU' ? 'О группе' : 'About group'} to2="/about/projects" label2={l === 'RU' ? 'Проекты' : 'Projects'} current={id} />
-      <Header>{id}</Header>
+      <Breadcrumbs to="/about" label={l === 'RU' ? 'О группе' : 'About group'} to2="/about/projects" label2={l === 'RU' ? 'Проекты' : 'Projects'} current={data.name} />
+      <Header>{data.name}</Header>
       <Content>
         <Top>
           <Image src={data.photo} />
