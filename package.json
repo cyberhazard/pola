@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
     "react-fa": "^4.2.0",
     "react-gmaps": "^1.6.0",
     "react-redux": "^5.0.6",
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && react-snap",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "./node_modules/.bin/eslint src --ext=js,jsx",
@@ -31,6 +31,7 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.2.1",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "react-snap": "^0.8.2"
   }
 }

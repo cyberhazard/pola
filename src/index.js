@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable no-unused-expressions */
 import React from 'react';
-import { render } from 'react-dom';
+import { hydrate, render } from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
@@ -16,11 +16,18 @@ import App from './App';
 
 const store = createStore(reducers);
 
-render(
-  <Provider store={store}>
+const rootElement = document.getElementById('root');
+
+if (rootElement.hasChildNodes()) {
+  hydrate(<Provider store={store}>
     <Router>
       <App />
     </Router>
-  </Provider>,
-  document.querySelector('#root'),
-);
+  </Provider>, rootElement);
+} else {
+  render(<Provider store={store}>
+    <Router>
+      <App />
+    </Router>
+  </Provider>, rootElement);
+}
