@@ -17,7 +17,7 @@ export default ({ l }) => (
           <NewsBlock l={l} key={id} id={id} title={title} timestamp={timestamp} />)
       }
       <Last>
-        <Link to="/news">
+        <Link to="/news/">
           <Button label={l === 'RU' ? 'Все новости' : 'All news'} />
         </Link>
       </Last>

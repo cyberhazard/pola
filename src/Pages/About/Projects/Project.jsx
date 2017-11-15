@@ -146,7 +146,7 @@ const Project = ({ match, l }) => {
   if (!data) data = projects.EN.find(el => el.id === id);
   return (
     <Page>
-      <Breadcrumbs to="/about" label={l === 'RU' ? 'О группе' : 'About group'} to2="/about/projects" label2={l === 'RU' ? 'Проекты' : 'Projects'} current={data.name} />
+      <Breadcrumbs to="/about/" label={l === 'RU' ? 'О группе' : 'About group'} to2="/about/projects/" label2={l === 'RU' ? 'Проекты' : 'Projects'} current={data.name} />
       <Header>{data.name}</Header>
       <Content>
         <Top>
@@ -164,7 +164,7 @@ const Project = ({ match, l }) => {
         <Text dangerouslySetInnerHTML={{ __html: data.text }} />
       </Content>
       <Footer>
-        <Link to="/about/projects"><Button label={l === 'RU' ? 'Назад проектам' : 'Back to projects'} /></Link>
+        <Link to="/about/projects/"><Button label={l === 'RU' ? 'Назад проектам' : 'Back to projects'} /></Link>
         <Downloads>
           { data.presentation && (
             <Download href={data.presentation} download>

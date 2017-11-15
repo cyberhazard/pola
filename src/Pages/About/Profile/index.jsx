@@ -31,7 +31,7 @@ const t = {
 
 const Profile = ({ l }) => (
   <Page>
-    <Breadscrubs to="/about" label={l === 'RU' ? 'О группе' : 'About group'} current={l === 'RU' ? 'Профиль группы' : 'Group\'s profile page'} />
+    <Breadscrubs to="/about/" label={l === 'RU' ? 'О группе' : 'About group'} current={l === 'RU' ? 'Профиль группы' : 'Group\'s profile page'} />
     <Header>{l === 'RU' ? 'Профиль группы' : 'Group\'s profile page'}</Header>
     <Content>
       <Text>
@@ -40,7 +40,7 @@ const Profile = ({ l }) => (
       </Text>
       <Slider />
     </Content>
-    <Link to="/about/history">
+    <Link to="/about/history/">
       <Button label={l === 'RU' ? 'История группы' : 'History'} />
     </Link>
   </Page>

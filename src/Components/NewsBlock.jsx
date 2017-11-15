@@ -54,7 +54,7 @@ export default ({ title, timestamp, id, l }) => (
     </Text>
     <Footer>
       <TimeStamp>{timestamp}</TimeStamp>
-      <More to={`/news/${id}`}>{l === 'RU' ? 'Подробнее' : 'More'}</More>
+      <More to={`/news/${id}/`}>{l === 'RU' ? 'Подробнее' : 'More'}</More>
     </Footer>
   </Block>
 );

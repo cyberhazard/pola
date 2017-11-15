@@ -54,12 +54,12 @@ const Item = ({ exact, to, label, onClick }) => (
 const MenuComponent = ({ language, onClick }) => (
   <Menu>
     <Item onClick={onClick} exact to="/" label={Translations[language].home} />
-    <Item onClick={onClick} to="/about" label={Translations[language].about} />
-    <Item onClick={onClick} to="/services" label={Translations[language].services} />
-    <Item onClick={onClick} to="/actives" label={Translations[language].actives} />
-    <Item onClick={onClick} to="/news" label={Translations[language].news} />
+    <Item onClick={onClick} to="/about/" label={Translations[language].about} />
+    <Item onClick={onClick} to="/services/" label={Translations[language].services} />
+    <Item onClick={onClick} to="/actives/" label={Translations[language].actives} />
+    <Item onClick={onClick} to="/news/" label={Translations[language].news} />
     {/* <Item onClick={onClick} to="/stockholders" label={Translations[language].stockholders} /> */}
-    <Item onClick={onClick} to="/contacts" label={Translations[language].contacts} />
+    <Item onClick={onClick} to="/contacts/" label={Translations[language].contacts} />
   </Menu>
 );
 

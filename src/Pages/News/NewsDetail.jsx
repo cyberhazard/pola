@@ -50,15 +50,15 @@ const Footer = styled.div`
 export default ({ match }) => {
   const id = match.params.id;
   const data = news.find(n => n.id === id);
-  if (!data) return <Redirect to="/404" />;
+  if (!data) return <Redirect to="/404/" />;
   return (
     <PageTemplate full>
-      <Breadcrumbs to="/news" label="Новости" current={data.title} />
+      <Breadcrumbs to="/news/" label="Новости" current={data.title} />
       <Header>{data.title}</Header>
       <TimeStamp>{data.timestamp}</TimeStamp>
       <HTML dangerouslySetInnerHTML={{ __html: data.html }} />
       <Footer>
-        <Link to="/news">
+        <Link to="/news/">
           <Button label="Все новости" />
         </Link>
       </Footer>

@@ -97,7 +97,7 @@ export default ({ children, img, header, right, link, more, top, l }) => (
       <Text>{children}</Text>
       {
         more &&
-        <RLink to={`/about/projects/${more}`}>
+        <RLink to={`/about/projects/${more}/`}>
           <Button label={l === 'RU' ? 'Подробнее' : 'More'} />
         </RLink>
       }

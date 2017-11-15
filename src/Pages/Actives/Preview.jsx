@@ -94,7 +94,7 @@ export default ({ shipName, photo, flag, portOfRegistry, typeOfVessel, id, close
         <Label>Port of Registry: <Text>{portOfRegistry}</Text></Label>
         <Label>Type of vessel: <Text>{typeOfVessel}</Text></Label>
         <Footer>
-          <Link to={`/actives/${id}`}>
+          <Link to={`/actives/${id}/`}>
             <Button label={l === 'RU' ? 'Подробнее' : 'More'} />
           </Link>
         </Footer>

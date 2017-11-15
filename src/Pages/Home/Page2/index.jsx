@@ -28,9 +28,9 @@ export default ({ l }) => (
     <MainText>
       {t[l].header}
     </MainText>
-    <More to="/about">{l === 'RU' ? 'Подробнее' : 'More' }</More>
+    <More to="/about/">{l === 'RU' ? 'Подробнее' : 'More' }</More>
     <Title right><Wave src={wave2} />{l === 'RU' ? 'Направления деятельности' : 'Activities'}</Title>
     <Directions l={l} />
-    <Link to="/actives"><MoreButton label={l === 'RU' ? 'Подробнее' : 'More'} /></Link>
+    <Link to="/actives/"><MoreButton label={l === 'RU' ? 'Подробнее' : 'More'} /></Link>
   </Page>
 );

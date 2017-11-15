@@ -8,13 +8,13 @@ import map from './../../../_assets/images/geo-map.png';
 
 const Geography = ({ l }) => (
   <Page>
-    <Breadscrubs to="/about" label={l === 'RU' ? 'О группе' : 'About group'} current={l === 'RU' ? 'География' : 'Geography'} />
+    <Breadscrubs to="/about/" label={l === 'RU' ? 'О группе' : 'About group'} current={l === 'RU' ? 'География' : 'Geography'} />
     <Header>{l === 'RU' ? 'География' : 'Geography'}</Header>
     <Content>
       <Text />
       <Img src={map} />
     </Content>
-    <Block to="/about/projects">
+    <Block to="/about/projects/">
       <Button label={l === 'RU' ? 'Проекты' : 'Projects'} />
     </Block>
   </Page>

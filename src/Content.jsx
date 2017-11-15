@@ -50,7 +50,7 @@ export default () => (
         <Route path="/services" component={Services} />
         {/* <Route path="/stockholders" component={NotFound} /> */}
         <Route path="/404" component={NotFound} />
-        <Redirect from="*" to="/404" />
+        <Redirect from="*" to="/404/" />
       </Switch>
     </ScrollToTop>
   </Content>

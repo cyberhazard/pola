@@ -82,7 +82,7 @@ const SinglePage = ({ match, l }) => {
   const data = ships.find(ship => ship.id === +id);
   return (
     <Page>
-      <Breadcrumbs to="/actives" label={l === 'RU' ? 'Активы' : 'Actives'} current={data.shipName} />
+      <Breadcrumbs to="/actives/" label={l === 'RU' ? 'Активы' : 'Actives'} current={data.shipName} />
       <Header>{data.shipName}</Header>
       <Image src={data.photo} />
       <div>
@@ -103,7 +103,7 @@ const SinglePage = ({ match, l }) => {
         <Line><Label>Deadweight:   </Label><Text>{data.deadweight}</Text></Line>
       </div>
       <Footer>
-        <Link to="/actives">
+        <Link to="/actives/">
           <Button label={l === 'RU' ? 'Назад к активам' : 'Back to actives'} />
         </Link>
       </Footer>

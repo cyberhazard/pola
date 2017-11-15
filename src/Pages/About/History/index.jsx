@@ -41,11 +41,11 @@ const Footer = styled.div`
 
 const History = ({ l }) => (
   <Page>
-    <Breadcrumbs to="/about" label={l === 'RU' ? 'О группе' : 'About group'} current={l === 'RU' ? 'История' : 'History'} />
+    <Breadcrumbs to="/about/" label={l === 'RU' ? 'О группе' : 'About group'} current={l === 'RU' ? 'История' : 'History'} />
     <Header>{l === 'RU' ? 'История' : 'History'}</Header>
     <Slider l={l} />
     <Footer>
-      <Link to="/about/lead">
+      <Link to="/about/lead/">
         <Button label={l === 'RU' ? 'Руководство групы' : 'Management'} />
       </Link>
     </Footer>

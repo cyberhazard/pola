@@ -47,11 +47,11 @@ const Header = styled(HeaderText)`
 
 const Lead = ({ l }) => (
   <Page>
-    <Breadcrumbs to="/about" label={l === 'RU' ? 'О группе' : 'About group'} current={l === 'RU' ? 'Руководство' : 'Management'} />
+    <Breadcrumbs to="/about/" label={l === 'RU' ? 'О группе' : 'About group'} current={l === 'RU' ? 'Руководство' : 'Management'} />
     <Header>{l === 'RU' ? 'Руководство' : 'Management'}</Header>
     <Slider l={l} />
     <Footer>
-      <Link to="/about/geography">
+      <Link to="/about/geography/">
         <Button label={l === 'RU' ? 'География' : 'Geography'} />
       </Link>
     </Footer>
