@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 import HeaderText from './../../Components/HeaderText';
-import { Ship1, Ship2, Ship4 } from './../Home/Page2/Directions/icons';
+import { Ship1, Ship2 } from './../Home/Page2/Directions/icons';
 import Category from './Category';
 import Preview from './Preview';
 import shipsData from './../../_fake_api/ships';
@@ -102,9 +102,6 @@ class Actives extends React.Component {
             <Category l={l} empty label={l === 'RU' ? 'Буксиры' : 'Tug boat'} ships={towSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
             <Category l={l} empty label={l === 'RU' ? 'Плавкраны' : 'floating crane'} ships={craneSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
             <Category l={l} empty label={l === 'RU' ? 'Прочее' : 'etc'} ships={otherSupply} selectedID={this.state.selectedID} selectID={this.selectID} />
-            <Title><Ship4 />{l === 'RU' ? 'Судостроительно-судоремонтные мощности' : 'Shipbuilding and shiprepairing capacities'}</Title>
-            <Category l={l} nevsky label={l === 'RU' ? 'Невский судостроительный и судоремонтный завод' : 'NSSZ'} ships={loaderConstructional} selectedID={this.state.selectedID} selectID={this.selectID} />
-            <Category l={l} lakeverf label={l === 'RU' ? 'Озерная судоверфь' : 'Laky Verf'} ships={otherConstructional} selectedID={this.state.selectedID} selectID={this.selectID} />
           </Ships>
           <Preview l={l} {...selected} close={this.closePopup} />
         </Content>
