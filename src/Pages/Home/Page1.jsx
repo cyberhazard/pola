@@ -9,7 +9,6 @@ import m from './../../media';
 import t from './t';
 
 import slide1 from './../../_assets/images/home-slide-1.jpg';
-import slide2 from './../../_assets/images/home-slide-2.jpg';
 import slide3 from './../../_assets/images/home-slide-3.jpg';
 
 const Text = styled.div`

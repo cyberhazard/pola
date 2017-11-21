@@ -86,8 +86,6 @@ class Actives extends React.Component {
     const towSupply = shipsData.filter(el => el.type === 'tow' && el.category === 'supply');
     const craneSupply = shipsData.filter(el => el.type === 'crane' && el.category === 'supply');
     const otherSupply = shipsData.filter(el => el.type === 'other' && el.category === 'supply');
-    const loaderConstructional = shipsData.filter(el => el.type === 'loader' && el.category === 'constructional');
-    const otherConstructional = shipsData.filter(el => el.type === 'other' && el.category === 'constructional');
     const selected = shipsData.find(el => el.id === this.state.selectedID);
     return (
       <Page>

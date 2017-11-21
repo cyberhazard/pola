@@ -1,5 +1,4 @@
-import img1 from './../../../_assets/images/history/1.png';
-import img2 from './../../../_assets/images/history/2.jpg';
+
 import img3 from './../../../_assets/images/history/3.png';
 // import img4 from './../../../_assets/images/history/4.png';
 import img5 from './../../../_assets/images/history/5.png';
