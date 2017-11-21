@@ -15,7 +15,6 @@ export default class extends React.Component {
     this.state = this.state;
     e.preventDefault();
     const { name: { value: name }, email: { value: email }, text: { value: text } } = e.currentTarget.elements;
-    console.log({ name, email, text });
     fetch('/mail.php', {
       method: 'POST',
       body: JSON.stringify({ name, email, text }),
