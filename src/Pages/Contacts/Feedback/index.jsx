@@ -17,8 +17,10 @@ export default class extends React.Component {
     const { name: { value: name }, email: { value: email }, text: { value: text } } = e.currentTarget.elements;
     fetch('/mail.php', {
       method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email, text }),
     }).then(() => (window.alertify.success('Ваша заявка отправленна')));
+    e.currentTarget.reset();
   }
   render() {
     const { l } = this.props;
