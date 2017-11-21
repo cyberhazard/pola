@@ -18,7 +18,7 @@ export default class extends React.Component {
     fetch('/mail.php', {
       method: 'POST',
       body: JSON.stringify({ name, email, text }),
-    });
+    }).then(() => (window.alertify.success('Ваша заявка отправленна')));
   }
   render() {
     const { l } = this.props;
