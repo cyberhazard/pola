@@ -15,6 +15,7 @@ export const Descriptions = styled.div`
   border-right: .2rem solid rgb(1, 104, 179);
   padding-right: 10.3896103896%;
   order: 1;
+  margin-bottom: 2rem;
   ${m.tablet`
    order: 2;
    padding-top: 4rem;
@@ -23,6 +24,7 @@ export const Descriptions = styled.div`
    text-align: justify;
    border-right: 0;
    flex-basis: auto;
+   margin-bottom: 1rem;
   `}
 `;
 
