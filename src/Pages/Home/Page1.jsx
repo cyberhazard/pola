@@ -101,7 +101,7 @@ export default class extends React.Component {
     super(props);
     this.state = { currentOffset: 0 };
 
-    this.slides = 3; // КОЛИЧЕСТВО СЛАЙДОВ!!!
+    this.slides = 2; // КОЛИЧЕСТВО СЛАЙДОВ!!!
     this.timer = 0;
     this.next = this.next.bind(this);
     this.prev = this.prev.bind(this);
@@ -157,17 +157,7 @@ export default class extends React.Component {
                 <Link to="/about/projects/project-1" > <Button label={l === 'RU' ? 'Подробнее' : 'More'} /> </Link>
               </Wrapper>
             </Slide>
-            <Slide bg={slide2}>
-              <Wrapper>
-                <Title>
-                  {t[l].slide2.title}
-                </Title>
-                <Text>
-                  {t[l].slide2.text}
-                </Text>
-                <Link to="/about/structure" > <Button label={l === 'RU' ? 'Подробнее' : 'More'} /> </Link>
-              </Wrapper>
-            </Slide>
+
             <Slide bg={slide1}>
               <Wrapper>
                 <Title>
