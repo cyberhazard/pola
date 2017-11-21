@@ -9,25 +9,25 @@ import img8 from './../../../_assets/images/history/8.JPG';
 
 export default {
   RU: [
-    {
-      id: 0,
-      offset: 0,
-      year: 1913,
-      title: 'Основание НССЗ',
-      img: img1,
-      text: 'Судостроительно-судоремонтный завод, построивший более 300 судов различного класса и назначения от малых пассажирских до буксиров и судов класса “река-море”. Завод активно осваивает новые технологии и наращивает производственные мощности для развития не только основного направления - судостроения, но и традиционного - судоремонта. Завод регулярно выполняет контракты любой сложности для крупнейших заказчиков. Так, по заказу Министерства транспорта была построена серия из 4-х многофункциональных аварийно-спасательных судов неограниченного района плавания',
-    },
-    {
-      id: 1,
-      offset: 15.9284497445,
-      year: 2004,
-      title: 'Создание компании ВодоходЪ',
-      img: img2,
-      text: 'Крупнейший российский оператор речных круизных перевозок, в управлении которого находится 26 собственных круизных пассажирских судов, а также 18 вспомогательных судов. Кроме того, в настоящий момент по заказу ООО “ВодоходЪ” на судостроительном заводе Красное Сормово строится новое современное круизное судно проекта PV 300 LMPP. По итогам 2016 года Водоходъ перевёз в общей сложности 500 тысяч пассажиров.',
-    },
+    // {
+    //   id: 0,
+    //   offset: 0,
+    //   year: 1913,
+    //   title: 'Основание НССЗ',
+    //   img: img1,
+    //   text: 'Судостроительно-судоремонтный завод, построивший более 300 судов различного класса и назначения от малых пассажирских до буксиров и судов класса “река-море”. Завод активно осваивает новые технологии и наращивает производственные мощности для развития не только основного направления - судостроения, но и традиционного - судоремонта. Завод регулярно выполняет контракты любой сложности для крупнейших заказчиков. Так, по заказу Министерства транспорта была построена серия из 4-х многофункциональных аварийно-спасательных судов неограниченного района плавания',
+    // },
+    // {
+    //   id: 1,
+    //   offset: 15.9284497445,
+    //   year: 2004,
+    //   title: 'Создание компании ВодоходЪ',
+    //   img: img2,
+    //   text: 'Крупнейший российский оператор речных круизных перевозок, в управлении которого находится 26 собственных круизных пассажирских судов, а также 18 вспомогательных судов. Кроме того, в настоящий момент по заказу ООО “ВодоходЪ” на судостроительном заводе Красное Сормово строится новое современное круизное судно проекта PV 300 LMPP. По итогам 2016 года Водоходъ перевёз в общей сложности 500 тысяч пассажиров.',
+    // },
     {
       id: 2,
-      offset: 37.8194207836,
+      offset: 0,
       year: 2006,
       title: 'Создание Pola Maritime Ltd',
       img: img3,
@@ -36,7 +36,7 @@ export default {
 
     {
       id: 4,
-      offset: 68.9097103918,
+      offset: 37.8194207836,
       year: 2012,
       title: 'Регистрация ООО «Пола Менеджмент»',
       img: img5,
@@ -44,7 +44,7 @@ export default {
     },
     {
       id: 5,
-      offset: 79.1311754685,
+      offset: 68.9097103918,
       year: 2014,
       title: 'Создание Inok N.V. Ltd',
       img: img6,
@@ -52,7 +52,7 @@ export default {
     },
     {
       id: 6,
-      offset: 89.2674616695,
+      offset: 79.1311754685,
       year: 2015,
       title: 'Создание ООО «Пола Райз»',
       img: img7,
@@ -68,25 +68,25 @@ export default {
     },
   ],
   EN: [
-    {
-      id: 0,
-      offset: 0,
-      year: 1913,
-      title: 'Establishment of NSSP',
-      img: img1,
-      text: 'Shipbuilding - Shiprepair Plant, which built over 300 vessels of various classes and destinations from small passenger to tugboats and river-sea vessels. The plant is actively mastering new technologies and increasing production capacities for the development of not only the main direction - shipbuilding, but also a traditional one - ship repair. The plant regularly performs contracts of any complexity for the largest customers. So, by order of the Ministry of Transport, a series of 4 multifunctional rescue vessels of an unrestricted navigation area was built.',
-    },
-    {
-      id: 1,
-      offset: 15.9284497445,
-      year: 2004,
-      title: 'Creation of the company Vodokhod',
-      img: img2,
-      text: 'The largest Russian river cruise ship operator, which manages 26 own cruise passenger vessels, as well as 18 auxiliary vessels. In addition, currently, a new modern cruise ship of PV 300 LMPP project is being built at the Krasnoye Sormovo Shipyard by order of Vodokhod LLC. Following the results of 2016, Vodokhod transported a total of 500,000 passengers.',
-    },
+    // {
+    //   id: 0,
+    //   offset: 0,
+    //   year: 1913,
+    //   title: 'Establishment of NSSP',
+    //   img: img1,
+    //   text: 'Shipbuilding - Shiprepair Plant, which built over 300 vessels of various classes and destinations from small passenger to tugboats and river-sea vessels. The plant is actively mastering new technologies and increasing production capacities for the development of not only the main direction - shipbuilding, but also a traditional one - ship repair. The plant regularly performs contracts of any complexity for the largest customers. So, by order of the Ministry of Transport, a series of 4 multifunctional rescue vessels of an unrestricted navigation area was built.',
+    // },
+    // {
+    //   id: 1,
+    //   offset: 15.9284497445,
+    //   year: 2004,
+    //   title: 'Creation of the company Vodokhod',
+    //   img: img2,
+    //   text: 'The largest Russian river cruise ship operator, which manages 26 own cruise passenger vessels, as well as 18 auxiliary vessels. In addition, currently, a new modern cruise ship of PV 300 LMPP project is being built at the Krasnoye Sormovo Shipyard by order of Vodokhod LLC. Following the results of 2016, Vodokhod transported a total of 500,000 passengers.',
+    // },
     {
       id: 2,
-      offset: 37.8194207836,
+      offset: 0,
       year: 2006,
       title: 'Establishment of Pola Maritime Ltd',
       img: img3,
@@ -95,7 +95,7 @@ export default {
 
     {
       id: 4,
-      offset: 68.9097103918,
+      offset: 37.8194207836,
       year: 2012,
       title: 'Registration of Pola Management LLC',
       img: img5,
@@ -103,7 +103,7 @@ export default {
     },
     {
       id: 5,
-      offset: 79.1311754685,
+      offset: 68.9097103918,
       year: 2014,
       title: 'Establishment of Inok N.V. Ltd',
       img: img6,
@@ -111,7 +111,7 @@ export default {
     },
     {
       id: 6,
-      offset: 89.2674616695,
+      offset: 79.1311754685,
       year: 2015,
       title: 'Establishment of Pola Rise LLC',
       img: img7,
