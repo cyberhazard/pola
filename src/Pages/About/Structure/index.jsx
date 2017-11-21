@@ -15,8 +15,6 @@ import ship2 from './../../../_assets/images/structure/ship2.png';
 import ship4 from './../../../_assets/images/structure/ship4.png';
 import ship5 from './../../../_assets/images/structure/bauxite.JPG';
 import ship6 from './../../../_assets/images/structure/ship6.png';
-import ship7 from './../../../_assets/images/structure/ship7.png';
-import ship8 from './../../../_assets/images/structure/ship8.png';
 import ship9 from './../../../_assets/images/structure/ship9.jpg';
 // import ship9 from './../../../_assets/images/structure/ship9.png';
 
@@ -68,12 +66,6 @@ const Structure = ({ l }) => (
     </Block>
     <Block l={l} right img={ship6} header={t[l][5].name} link={t[l][5].site}>
       { t[l][5].text }
-    </Block>
-    <Block l={l} img={ship7} header={t[l][6].name} link={t[l][6].site}>
-      { t[l][6].text }
-    </Block>
-    <Block l={l} right img={ship8} header={t[l][7].name} link={t[l][7].site}>
-      { t[l][7].text }
     </Block>
     <Footer>
       <Link to="/about/profile">
