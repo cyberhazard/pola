@@ -25,13 +25,6 @@ export default {
       position: 'Генеральный директор "Inok TM"',
       description: '',
     },
-    {
-      id: 3,
-      img: person1,
-      title: 'Бурьянов Константин Геннадьевич',
-      position: 'Генеральный директор "Окская судоверфь"',
-      description: '',
-    },
   ],
   EN: [
     {
@@ -53,13 +46,6 @@ export default {
       img: person1,
       title: 'Bondarenko Sergey',
       position: 'CEO «INOK TM»',
-      description: '',
-    },
-    {
-      id: 3,
-      img: person1,
-      title: 'Бурьянов Константин Геннадьевич',
-      position: 'Генеральный директор "Окская судоверфь"',
       description: '',
     },
   ],
