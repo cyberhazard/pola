@@ -1,7 +1,7 @@
 import img1 from './../../_assets/images/services/image_1.png';
 import img2 from './../../_assets/images/services/image_2.png';
-import img3 from './../../_assets/images/services/image_3.png';
-import img4 from './../../_assets/images/services/image_4.png';
+// import img3 from './../../_assets/images/services/image_3.png';
+// import img4 from './../../_assets/images/services/image_4.png';
 import img5 from './../../_assets/images/services/image_5.png';
 import img6 from './../../_assets/images/services/image_6.png';
 
@@ -59,20 +59,20 @@ export default {
       // eslint-disable-next-line
       description: "River freight is used as an alternative way to rail freight transportation. River transportation of cargo has a number of advantages, which make this type of transportation the most profitable for regions with large rivers.\n<br /><br />\nRiver freight advantages:\n<br /> ● Ability to transport heavy, oversized cargo in any volumes\n<br /> ● Low tariffs (relative to the cost of transporting goods by rail)\n<br /><br />\nRiver cargo transportations are most often used for transportation of food, lumber, roundwood, oil products and lubricants, bulk cargo, machinery, coal, containers, especially dangerous goods and bulky cargo.\n<br />The fleet owned by the Pola Group allows transportation of bulk, general, project and oil-loading cargo along inland waterways.",
     },
-    {
-      id: 2,
-      image: img3,
-      name: 'Passenger transportation and organization of river cruises',
-      // eslint-disable-next-line
-      description: "Vodokhod Cruise Company, a member of the Pola Group, has been organizing river cruises on the water spaces of Russia for more than 10 years. The company offers a wide range of river cruise routes lasting from 2 to 19 days, covering almost the entire European part of Russia.\n<br /><br />\nCurrently, the cruise fleet of the company has:\n<br /> ● 26 units of comfortable four-deck cruise fleet of projects 301, 302, 92-016 Q-040 and Q-056 \n<br /> ● 9 units of the passenger high-speed fleet of Meteor type; \n<br /> ● 9 units of the pleasure fleet of Moscow, Neva and Otdykh (Rest) type.\n<br /><br />\nAnnual volume of transportation: more than 700 thousand people a year",
-    },
-    {
-      id: 3,
-      image: img4,
-      name: 'Shipbuilding and shiprepairing activities',
-      // eslint-disable-next-line
-      description: "Nevsky Shipbuilding - Shiprepair Plant, a member of Pola Group, has been operating since 1913 (formerly known as Shlisselburg Shipyard). The company builds ships of various classes and destinations.\n<br /><br />\nFor the implementation of shipbuilding and shiprepairing programs, Nevsky Shipbuilding -Shiprepairing Plant has the necessary production facilities:\n<br />● Blank production\n<br />● Shipbuilding production\n<br />● Machining production\n<br />● Pipeline production\n<br />● Painting and finishing production\n<br />● Production in repair of internal combustion engines \n<br />● Site for repair of steerable propellers \n<br />● Trigger-lifting device G-300\n<br /><br />\nThe plant is actively mastering new technologies and increasing production capacities for the development of not only the main activity - shipbuilding, but also the traditional - shiprepairing.",
-    },
+    // {
+    //   id: 2,
+    //   image: img3,
+    //   name: 'Passenger transportation and organization of river cruises',
+    //   // eslint-disable-next-line
+    //   description: "Vodokhod Cruise Company, a member of the Pola Group, has been organizing river cruises on the water spaces of Russia for more than 10 years. The company offers a wide range of river cruise routes lasting from 2 to 19 days, covering almost the entire European part of Russia.\n<br /><br />\nCurrently, the cruise fleet of the company has:\n<br /> ● 26 units of comfortable four-deck cruise fleet of projects 301, 302, 92-016 Q-040 and Q-056 \n<br /> ● 9 units of the passenger high-speed fleet of Meteor type; \n<br /> ● 9 units of the pleasure fleet of Moscow, Neva and Otdykh (Rest) type.\n<br /><br />\nAnnual volume of transportation: more than 700 thousand people a year",
+    // },
+    // {
+    //   id: 3,
+    //   image: img4,
+    //   name: 'Shipbuilding and shiprepairing activities',
+    //   // eslint-disable-next-line
+    //   description: "Nevsky Shipbuilding - Shiprepair Plant, a member of Pola Group, has been operating since 1913 (formerly known as Shlisselburg Shipyard). The company builds ships of various classes and destinations.\n<br /><br />\nFor the implementation of shipbuilding and shiprepairing programs, Nevsky Shipbuilding -Shiprepairing Plant has the necessary production facilities:\n<br />● Blank production\n<br />● Shipbuilding production\n<br />● Machining production\n<br />● Pipeline production\n<br />● Painting and finishing production\n<br />● Production in repair of internal combustion engines \n<br />● Site for repair of steerable propellers \n<br />● Trigger-lifting device G-300\n<br /><br />\nThe plant is actively mastering new technologies and increasing production capacities for the development of not only the main activity - shipbuilding, but also the traditional - shiprepairing.",
+    // },
     {
       id: 4,
       image: img5,
