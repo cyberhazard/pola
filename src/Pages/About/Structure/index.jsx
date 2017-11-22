@@ -10,11 +10,11 @@ import m from './../../../media';
 import t from './t';
 
 import ship1 from './../../../_assets/images/structure/ship1.png';
-import ship2 from './../../../_assets/images/structure/ship2.png';
+// import ship2 from './../../../_assets/images/structure/ship2.png';
 // import ship3 from './../../../_assets/images/structure/ship3.png';
 import ship4 from './../../../_assets/images/structure/ship4.png';
 import ship5 from './../../../_assets/images/structure/bauxite.JPG';
-import ship6 from './../../../_assets/images/structure/ship6.png';
+// import ship6 from './../../../_assets/images/structure/ship6.png';import ship6 from './../../../_assets/images/structure/ship6.png';
 import ship9 from './../../../_assets/images/structure/ship9.jpg';
 import ship8 from './../../../_assets/images/structure/ship8.png';
 
@@ -58,7 +58,7 @@ const Structure = ({ l }) => (
     <Block l={l} img={ship4} header={t[l][2].name} >
       { t[l][2].text }
     </Block>
-    <Block l={l} right img={ship6} header={t[l][3].name} >
+    <Block l={l} right img={ship5} header={t[l][3].name} >
       { t[l][3].text }
     </Block>
     <Block l={l} img={ship8} header={t[l][4].name} >
