@@ -16,7 +16,7 @@ import ship4 from './../../../_assets/images/structure/ship4.png';
 import ship5 from './../../../_assets/images/structure/bauxite.JPG';
 import ship6 from './../../../_assets/images/structure/ship6.png';
 import ship9 from './../../../_assets/images/structure/ship9.jpg';
-// import ship9 from './../../../_assets/images/structure/ship9.png';
+import ship8 from './../../../_assets/images/structure/ship8.png';
 
 const Page = styled.div`
   position: relative;
@@ -52,21 +52,19 @@ const Structure = ({ l }) => (
     <Block l={l} img={ship1} header={t[l][0].name} link={t[l][0].site} >
       { t[l][0].text }
     </Block>
-    <Block l={l} right img={ship2} header={t[l][1].name} link={t[l][1].site}>
+    <Block l={l} right img={ship9} header={t[l][1].name} link={t[l][1].site}>
       { t[l][1].text }
     </Block>
-    <Block l={l} img={ship9} header={t[l][2].name} >
+    <Block l={l} img={ship4} header={t[l][2].name} >
       { t[l][2].text }
     </Block>
-    <Block l={l} right img={ship4} header={t[l][3].name} >
+    <Block l={l} right img={ship6} header={t[l][3].name} >
       { t[l][3].text }
     </Block>
-    <Block l={l} img={ship5} header={t[l][4].name} >
+    <Block l={l} img={ship8} header={t[l][4].name} >
       { t[l][4].text }
     </Block>
-    <Block l={l} right img={ship6} header={t[l][5].name} link={t[l][5].site}>
-      { t[l][5].text }
-    </Block>
+
     <Footer>
       <Link to="/about/profile">
         <Button label={l === 'RU' ? 'Профиль группы' : 'Group’s Profile Page'} />
