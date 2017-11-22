@@ -25,6 +25,7 @@ const Content = styled.div`
 
 const MovingBlock = styled.div`
   display: flex;
+  justify-content:space-between;
   transition: .5s;
   ${p => p.offset && `transform: translateX(-${p.offset}rem);`}
 `;
