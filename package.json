@@ -7,14 +7,14 @@
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-fa": "^4.2.0",
-    "react-gmaps": "^1.6.0",
+    "react-gmaps": "^1.7.0",
     "react-redux": "^5.0.6",
-    "react-router-dom": "^4.1.2",
-    "react-scripts": "1.0.11",
-    "react-transition-group": "^2.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17",
+    "react-transition-group": "^2.2.1",
     "redux": "^3.7.2",
-    "smoothscroll-polyfill": "^0.3.6",
-    "styled-components": "^2.1.2"
+    "smoothscroll-polyfill": "^0.4.0",
+    "styled-components": "^2.2.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -32,6 +32,6 @@
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.2.1",
     "husky": "^0.14.3",
-    "react-snap": "^0.8.2"
+    "react-snap": "^1.1.1"
   }
 }
