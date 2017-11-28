@@ -54,7 +54,7 @@ const NewsDetail = ({ match, l }) => {
   if (!data) return <Redirect to="/404" />;
   return (
     <PageTemplate full>
-      <Breadcrumbs to="/news" label="Новости" current={data.title} />
+      <Breadcrumbs to="/news" label={l === 'RU' ? 'Новости' : 'News'} current={data.title} />
       <Header>{data.title}</Header>
       <TimeStamp>{data.timestamp}</TimeStamp>
       <HTML dangerouslySetInnerHTML={{ __html: data.html }} />
