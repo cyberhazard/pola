@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link, Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
 import Button from './../../Components/Button';
 import news from './../../_fake_api/news';
 import PageTemplate from './../../Components/PageTemplate';
@@ -47,9 +48,9 @@ const Footer = styled.div`
   text-align: center;
 `;
 
-export default ({ match }) => {
+const NewsDetail = ({ match, l }) => {
   const id = match.params.id;
-  const data = news.find(n => n.id === id);
+  const data = news[l].find(n => n.id === id);
   if (!data) return <Redirect to="/404" />;
   return (
     <PageTemplate full>
@@ -59,9 +60,13 @@ export default ({ match }) => {
       <HTML dangerouslySetInnerHTML={{ __html: data.html }} />
       <Footer>
         <Link to="/news">
-          <Button label="Все новости" />
+          <Button label={l === 'RU' ? 'Все новости' : 'All news'} />
         </Link>
       </Footer>
     </PageTemplate>
   );
 };
+
+export default connect(
+  state => ({ l: state.language }),
+)(NewsDetail);

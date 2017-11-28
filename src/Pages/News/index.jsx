@@ -88,7 +88,7 @@ class NewsClass extends React.Component {
     const { l } = this.props;
     const filter = this.state.filter;
     const label = values[l].find(el => el.value === filter).name;
-    const newses = news
+    const newses = news[this.props.l]
       .filter(el => new Date(el.timestamp).valueOf() >= getRange(this.state.filter) || this.state.filter === '')
       .map(({ title, timestamp, id }) =>
         <NewsBlock l={l} title={title} timestamp={timestamp} id={id} key={id} />);

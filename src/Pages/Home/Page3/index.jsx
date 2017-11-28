@@ -13,7 +13,7 @@ export default ({ l }) => (
     <Header><Wave src={waveWhite} />{l === 'RU' ? 'Последние новости' : 'Last news'}</Header>
     <Blocks>
       {
-        news.slice(0, 5).map(({ id, title, timestamp }) =>
+        news[l].slice(0, 5).map(({ id, title, timestamp }) =>
           <NewsBlock l={l} key={id} id={id} title={title} timestamp={timestamp} />)
       }
       <Last>
