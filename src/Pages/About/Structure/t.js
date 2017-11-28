@@ -2,7 +2,7 @@ export default {
   RU: {
     0: {
       name: 'Pola Maritime Ltd.',
-      text: 'Основана в 2006 году и имеет богатый опыт на рынке морских перевозок. Компания оперирует судами типа “Handysize” в количестве 19 единиц, из которых 11 собственных судов и 8 судов, арендованных на условиях тайм-чартера. Компания обладает молодым флотом: средний возраст судов - 10 лет. Общая грузоподъёмность флота превышает 650 тысяч тонн. По итогам 2016 года флотом Pola Maritime перевезено более 5 млн. тонн грузов.',
+      text: 'Основана в 2006 году и имеет богатый опыт на рынке морских перевозок. Компания оперирует 19 судами типа “Handysize” , из которых 11 являются собственными. Компания обладает молодым флотом: средний возраст судов - 10 лет. Общая грузоподъёмность флота превышает 1,7 тысяч тонн. По итогам 2016 года флотом Pola Maritime перевезено более 5 млн. тонн грузов.',
       site: 'http://pola.com.cy',
     },
     1: {
@@ -12,24 +12,24 @@ export default {
     },
     2: {
       name: 'ООО «Пола Менеджмент»',
-      text: 'Российская компания, выполняющая функции стратегического (проектного) управления компаниями группы Pola. Компания обладает квалифицированным управленческим персоналом с богатым опытом работы в стивидорном, судоходном и судостроительном бизнесе. Компания была создана в 2012 году. Усилиями компании были разработаны и сопровождаются следующие проекты: проект «Гвинея», проект «RSD-59», проект «Белмакс», проект «Балтийская паромная компания».',
+      text: 'Российская компания, выполняющая функции стратегического управления проектами группы Pola. Компания обладает квалифицированным управленческим персоналом с богатым опытом работы в стивидорном, судоходном и судостроительном бизнесе. Компания была создана в 2012 году. Усилиями компании были разработаны и сопровождаются следующие проекты: проект «Гвинея», проект «RSD-59», проект «Белмакс», проект «Балтийская паромная компания».',
       site: '',
     },
     3: {
       name: 'Pola Logistic',
-      text: 'Компания занимается непосредственной реализацией проекта «Гвинея»',
+      text: 'Компания занимается непосредственной реализацией проекта «Гвинея», обеспечивая доставку рудного материала на океанические судна клиента ',
       site: '',
     },
     4: {
       name: 'Inok N.V. Ltd.',
-      text: 'Компания оказывает услуги технического и кадрового менеджмента. Компания организует техническое обслуживание и ремонт флота, а также занималась  комплектованием экипажей более 40 судов.',
+      text: 'Крупнейшая компания в области технического и кадрового менеджмента. Компания организует техническое обслуживание и ремонт флота, а также занималась  комплектованием экипажей более 40 судов.',
       site: 'http://www.inok-tm.com',
     },
   },
   EN: {
     0: {
       name: 'Pola Maritime Ltd.',
-      text: 'It was established in 2006 and has a wide experience in the maritime shipping market. The company operates vessels of Handysize type in the amount of 19 units, of which 11 are own vessels and 8 vessels are leased on a time charter basis. The company has a young fleet: the average age of the vessels is 10 years. The total fleet cargo capacity exceeds 650 thousand tons. At the end of 2016, the Pola Maritime fleet transported over 5 million tons of cargo.',
+      text: 'It was established in 2006 and has a wide experience in the maritime shipping market. The company operates 19 vessels of the "Handysize" type, 11 of which are their own. The company has a young fleet: the average age of the vessels is 10 years. The total fleet cargo capacity exceeds 1,7 million thousand tons. At the end of 2016, the Pola Maritime fleet transported over 5 million tons of cargo.',
       site: 'http://pola.com.cy',
     },
     1: {
@@ -39,12 +39,12 @@ export default {
     },
     2: {
       name: 'Pola Management LLC',
-      text: 'Russian company that performs functions of strategic (project) management of the Pola Group of Companies. The company has qualified management personnel with rich experience in stevedoring, shipping and shipbuilding business. The company was established in 2012. The following projects have been developed and supported by the company\'s efforts: the Guinea project, the RSD-59 project, the Belmax project and the Baltic Ferry Company project.',
+      text: 'Russian company that performs functions of strategic  management of the Pola Group projects. The company has qualified management personnel with rich experience in stevedoring, shipping and shipbuilding business. The company was established in 2012. The following projects have been developed and supported by the company\'s efforts: the Guinea project, the RSD-59 project, the Belmax project and the Baltic Ferry Company project.',
       site: '',
     },
     3: {
       name: 'Pola Logistic',
-      text: 'The company is directly engaged in the implementation of the Guinea project',
+      text: 'The company is directly engaged in the implementation of the Guinea project, ensuring the delivery of ore material to the oceans customer ships',
       site: '',
     },
     4: {
@@ -54,7 +54,7 @@ export default {
     },
     5: {
       name: 'Inok N.V. Ltd.',
-      text: 'The company renders services of technical and personnel management. The company organizes maintenance and repair of the fleet, and was also engaged in recruitment of crews of more than 40 vessels.',
+      text: 'One of the largest company of technical and personnel management. The company organizes maintenance and repair of the fleet, and was also engaged in recruitment of crews of more than 40 vessels.',
       site: 'http://www.inok-tm.com',
     },
   },

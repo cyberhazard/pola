@@ -10,13 +10,13 @@ export default {
     },
     slide3: {
       title: 'Выход на рынок Short Sea перевозок',
-      text: 'В 2018 году будет введено в эксплуатацию 9 судов RSD 59 и 1 RSD 49 для Short Sea перевозок',
+      text: 'В 2018 году будет введено в эксплуатацию 10 судов RSD 59 и 1 RSD 49 для Short Sea перевозок',
     },
   },
   EN: {
     slide1: {
       title: 'Marine shipping of goods',
-      text: 'The Pola Group exercises control over 19 vessels of the Handysize type with a total deadweight of more than 650 thousand tons.',
+      text: 'In operations of Pola Group there are about 19 vessels of the Handysize type with a total deadweight of more than  650 thousand tons',
     },
     slide2: {
       title: 'River cruises on inland waterways of the Russian Federation',
@@ -24,7 +24,7 @@ export default {
     },
     slide3: {
       title: 'Entering the Short Sea Market',
-      text: 'In 2018, 9 vessels RSD 59 and 1 RSD 49 for Short Sea transportation will be put into operation',
+      text: 'In 2018, 10 vessels RSD 59 and 1 RSD 49 for Short Sea transportation will be put into operation',
     },
   },
 };

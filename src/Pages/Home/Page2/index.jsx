@@ -17,13 +17,14 @@ const MButton = styled(MoreButton)`
 const t = {
   RU: {
     header: `Группа компаний Pola специализируется на перевозках наливных, навалочных и генеральных грузов на судах морского и речного флота,
-    а также на судах класса “река-море”. Суммарная численность судов, находящихся в управлении компаний группы Polа,
-    составляет более 90 ед. общим тоннажем более 900 тыс.т.`,
+    а также на судах класса “река-море”. Суммарный дедвейт судов, находящихся в управлении компаний группы Polа,
+    в ближайщшее время составит более 1 млн. тонн.`,
   },
   EN: {
     header: `The area of business of Pola Group of Companies involves transportation of bulk and general cargoes on the vessels of the sea and river fleet,
-    as well as on the vessels of the river-sea class. The total number of vessels operated by the Pola Group of Companies is more than 90 units with
-    total tonnage over 900 thousand tons.`,
+    as well as on the vessels of the river-sea class. T
+    The total deadweight of the vessels under the control of the companies of the Pol Group,
+    in the nearest time will be more than 1 million tons.`,
   },
 };
 

@@ -9,12 +9,12 @@ export default {
     {
       id: 'project-1',
       name: 'Проект «Handysize»',
-      description: 'В настоящий момент группа Pola оперирует судами типа Handysize, дедвейтом более 650 тыс. тонн',
+      description: 'В настоящий момент группа Pola оперирует судами типа Handysize, дедвейтом более 1,7 млн. тонн',
       photo: ship1,
       title: 'Перевозка грузов морскими путями',
-      top: 'В настоящий момент группа Pola оперирует судами типа Handysize, дедвейтом более 650 тыс. тонн',
+      top: 'В настоящий момент группа Pola оперирует судами типа Handysize, дедвейтом более 1,7 млн. тонн',
       numbers: [
-        { number: 650000, text1: 'тонн', text2: 'общий дедвейт судов' },
+        { number: 1700000, text1: 'тонн', text2: 'общий дедвейт судов' },
         { number: 11, text1: 'судов', text2: 'в собственности' },
         { number: 10, text1: 'лет', text2: 'средний возраст судна' },
       ],
@@ -90,12 +90,12 @@ export default {
     {
       id: 'project-1',
       name: 'Handysize Project',
-      description: 'Currently, Pola Group operates the vessels of Handysize type, with the deadweight over 650 thousand tons.',
+      description: 'Currently, Pola Group operates the vessels of Handysize type, with the deadweight over 1,7 million tons.',
       photo: ship1,
       title: 'Cargo transportation by sea',
-      top: 'Currently, Pola Group operates the vessels of Handysize type, with the deadweight over 650 thousand tons.',
+      top: 'Currently, Pola Group operates the vessels of Handysize type, with the deadweight over 1,7 million tons.',
       numbers: [
-        { number: 650000, text1: 'tonn', text2: 'total deadweight of vessels' },
+        { number: 1700000, text1: 'tonn', text2: 'total deadweight of vessels' },
         { number: 11, text1: 'vessels', text2: 'owned' },
         { number: 10, text1: 'years', text2: 'Average age of vessels' },
       ],

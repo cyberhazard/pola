@@ -8,7 +8,7 @@ import Slider from './Slider';
 
 const t = {
   RU: {
-    description: <span>Группа компаний Pola специализируется на перевозках наливных, навалочных и генеральных грузов на судах морского и речного флота, а также на судах класса “река-море”. Суммарная численность судов, находящихся в управлении компаний группы Polа, составляет более 90 ед. общим тоннажем более 900 тыс.т.<br /><br /></span>,
+    description: <span>Группа компаний Pola специализируется на перевозках наливных, навалочных и генеральных грузов на судах морского и речного флота, а также на судах класса “река-море”. Суммарная численность судов, находящихся в управлении компаний группы Polа, в ближайшее время составит более 90 ед. общим тоннажем более 1,7 млнт.<br /><br /></span>,
     list: (<span>Услуги группы компаний Pola<br />
       - Морские перевозки грузов<br />
       - Речные перевозки грузов<br />
@@ -18,7 +18,7 @@ const t = {
       - Комплексные логистические решения<br /></span>),
   },
   EN: {
-    description: <span>Pola Group of Companies is specialized in the transportation of bulk and general cargoes on the vessels of the sea and river fleet, as well as on the vessels of the river-sea class. The total number of vessels operated by Pola Group of Companies is more than 90 units with total tonnage over 900 thousand tons.<br /><br /></span>,
+    description: <span>Pola Group of Companies is specialized in the transportation of bulk and general cargoes on the vessels of the sea and river fleet, as well as on the vessels of the river-sea class. The total number of vessels operated by Pola Group of Companies in the near future will be more than 90 units with total tonnage over 1,7 million tons.<br /><br /></span>,
     list: (<span>Services of Pola Group of Companies<br />
       - Sea freight transportation<br />
       - River freight transportation<br />

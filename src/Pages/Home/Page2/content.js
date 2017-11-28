@@ -7,7 +7,7 @@ export default {
     },
     {
       id: 1,
-      description: 'Под управлением группы Pola находится 19 морских судов типа Handysize суммарным дедвейтом свыше 700тыс. тонн. Pola обладает весьма молодым флотом: средний возраст судов не превышает 10 лет, а все члены плавсостава – квалифицированные специалисты с многолетним опытом.',
+      description: 'В оперировании группы Pola находится до 50 морских судов типа Handysize суммарным дедвейтом свыше 1,7 млн. тонн. Pola обладает весьма молодым флотом: средний возраст судов не превышает 10 лет, а все члены плавсостава – квалифицированные специалисты с многолетним опытом.',
       name: 'Морской флот',
     },
     // {
@@ -29,7 +29,7 @@ export default {
     },
     {
       id: 1,
-      description: 'Pola Group operates 19 vessels of the Handysize type with a total deadweight of more than 700 thousand tons. Pola has a very young fleet: the average age of the vessels does not exceed 10 years, and all members of the crew are qualified professionals with many years of experience.',
+      description: 'In operations of Pola Group there are about 50 vessels of the Handysize type with a total deadweight of more than 1,7 million tons. Pola has a very young fleet: the average age of the vessels does not exceed 10 years, and all members of the crew are qualified professionals with many years of experience.',
       name: 'Marine Fleet',
     },
     // {
