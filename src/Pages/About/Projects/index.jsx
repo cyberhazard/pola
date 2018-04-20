@@ -30,7 +30,7 @@ const Header = HeaderText.extend`
 
 const Projects = ({ l }) => (
   <Page>
-    <Breadcrumbs to="/about" label={l === 'RU' ? 'О группе' : 'About group'} current={l === 'RU' ? 'Проекты' : 'Projects'} />
+    <Breadcrumbs to="/about" label={l === 'RU' ? 'О Pola' : 'About'} current={l === 'RU' ? 'Проекты' : 'Projects'} />
     <Header>{l === 'RU' ? 'Проекты' : 'Projects'}</Header>
     {
       projects[l].map((project, index) => (

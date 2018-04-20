@@ -2,7 +2,7 @@ export default {
   RU: {
     0: {
       name: 'Pola Maritime Ltd.',
-      text: 'Основана в 2006 году и имеет богатый опыт на рынке морских перевозок. Компания оперирует 19 судами типа “Handysize” , из которых 11 являются собственными. Компания обладает молодым флотом: средний возраст судов - 10 лет. Общая грузоподъёмность флота превышает 1,7 тысяч тонн. По итогам 2016 года флотом Pola Maritime перевезено более 5 млн. тонн грузов.',
+      text: 'Основана в 2006 году и имеет богатый опыт на рынке морских перевозок. Компания оперирует 19 судами типа “Handysize” , из которых 11 являются собственными. Компания обладает молодым флотом: средний возраст судов - 10 лет. Общая грузоподъёмность флота превышает 650 тыс. тонн. По итогам 2016 года флотом Pola Maritime перевезено более 5 млн. тонн грузов.',
       site: 'http://pola.com.cy',
     },
     1: {
@@ -16,45 +16,30 @@ export default {
       site: '',
     },
     3: {
-      name: 'Pola Logistic',
-      text: 'Компания занимается непосредственной реализацией проекта «Гвинея», обеспечивая доставку рудного материала на океанические судна клиента ',
-      site: '',
-    },
-    4: {
       name: 'Inok N.V. Ltd.',
-      text: 'Крупнейшая компания в области технического и кадрового менеджмента. Компания организует техническое обслуживание и ремонт флота, а также занималась  комплектованием экипажей более 40 судов.',
+      text: 'Крупнейшая компания в области технического и кадрового менеджмента. Компания организует техническое обслуживание и ремонт флота, а также занимается  комплектованием экипажей более 40 судов.',
       site: 'http://www.inok-tm.com',
     },
   },
   EN: {
     0: {
       name: 'Pola Maritime Ltd.',
-      text: 'It was established in 2006 and has a wide experience in the maritime shipping market. The company operates 19 vessels of the "Handysize" type, 11 of which are their own. The company has a young fleet: the average age of the vessels is 10 years. The total fleet cargo capacity exceeds 1,7 million thousand tons. At the end of 2016, the Pola Maritime fleet transported over 5 million tons of cargo.',
+      text: 'It was established in 2006 and has a wide experience in the maritime shipping market. The company operates 19 vessels of the "Handysize" type, 11 of which are their own. The company has a young fleet: the average age of the vessels is 10 years. The total fleet cargo capacity exceeds 650 thousands tons. At the end of 2016, the Pola Maritime fleet transported over 5 million tons of cargo.',
       site: 'http://pola.com.cy',
     },
     1: {
-      name: 'Pola Rise LLC',
+      name: 'Pola Rise Ltd.',
       text: 'Russian company established in 2015. Currently, according to the order of Paul Rise, 10 vessels of the RSD-59 project and one vessel of the RSD-49 river-sea class project, as well as 10 oil barges of Belmax lake class project are being built. Construction of the vessels is carried out at the Krasnoye Sormovo, NSSP and Okskaya Shipyards. All vessels meet the latest IMO requirements. The vessels can operate both in the sea areas and on the inland waterways of the Russian Federation, their dimensions and draft allow them to transport goods across the entire Russian river system and other European countries.',
       site: '',
     },
     2: {
-      name: 'Pola Management LLC',
+      name: 'Pola Management Ltd.',
       text: 'Russian company that performs functions of strategic  management of the Pola Group projects. The company has qualified management personnel with rich experience in stevedoring, shipping and shipbuilding business. The company was established in 2012. The following projects have been developed and supported by the company\'s efforts: the Guinea project, the RSD-59 project, the Belmax project and the Baltic Ferry Company project.',
       site: '',
     },
     3: {
-      name: 'Pola Logistic',
-      text: 'The company is directly engaged in the implementation of the Guinea project, ensuring the delivery of ore material to the oceans customer ships',
-      site: '',
-    },
-    4: {
-      name: 'NSSP LLC',
-      text: 'Shipbuilding - Shiprepair Plant, which built over 300 vessels of various classes and destinations from small passenger to tugboats and river-sea vessels. The plant is actively mastering new technologies and increasing production capacities for the development of not only the main direction - shipbuilding, but also a traditional one - ship repair. The plant regularly performs contracts of any complexity for the largest customers. So, by order of the Ministry of Transport, a series of 4 multifunctional rescue vessels of an unrestricted navigation area was built.',
-      site: 'http://www.nssz.ru',
-    },
-    5: {
       name: 'Inok N.V. Ltd.',
-      text: 'One of the largest company of technical and personnel management. The company organizes maintenance and repair of the fleet, and was also engaged in recruitment of crews of more than 40 vessels.',
+      text: 'One of the largest company of technical and personnel management. The company organizes maintenance and repair of the fleet, and engaged in recruitment of crews of more than 40 vessels.',
       site: 'http://www.inok-tm.com',
     },
   },

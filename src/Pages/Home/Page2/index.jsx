@@ -16,21 +16,21 @@ const MButton = styled(MoreButton)`
 
 const t = {
   RU: {
-    header: `Группа компаний Pola специализируется на перевозках наливных, навалочных и генеральных грузов на судах морского и речного флота,
-    а также на судах класса “река-море”. Суммарный дедвейт судов, находящихся в управлении компаний группы Polа,
+    header: `Компании Pola специализируется на перевозках наливных, навалочных и генеральных грузов на судах морского и речного флота,
+    а также на судах класса “река-море”. Суммарный дедвейт судов, находящихся в управлении компаний  Polа,
     в ближайщшее время составит более 1 млн. тонн.`,
   },
   EN: {
-    header: `The area of business of Pola Group of Companies involves transportation of bulk and general cargoes on the vessels of the sea and river fleet,
-    as well as on the vessels of the river-sea class. T
-    The total deadweight of the vessels under the control of the companies of the Pol Group,
+    header: `The area of business of Pola Companies involves transportation of bulk and general cargoes on the vessels of the sea and river fleet,
+    as well as on the vessels of the river-sea class.
+    The total deadweight of the vessels under the control of the Pola companies ,
     in the nearest time will be more than 1 million tons.`,
   },
 };
 
 export default ({ l }) => (
   <Page>
-    <Title left><Wave src={wave1} />{l === 'RU' ? 'О группе' : 'About group' }</Title>
+    <Title left><Wave src={wave1} />{l === 'RU' ? 'О компаниях Pola' : 'About Pola companies' }</Title>
     <MainText>
       {t[l].header}
     </MainText>

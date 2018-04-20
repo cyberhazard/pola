@@ -1,6 +1,6 @@
 export default {
   home: 'Home',
-  about: 'About Group',
+  about: 'About Pola',
   services: 'Services',
   actives: 'Actives',
   news: 'News',

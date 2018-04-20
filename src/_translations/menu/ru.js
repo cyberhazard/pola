@@ -1,6 +1,6 @@
 export default {
   home: 'Главная',
-  about: 'О группе',
+  about: 'О Pola',
   services: 'Услуги',
   actives: 'Активы',
   news: 'Новости',

@@ -12,21 +12,21 @@ import aboutB6 from './../../_assets/images/about-b6.png';
 
 const About = ({ l }) => (
   <Page>
-    <Title><Wave src={wave} />{l === 'RU' ? 'О группе' : 'About group'}</Title>
+    <Title><Wave src={wave} />{l === 'RU' ? 'О Pola' : 'About Pola'}</Title>
     <Blocks>
       <Block to="/about/structure">
         <Wave float src={wave} /><FloatImage className="float-image" src={aboutB1} css="top: -7rem; left: -11rem;" />
-        {l === 'RU' ? 'Компании группы' : 'Group Companies'}
+        {l === 'RU' ? 'Компании Pola' : 'Pola Companies'}
       </Block>
       <Block to="/about/profile">
         <Wave float src={wave} /><FloatImage className="float-image" src={aboutB2} css="top: -4.2rem; left: -6rem;" />
-        {l === 'RU' ? 'Профиль группы' : 'Group’s Profile Page'}
+        {l === 'RU' ? 'Профиль Pola' : 'Pola Profile Page'}
       </Block>
       <Block to="/about/history">
         <Wave float src={wave} /><FloatImage className="float-image" src={aboutB3} css="right: -10rem; bottom: -1rem;" />
         {l === 'RU' ? 'История' : 'History'}
       </Block>
-      <Block to="/about/lead">
+      <Block to="/about/#">
         <Wave float src={wave} /><FloatImage className="float-image" src={aboutB4} css="top: -7rem; left: -9rem;" />
         {l === 'RU' ? 'Руководство' : 'Management'}
       </Block>

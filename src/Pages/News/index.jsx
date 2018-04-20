@@ -92,7 +92,7 @@ class NewsClass extends React.Component {
       .filter(el => new Date(el.timestamp).valueOf() >= getRange(this.state.filter) || this.state.filter === '')
       .map(({ title, timestamp, id }) =>
         <NewsBlock l={l} title={title} timestamp={timestamp} id={id} key={id} />);
-    newses.length = 6;
+    newses.length = 12;
     return (
       <Page full normal>
         <Header>

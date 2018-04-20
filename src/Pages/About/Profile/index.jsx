@@ -8,11 +8,10 @@ import Slider from './Slider';
 
 const t = {
   RU: {
-    description: <span>Группа компаний Pola специализируется на перевозках наливных, навалочных и генеральных грузов на судах морского и речного флота, а также на судах класса “река-море”. Суммарная численность судов, находящихся в управлении компаний группы Polа, в ближайшее время составит более 90 ед. общим тоннажем более 1,7 млнт.<br /><br /></span>,
-    list: (<span>Услуги группы компаний Pola<br />
+    description: <span>Компании Pola специализируются на перевозках наливных, навалочных и генеральных грузов на судах морского и речного флота, а также на судах класса “река-море”. Суммарная численность судов, находящихся в управлении компаний Polа, в ближайшее время составит более 90 ед. общим тоннажем более 1,7 млнт.<br /><br /></span>,
+    list: (<span>Услуги компаний Pola<br />
       - Морские перевозки грузов<br />
       - Речные перевозки грузов<br />
-      - Пассажирские перевозки и организация речных круизов<br />
       - Судостроительная и судоремонтная деятельность<br />
       - Услуги технического и кадрового менеджмента<br />
       - Комплексные логистические решения<br /></span>),
@@ -22,7 +21,7 @@ const t = {
     list: (<span>Services of Pola Group of Companies<br />
       - Sea freight transportation<br />
       - River freight transportation<br />
-      - Passenger transportation and river cruise organization<br />
+
       - Shipbuilding and ship repair activities<br />
       - Services of technical and personnel management<br />
       - Comprehensive logistics solutions<br /></span>),
@@ -31,8 +30,8 @@ const t = {
 
 const Profile = ({ l }) => (
   <Page>
-    <Breadscrubs to="/about" label={l === 'RU' ? 'О группе' : 'About group'} current={l === 'RU' ? 'Профиль группы' : 'Group\'s profile page'} />
-    <Header>{l === 'RU' ? 'Профиль группы' : 'Group\'s profile page'}</Header>
+    <Breadscrubs to="/about" label={l === 'RU' ? 'О Pola' : 'About Pola'} current={l === 'RU' ? 'Профиль Pola' : 'Pola companies profile page'} />
+    <Header>{l === 'RU' ? 'Профиль Pola' : 'Pola companies profile page'}</Header>
     <Content>
       <Text>
         {t[l].description}
@@ -41,7 +40,7 @@ const Profile = ({ l }) => (
       <Slider />
     </Content>
     <Link to="/about/history">
-      <Button label={l === 'RU' ? 'История группы' : 'History'} />
+      <Button label={l === 'RU' ? 'История' : 'History'} />
     </Link>
   </Page>
 );

@@ -2,12 +2,12 @@ export default {
   RU: [
     {
       id: 0,
-      description: 'Группа Pola планирует выйти на рынок речных перевозок с 2018 года. К этому моменту  будут сданы в эксплуатацию суда проекта RSD59 и RSD49,предназанченные для перевозок генеральных, навалочных и проектных грузов,  а также нефтеналивные баржебуксирные составы проекта Белмакс.',
+      description: 'Компании Pola планируют выйти на рынок речных перевозок с 2018 года. К этому моменту  будут сданы в эксплуатацию суда проекта RSD59 и RSD49,предназанченные для перевозок генеральных, навалочных и проектных грузов,  а также нефтеналивные баржебуксирные составы проекта Белмакс.',
       name: 'Речной флот',
     },
     {
       id: 1,
-      description: 'В оперировании группы Pola находится до 50 морских судов типа Handysize суммарным дедвейтом свыше 1,7 млн. тонн. Pola обладает весьма молодым флотом: средний возраст судов не превышает 10 лет, а все члены плавсостава – квалифицированные специалисты с многолетним опытом.',
+      description: 'В оперировании компаний Pola находится 19 морских судов типа Handysize суммарным дедвейтом свыше 650 тыс. тонн. Pola обладает весьма молодым флотом: средний возраст судов не превышает 10 лет, а все члены плавсостава – квалифицированные специалисты с многолетним опытом.',
       name: 'Морской флот',
     },
     // {
@@ -24,12 +24,12 @@ export default {
   EN: [
     {
       id: 0,
-      description: 'Pola Group intends to enter the river transport market from 2018. Till that time, the vessels of RSD59 and RSD49 projects, designed for transportation of general, bulk and project cargo, as well as oil-loading barge towing arrangements of the Belmax project, will be put into operation.',
+      description: 'Pola companies intends to enter the river transport market from 2018. Till that time, the vessels of RSD59 and RSD49 projects, designed for transportation of general, bulk and project cargo, as well as oil-loading barge towing arrangements of the Belmax project, will be put into operation.',
       name: 'River Fleet',
     },
     {
       id: 1,
-      description: 'In operations of Pola Group there are about 50 vessels of the Handysize type with a total deadweight of more than 1,7 million tons. Pola has a very young fleet: the average age of the vessels does not exceed 10 years, and all members of the crew are qualified professionals with many years of experience.',
+      description: 'In operations of Pola companies there are 19 vessels of the Handysize type with a total deadweight of more than 650 thousand tons. Pola has a very young fleet: the average age of the vessels does not exceed 10 years, and all members of the crew are qualified professionals with many years of experience.',
       name: 'Marine Fleet',
     },
     // {

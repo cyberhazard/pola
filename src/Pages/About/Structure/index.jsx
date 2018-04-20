@@ -47,8 +47,8 @@ const Footer = styled.div`
 
 const Structure = ({ l }) => (
   <Page>
-    <Breadcrumbs to="/about" label={l === 'RU' ? 'О группе' : 'About'} current={l === 'RU' ? 'Компании группы' : 'Group Companies'} />
-    <Header>{l === 'RU' ? 'Компании группы' : 'Group Companies'}</Header>
+    <Breadcrumbs to="/about" label={l === 'RU' ? 'О Pola' : 'About'} current={l === 'RU' ? 'Компании Pola' : 'Pola companies'} />
+    <Header>{l === 'RU' ? 'Компании Pola' : 'Pola Companies'}</Header>
     <Block l={l} img={ship1} header={t[l][0].name} link={t[l][0].site} >
       { t[l][0].text }
     </Block>
@@ -58,16 +58,12 @@ const Structure = ({ l }) => (
     <Block l={l} img={ship4} header={t[l][2].name} >
       { t[l][2].text }
     </Block>
-    <Block l={l} right img={ship5} header={t[l][3].name} >
+    <Block l={l} right img={ship8} header={t[l][3].name} >
       { t[l][3].text }
     </Block>
-    <Block l={l} img={ship8} header={t[l][4].name} >
-      { t[l][4].text }
-    </Block>
-
     <Footer>
       <Link to="/about/profile">
-        <Button label={l === 'RU' ? 'Профиль группы' : 'Group’s Profile Page'} />
+        <Button label={l === 'RU' ? 'Профиль компаний Pola' : 'Pola companies Profile Page'} />
       </Link>
     </Footer>
   </Page>

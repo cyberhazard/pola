@@ -2,7 +2,7 @@ export default {
   RU: {
     slide1: {
       title: 'Перевозка грузов морским флотом',
-      text: 'Под управлением группы Pola находится 19 судов типа Handysize суммарным дедвейтом более 650тыс. тонн',
+      text: 'Под управлением компаний Pola находится 19 судов типа Handysize суммарным дедвейтом более 650тыс. тонн',
     },
     slide2: {
       title: 'Речные круизы по внутренним водным путям РФ',
@@ -16,7 +16,7 @@ export default {
   EN: {
     slide1: {
       title: 'Marine shipping of goods',
-      text: 'In operations of Pola Group there are about 19 vessels of the Handysize type with a total deadweight of more than  650 thousand tons',
+      text: 'In operations of Pola companies there are about 19 vessels of the Handysize type with a total deadweight of more than  650 thousand tons',
     },
     slide2: {
       title: 'River cruises on inland waterways of the Russian Federation',

@@ -6,12 +6,21 @@ export default {
   RU: [
     {
       title:
-        'Группа Pola планирует выйти на рынок речных перевозок с 2018 года.',
+        'Крупнейшее судно проекта RSD49 перевозит 6000 тонн груза на расстояние 2000 миль из Санкт-Петербурга в Шарпнесс.',
       timestamp: '01-22-2017-10:00',
       id: '0',
       html: `<div>
         <p style="margin-bottom: 3rem;">
-          Группа Pola планирует выйти на рынок речных перевозок с 2018 года. К этому моменту  будут сданы в эксплуатацию суда проекта RSD59 и RSD49,предназанченные для перевозок генеральных, навалочных и проектных грузов,  а также нефтеналивные баржебуксирные составы проекта Белмакс.
+
+        Судно Пола Севастиана длиной 140 метров и шириной 17 метров перевозит 6000 тонн сои и пшеницы на расстояние 2000 миль из Санкт-Петербурга в Шарпнесс. Это делает Пола Севастиана крупнейшим судном такого класса, разгрузившемся в порту Шарпнесса с начала 1950-х.
+
+
+        Сотрудники канала Gloucester & Sharpness Canal помогли безопасно пришвартовать судно.
+        Но несмотря на то, что команде из возьми человек удалось успешно пришвартовать судно, проблемы при выходе из канала все же возникли, так как Пола Севастиана не смогла развернуться и для выхода из канала пришлось сдавать задним ходом.
+        Руководитель канальна Левис Нил объясняет: "Канал Шарпнесс принимает огромное количество кораблей в течение года. Но все они обычно не превосходят в длину 90 метров, так что Пола Севастиана огромен по сравнению с обычными судами, посещающими канал. Так что швартовка такого судна была очень сложной задачей, требующей серьезной подготовки.
+
+
+        Источник: http://www.gloucestershirelive.co.uk/news/gloucester-news/largest-vessel-generation-travels-2000-1045321
         </p>
       </div>`,
     },
@@ -184,12 +193,23 @@ export default {
   EN: [
     {
       title:
-        'Pola Group plans to enter the river transport market from 2018.',
+        'Largest vessel in a generation travels 2,000 miles from Russia to Sharpness with 6,000 tonnes of cargo',
       timestamp: '01-22-2017-10:00',
       id: '0',
       html: `<div>
         <p style="margin-bottom: 3rem;">
-        The Pola Group plans to enter the river transport market in 2018. By this time, the vessels RSD59 and RSD49 projected for the transportation of general, bulk and project cargoes, as well as oil-filled brewing-brewing compounds of the Belmaks project, will be commissioned.
+        At 140 metres long (460ft) and 17 metres wide, the monster cargo ship Pola Sevastiana travelled 2000 miles from St Petersburg, Russia to Sharpness before unloading over 6,000 tonnes of wheat and soya.
+        It makes this the 'largest vessel in a generation' to visit the historic Sharpness Docks and the largest cargo to be unloaded there since the early 1950s.
+
+        The 140 metre-long Pola Sevastiana travelled from St Petersburg to Sharpness
+
+        A team of eight from the Trust guided the behemoth into the docks but the ship was so big that when it was time to leave the port it wasn’t able to turn around in the dock.
+        Instead, the Pola Sevastiana had to reverse backwards into the River Severn.
+        Lewis Kneale, Canal & River Trust supervisor, explains: “Sharpness Docks welcomes a huge variety of vessels all year round, the average size in length is around 90 metres, so this was a monster by comparison. It’s size presented a pretty unique challenge, one we had to put a lot of preparation into.
+        "Not everyone knows there is a dock at the end of it. It’s a fascinating place to work, with ships of different shapes and sizes from all over the world coming to Gloucestershire.”
+        The dock at Sharpness was opened in 1874 and is one of the most inland ports in Britain. It serves as the gateway from the River Severn to the Gloucester & Sharpness Canal.
+
+        Original news: http://www.gloucestershirelive.co.uk/news/gloucester-news/largest-vessel-generation-travels-2000-1045321
         </p>
       </div>`,
     },

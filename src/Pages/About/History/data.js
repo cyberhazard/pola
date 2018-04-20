@@ -57,14 +57,6 @@ export default {
       img: img7,
       text: 'Российская компания, основанная в 2015 году. На данный момент по заказу «Пола Райз» строится 10 судов проекта RSD-59 и одно судно проекта RSD-49 класса «река-море», а также 10 нефтеналивных барж проекта «Белмакс» озёрного класса. Строительство судов осуществляется на верфях «Красное Сормово», «НССЗ» и «Окская судоверфь». Все суда соответствуют IMO. Суда могут работать как в морских районах, так и на внутренних водных путях России, их габариты и осадка позволяют им перевозить грузы по всей российской речной системе и другим европейским странам.',
     },
-    {
-      id: 7,
-      offset: 100,
-      year: 2016,
-      title: 'Регистрация Pola Logistics Ltd',
-      img: img8,
-      text: ' Компания занимается непосредственной реализацией проекта «Гвинея»',
-    },
   ],
   EN: [
     // {
@@ -115,14 +107,6 @@ export default {
       title: 'Establishment of Pola Rise LLC',
       img: img7,
       text: 'Russian company established in 2015. Currently, according to the order of Paul Rise, 10 vessels of the RSD-59 project and one vessel of the RSD-49 river-sea class project, as well as 10 oil barges of Belmax lake class project are being built. Construction of the vessels is carried out at the Krasnoye Sormovo, NSSP and Okskaya Shipyards. All vessels meet the latest IMO requirements. The vessels can operate both in the sea areas and on the inland waterways of the Russian Federation, their dimensions and draft allow them to transport goods across the entire Russian river system and other European countries.',
-    },
-    {
-      id: 7,
-      offset: 100,
-      year: 2016,
-      title: 'Registration of Pola Logistics Ltd',
-      img: img8,
-      text: 'The company is directly engaged in the implementation of the Guinea project',
     },
   ],
 };
