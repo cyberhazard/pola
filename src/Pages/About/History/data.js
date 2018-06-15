@@ -4,7 +4,7 @@ import img3 from './../../../_assets/images/history/3.png';
 import img5 from './../../../_assets/images/history/5.png';
 import img6 from './../../../_assets/images/history/6.png';
 import img7 from './../../../_assets/images/history/7.jpg';
-import img8 from './../../../_assets/images/history/8.JPG';
+// import img8 from './../../../_assets/images/history/8.JPG';
 
 export default {
   RU: [

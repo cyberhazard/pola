@@ -13,7 +13,7 @@ import ship1 from './../../../_assets/images/structure/ship1.png';
 // import ship2 from './../../../_assets/images/structure/ship2.png';
 // import ship3 from './../../../_assets/images/structure/ship3.png';
 import ship4 from './../../../_assets/images/structure/ship4.png';
-import ship5 from './../../../_assets/images/structure/bauxite.JPG';
+// import ship5 from './../../../_assets/images/structure/bauxite.JPG';
 // import ship6 from './../../../_assets/images/structure/ship6.png';import ship6 from './../../../_assets/images/structure/ship6.png';
 import ship9 from './../../../_assets/images/structure/ship9.jpg';
 import ship8 from './../../../_assets/images/structure/ship8.png';
